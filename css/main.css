@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+}
+.inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+}
+.menu-title-wrap{
+    width: 100%;
+    height: 360px;
+    padding-top: 230px;
+}
+.menu-title{
+    color: #034934;
+    font-weight: 700;
+    font-size: 50px;
+}
+.menu-subtitle{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+
+}
