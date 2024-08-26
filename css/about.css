@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* 어바웃 메뉴 리스트 */
+.about-lists {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  margin-bottom: 100px;
+}
+/* 잇츠베러 ======================================================================*/
+.its-better_txt {
+  display: block;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 150px;
+}
+.its-better_txt > .its-better_logo {
+  position: absolute;
+  width: 380px;
+}
+.its-better_logo > img {
+  width: 100%;
+}
+.its-better_txt > h3 {
+  position: absolute;
+  left: 335px;
+  top: 84px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.its-better_subtxt {
+  max-width: 858px;
+  width: 100%;
+  margin: 0 auto;
+}
+.its-better_img{
+    width: 760px;
+    height: 760px;
+    margin: 60px auto;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.its-better_middle-img{
+    width: 544px;
+    height: 544px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.its-better_middle-img > img{
+    width: 100%;
+}
+
+/* 더플랜잇 ==========================================================================*/
+.the-plant-eat_txt {
+  display: block;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.the-plant-eat_txt > .the-plant-eat_logo {
+  position: absolute;
+  width: 380px;
+  height: 150px;
+  overflow: hidden;
+}
+.the-plant-eat_txt > .the-plant-eat_logo > img {
+  width: 100%;
+}
+.the-plant-eat_txt > h3 {
+  position: absolute;
+  left: 370px;
+  top: 57px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.the-plant-eat_txt > h3 > p > span {
+  color: #056726;
+}
+.the-plant-eat_subtxt {
+  max-width: 858px;
+  width: 100%;
+  margin: 0 auto;
+}
+.the-plant-eat_explain{
+    text-align: center;
+}
+/* 더 플랜잇 상세 페이지 */
+/* 기술 및 방향성 */
+.the-plant-eat_about_main-bg {
+  width: 100%;
+  height: 600px;
+  background-color: #00000046;
+}
+.the-plant-eat_about_main-section {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #056726;
+  position: relative;
+}
+/* 이미지 움직이기 -=======================================*/
+.the-plant-eat_flip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 400px;
+  height: 400px;
+}
+
+.the-plant-eat_flip > .card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s ease-out;
+  transform-style: preserve-3d;
+}
+
+.the-plant-eat_flip > .card > .front,
+.the-plant-eat_flip > .card > .back {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.the-plant-eat_flip > .card > .over {
+  overflow: hidden;
+}
+.the-plant-eat_flip > .card > .over img {
+  width: 100%;
+}
+
+.the-plant-eat_flip > .card > .front {
+  background: rgb(255, 255, 255);
+}
+
+.the-plant-eat_flip > .card > .back {
+  background: royalblue;
+  transform: rotateY(-180deg);
+}
+
+.the-plant-eat_flip:hover > .card {
+  transform: rotateY(-180deg);
+}
