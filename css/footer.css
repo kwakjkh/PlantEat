@@ -1,6 +1,5 @@
 @charset "utf-8";
 .footer {
-  padding-top: 300px;
   color: #034934;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -42,8 +41,8 @@
 .footer-sns > li {
   padding-right: 40px;
 }
-.lower-footer{
-    font-size: 16px;
+.lower-footer {
+  font-size: 16px;
 }
 .footer-info {
   width: 100%;
@@ -54,40 +53,40 @@
   height: 110px;
   margin-left: 40px;
 }
-.footer-info p{
-    margin-top: 15px;
-    margin-left: 40px;
-    line-height: 1.3;
+.footer-info p {
+  margin-top: 15px;
+  margin-left: 40px;
+  line-height: 1.3;
 }
-.footer-info p span{
-    margin-right: 10px;
+.footer-info p span {
+  margin-right: 10px;
 }
-.footer-info p:last-child{
-    margin-top: 5px;
-    color: #83998b;
+.footer-info p:last-child {
+  margin-top: 5px;
+  color: #83998b;
 }
-.footer-contact{
-    width: 360px;
-    margin: 40px;
-    float: right;
-    background: #eff2f1;
-    padding: 30px 35px;
+.footer-contact {
+  width: 360px;
+  margin: 40px;
+  float: right;
+  background: #eff2f1;
+  padding: 30px 35px;
 }
-.footer-contact p:nth-child(3){
-    font-size: 14px;
-    margin-bottom: 20px;
+.footer-contact p:nth-child(3) {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
-.footer-contact p:last-child{
-    margin-top: 10px;
+.footer-contact p:last-child {
+  margin-top: 10px;
 }
-.contact-bold{
-    font-weight: bold;
-    font-size: 17px;
-    margin-right: 10px;
+.contact-bold {
+  font-weight: bold;
+  font-size: 17px;
+  margin-right: 10px;
 }
-.contact-ph{
-    font-size: 37px;
-    font-weight: bold;
-    margin-top: 12px;
-    margin-bottom: 4px;
+.contact-ph {
+  font-size: 37px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
