@@ -1,0 +1,90 @@
+@charset "utf-8";
+.hot-item {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 105px;
+  padding-bottom: 110px;
+}
+.hot-item h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.hot-item a {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.hot-item-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+}
+.hot-item-list > li {
+  width: 18%;
+}
+.hot-item-list li a {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.hot-item-list li a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+.hot-item-list li a:first-child:after {
+  content: "";
+  background-image: url("../../images/icons/icon_shop_basket.png");
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  background-size: cover;
+}
+.hot-item-name {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.hot-item-name span {
+  font-size: 15px;
+}
+.hot-item-name p {
+  font-size: 20px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+.hot-item-price {
+  width: 100%;
+  position: relative;
+  padding-top: 6px;
+  padding-left: 5px;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  align-content: center;
+}
+.hot-item-price p {
+  font-size: 25px;
+  font-weight: bold;
+  /* display: block; */
+  padding-top: 3px;
+}
+.hot-item-discount {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  /* position: absolute;
+    left: 5px; */
+  /* float: left; */
+}
+.hot-item-rate {
+  font-size: 18px;
+  color: #ff642c;
+  font-weight: bold;
+  /* position: absolute;
+    right: 5px; */
+  float: right;
+}
