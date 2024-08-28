@@ -1,0 +1,41 @@
+@charset "utf-8";
+.mini-banner{
+    width: 100%;
+    height: 254px;
+    font-family: "Oswald", sans-serif;
+    padding-top: 46px;
+}
+.mini-banner span{
+    font-size: 30px;
+}
+.mini-banner p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.mini-banner .mini-banner-box{
+    border: 0.5px solid black;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    margin-top: 34px;
+}
+.mini-banner1{
+    background-color: rgba(5, 103, 38, 0.25);
+}
+.mini-banner .inner{
+    position: relative;
+    height: 100%;
+}
+.mini-banner1 .inner::after{
+    content: "";
+    background-image: url("../../images/mini_banner/minibanner1.png");
+    background-size: cover;
+    width: 419px;
+    height: 240px;
+    right: 0;
+    bottom: 7px;
+    position: absolute;
+}
