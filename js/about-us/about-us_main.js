@@ -159,18 +159,53 @@ window.addEventListener("load", function () {
   });
 
   // .click-ani 요소들을 선택
-  const cAni = document.querySelectorAll(".click-ani");
+  thePlantEatTechLine.forEach((techs) => {
+    const cAni = techs.querySelector(".click-ani");
+    const techInfo = techs.querySelector(".tech-infos");
+    cAni.addEventListener("click", function () {
+      // 모든 .tech-infos 요소에서 info_active 클래스 제거
+      document.querySelectorAll(".tech-infos").forEach((info) => {
+        info.classList.remove("info_active");
+      });
 
-  cAni.forEach((cAniElement) => {
-    // 각 .click-ani 요소에 클릭 이벤트 리스너 추가
-    cAniElement.addEventListener("click", () => {
-      // .click-ani 요소의 하위에 있는 .tech-infos 요소를 찾음
-      const techInfo = cAniElement.querySelector(".tech-infos");
-
-      // .tech-infos 요소가 존재하면 info_active 클래스를 추가
-      if (techInfo) {
-        techInfo.classList.add("info_active");
-      }
+      // 현재 클릭된 요소에만 info_active 클래스 추가
+      techInfo.classList.add("info_active");
     });
+  });
+  const cAni_1 = this.document.querySelector(".line1-after");
+  const cAni_1Line = this.document.querySelector(".tech-1 .line");
+  const cAni_2 = this.document.querySelector(".line2-after");
+  const cAni_2Line = this.document.querySelector(".tech-2 .line");
+  const cAni_3 = this.document.querySelector(".line3-after");
+  const cAni_3Line = this.document.querySelector(".tech-3 .line");
+  cAni_1.addEventListener("click", function () {
+    thePlantEatMore.classList.add("bg-m_line1-after");
+    cAni_1Line.classList.add("m_line1-after");
+    cAni_2Line.classList.remove("m_line2-after");
+    cAni_3Line.classList.remove("m_line3-after");
+    if(cAni_1Line){
+      cAni_2Line.classList.add("hide")
+      cAni_3Line.classList.add("hide")
+    }
+  });
+  cAni_2.addEventListener("click", function () {
+    thePlantEatMore.classList.add("bg-m_line1-after");
+    cAni_2Line.classList.add("m_line2-after");
+    cAni_3Line.classList.remove("m_line3-after");
+    cAni_1Line.classList.remove("m_line1-after");
+    if(cAni_2Line){
+      cAni_1Line.classList.add("hide")
+      cAni_3Line.classList.add("hide")
+    }
+  });
+  cAni_3.addEventListener("click", function () {
+    thePlantEatMore.classList.add("bg-m_line2-after");
+    cAni_3Line.classList.add("m_line3-after");
+    cAni_2Line.classList.remove("m_line2-after");
+    cAni_1Line.classList.remove("m_line1-after");
+    if(cAni_3Line){
+      cAni_1Line.classList.add("hide")
+      cAni_2Line.classList.add("hide")
+    }
   });
 });
