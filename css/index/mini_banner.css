@@ -25,9 +25,13 @@
 .mini-banner1{
     background-color: rgba(5, 103, 38, 0.25);
 }
+.mini-banner2{
+    background-color: rgba(255, 100, 44, 0.25);
+}
 .mini-banner .inner{
     position: relative;
     height: 100%;
+    padding: 0 50px;
 }
 .mini-banner1 .inner::after{
     content: "";
@@ -35,6 +39,16 @@
     background-size: cover;
     width: 419px;
     height: 240px;
+    right: 0;
+    bottom: 7px;
+    position: absolute;
+}
+.mini-banner2 .inner::after{
+    content: "";
+    background-image: url("../../images/mini_banner/minibanner2.png");
+    background-size: cover;
+    width: 447px;
+    height: 380px;
     right: 0;
     bottom: 7px;
     position: absolute;
