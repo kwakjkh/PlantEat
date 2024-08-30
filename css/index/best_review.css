@@ -1,0 +1,37 @@
+@charset "utf-8";
+.best-review {
+  width: 100%;
+}
+.best-review .inner {
+  padding: 0 20px;
+}
+.best-review h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.best-review .swiper-slide {
+  aspect-ratio: 1/1.6;
+}
+
+.review-image {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.review-image img {
+  width: 100%;
+}
+.review-title a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.review-p {
+  width: 100%;
+}
+.review-p a {
+  width: 100%;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
