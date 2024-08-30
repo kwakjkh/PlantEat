@@ -1,10 +1,9 @@
 @charset "utf-8";
-.inner {
-  max-width: 1500px;
-  margin: auto;
-}
+
 /*prducts 카테고리  */
-.prducts-main .prductsIcon {
+.prducts-main button {
+  border: none;
+  background: none;
   width: 120px;
   height: 100px;
   float: left;
@@ -14,22 +13,20 @@
   margin-bottom: 100px;
   justify-content: center;
 }
-.prductsIcon > img {
+.prducts-main button > img {
   width: 100%;
   height: 100%;
-  position: relative;
 }
-.prductsIcon > p {
+.prducts-icon > li > button > p {
   font-size: 15px;
   font-weight: 1000;
   color: #034934;
-  margin-left: 21px;
 }
 #prducts-xilk-tet {
   color: #ff642c;
 }
 .prducts {
-  display: flex;
+  display: flex ;
 }
 /* prducts list */
 
@@ -38,17 +35,20 @@
   position: relative;
   margin: auto;
   /* display: flex; */
+
+  display: flex;
+
 }
 .prducts p {
   font-size: 20px;
 }
-/*  prducts-xilk */
 .prducts-xilk .item-img {
   /* width: calc(100% / 4); */
 }
 .prducts-xilk .item-img a img {
   width: 100%;
 }
+
 /* prducts-mayo */
 .prducts-mayo {
   width: 25%;
@@ -62,10 +62,14 @@
 
 
 }
-/* .prducts img {
+ .prducts img {
   width: calc(100% / 4);
+
   height: 100%;
-} */
+  margin: 0 10px;
+display: flex !important;
+}
+
 .item-bt {
   position: relative;
 }
@@ -80,35 +84,35 @@
   height: 50px;
   right: 15px;
   bottom: 25px;
+
+.prducts img {
+  width: 300px;
+  height: 300px;
+}
+.prducts .shop_basket {
+
   position: absolute;
-  display: block;
+  right:10px ;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
 }
-
-.item-info-list .or-pice {
-  font-size: 18px;
-  color: #a0a0a0;
-  text-decoration: line-through;
-}
-
-.item-info-list {
-  display: grid;
-  padding-left: 8px;
-}
-.item-info-list li > b {
-  font-size: 18px;
-  color: #ff642c;
-  float: right;
-  padding-right: 5px;
+.item-info-list{
+  color: #034934;
 }
 .item-info-list span {
   float: left;
   font-size: 20px;
 }
+
 .item-info-list .pPrice {
   margin-left: 5px;
   font-size: 20px;
 }
-.prducts-xilk {
+
+
+.prducts-xilk{
+
   display: none;
 }
 .prducts-mayo {
@@ -122,3 +126,5 @@
 }
 
 @media screen and();
+
+

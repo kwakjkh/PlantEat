@@ -17,6 +17,9 @@
 .the-plant-eat_about_main-section {
   position: absolute;
 }
+.line{
+  transition: all 0.5s
+}
 /* 첫번쨰 줄 =============================================================*/
 .the-plant-eat_about_main-section > .tech-1 > .line {
   display: flex;
@@ -57,7 +60,6 @@
   max-width: 350px;
   height: 270px;
   border-top: 1px solid #fff;
-  transition: all 0.3s;
 }
 /* 세번쨰 줄 =============================================================*/
 .the-plant-eat_about_main-section > .tech-3 > .line {
@@ -100,8 +102,7 @@
   opacity: 1;
 }
 /* 1 */
-.the-plant-eat_about_main-section > .tech-1 > .line > .line1-2 >.line1-2-after {
-  content: "";
+.the-plant-eat_about_main-section > .tech-1 > .line > .line1-2 > .line1-after {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -116,8 +117,7 @@
   width: 100%;
   max-width: 350px;
 }
-.the-plant-eat_about_main-section > .tech-2 > .line >.line2-1-after {
-  content: "";
+.the-plant-eat_about_main-section > .tech-2 > .line > .line2-after {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -128,8 +128,7 @@
 .tech-3.bgLogo-active > .line > .line3-2 {
   width: 40%;
 }
-.the-plant-eat_about_main-section > .tech-3 > .line > .line3-2 >.line3-2-after{
-  content: "";
+.the-plant-eat_about_main-section > .tech-3 > .line > .line3-2 > .line3-after {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -137,4 +136,95 @@
   position: absolute;
   right: 0;
   top: -8px;
+}
+.click-ani {
+  cursor: pointer;
+  display: block;
+}
+.click-ani-after {
+  z-index: 999;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  animation: click-animation 0.8s infinite;
+}
+/* 클릭 이펙트 애니메이션 */
+@keyframes click-animation {
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.tech-infos {
+  z-index: -1;
+  position: absolute;
+  width: 50px;
+  /* height: 50px; */
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+
+.tech-infos.info_active {
+  opacity: 1;
+  width: 200%;
+}
+.tech-1 .info_active.info_active> h1, h2, h3{
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+.tech-1 .info_active.info_active{
+  left: -300%;
+  width: 300%;
+}
+.tech-2 .info_active.info_active{
+  left: -200%;
+}
+.tech-3 .info_active.info_active{
+  right: -300%;
+  width: 300%;
+}
+
+
+
+
+
+
+
+
+
+/* 배경 로고 */
+.the-plant-eat_flip.bg-m_line1-after {
+  left: calc(50% + 30%);
+}
+.the-plant-eat_flip.bg-m_line2-after{
+  left: calc(50% - 30%);
+}
+.tech-1 > .line.m_line1-after {
+  right: calc(50% - 30%);
+}
+/* 선 */
+.tech-2 > .line.m_line2-after{
+  right: calc(50% - 30%);
+}
+.tech-3 > .line.m_line3-after{
+  left: calc(50% - 30%);
+}
+.tech-1 > .line.hide{
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
+}
+.tech-2 > .line.hide{
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
+}
+.tech-3 > .line.hide{
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
 }
