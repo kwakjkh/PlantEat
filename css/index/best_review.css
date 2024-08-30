@@ -21,17 +21,62 @@
 .review-image img {
   width: 100%;
 }
+.review-text{
+  padding: 20px 15px;
+  position: relative;
+}
+.review-title{
+  margin-top: 15px;
+}
 .review-title a {
+  display: block;
   font-size: 20px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .review-p {
+  margin-top: 15px;
   width: 100%;
 }
 .review-p a {
+  display: block;
   width: 100%;
   font-size: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.review-name{
+  font-size: 13px;
+  margin-top: 25px;
+  color: #555;
+  padding-bottom: 30px;
+}
+.review-name span{
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 0.5px solid #ddd;
+}
+.review-product{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 0.5px solid #ddd;
+}
+.review-product a{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  color: #555;
+}
+.review-product a img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
