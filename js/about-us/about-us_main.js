@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
   // 잇츠베러 클릭 영역
   const eatsBetterMore = document.querySelector(".its-better_middle-img_after");
   eatsBetterMore.addEventListener("click", function () {
+    eatsBetterMore.style.display = "none";
     const eatsClicking = document.querySelector(".its-better_img"); //앗츠베러 상품 이미지
     const eAboutInfo = document.querySelector(".its-better_i_info"); //잇츠베러 상품 정보
     const goAShop = document.querySelector(".go_a__shop"); //잇츠베러 상품 바로 가기 버튼
@@ -73,7 +74,7 @@ window.addEventListener("load", function () {
       }, 400); // 0.5초 동안의 투명화 후에 이미지 업데이트
     });
   });
-    // 잇츠베러 다른 상품 클릭시 이미지 및 상품 정보 바뀌기 1080
+  // 잇츠베러 다른 상품 클릭시 이미지 및 상품 정보 바뀌기 1080
   const ePbtListLi1080 = document.querySelectorAll(".its-better_a_pbt_list-1080 li img"); //잇츠베러 다른 상품 리스트 li
   ePbtListLi1080.forEach(function (img) {
     img.addEventListener("click", function () {
@@ -126,6 +127,12 @@ window.addEventListener("load", function () {
   // 더플랜잇 스크롤영역
   const thePlantEatMore = this.document.querySelector(".the-plant-eat_flip");
   const thePlantEatMore_Bg = this.document.querySelector(".the-plant-eat_about_main-section");
+  const thePlantEatMore_BgLogo = this.document.querySelector(".the-plant-eat_about_main-section > .the-plant-eat_flip");
+  const thePlantEatTechLine = document.querySelectorAll(".tech");
+  // const tpeBgVideo = this.document.querySelector(".video > video");
+  // if (tpeBgVideo.paused) {
+  //   tpeBgVideo.play();
+  // }
   const waypoint_plantEat = new Waypoint({
     element: document.querySelector(".about_the-plant-eat"),
     handler: function (direction) {
@@ -133,11 +140,21 @@ window.addEventListener("load", function () {
       if (direction === "down") {
         thePlantEatMore.classList.add("hover");
         thePlantEatMore_Bg.classList.add("bg_hover");
+        setTimeout(function () {
+          thePlantEatTechLine.forEach(function (element) {
+            element.classList.add("bgLogo-active");
+          });
+        }, 400);
       } else {
         thePlantEatMore.classList.remove("hover");
         thePlantEatMore_Bg.classList.remove("bg_hover");
+        setTimeout(function () {
+          thePlantEatTechLine.forEach(function (element) {
+            element.classList.remove("bgLogo-active");
+          }, 400);
+        });
       }
     },
-    offset: "-20%",
+    offset: "-40%",
   });
 });
