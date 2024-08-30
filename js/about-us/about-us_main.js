@@ -136,7 +136,7 @@ window.addEventListener("load", function () {
   const waypoint_plantEat = new Waypoint({
     element: document.querySelector(".about_the-plant-eat"),
     handler: function (direction) {
-      console.log(direction);
+      // console.log(direction);
       if (direction === "down") {
         thePlantEatMore.classList.add("hover");
         thePlantEatMore_Bg.classList.add("bg_hover");
@@ -156,5 +156,21 @@ window.addEventListener("load", function () {
       }
     },
     offset: "-40%",
+  });
+
+  // .click-ani 요소들을 선택
+  const cAni = document.querySelectorAll(".click-ani");
+
+  cAni.forEach((cAniElement) => {
+    // 각 .click-ani 요소에 클릭 이벤트 리스너 추가
+    cAniElement.addEventListener("click", () => {
+      // .click-ani 요소의 하위에 있는 .tech-infos 요소를 찾음
+      const techInfo = cAniElement.querySelector(".tech-infos");
+
+      // .tech-infos 요소가 존재하면 info_active 클래스를 추가
+      if (techInfo) {
+        techInfo.classList.add("info_active");
+      }
+    });
   });
 });
