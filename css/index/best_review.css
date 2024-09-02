@@ -1,5 +1,6 @@
 @charset "utf-8";
 .best-review {
+  padding-top: 105px;
   width: 100%;
 }
 .best-review .inner {
@@ -9,6 +10,7 @@
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+  padding-bottom: 65px;
 }
 .best-review .swiper-slide {
   aspect-ratio: 1/1.6;
@@ -20,6 +22,7 @@
 }
 .review-image img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .review-text{
   padding: 20px 15px;

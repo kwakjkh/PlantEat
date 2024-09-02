@@ -1,0 +1,24 @@
+@charset "utf-8";
+.banner{
+    width: 100%;
+    /* padding-top: 110px; */
+}
+.sw-banner{
+    
+    width: 100%;
+}
+.sw-banner a{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.sw-banner a img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.header {
+    transition: top 0.3s ease-in-out; /* 부드럽게 숨기고 나타나도록 설정 */
+    top: 0;
+  }
+  
