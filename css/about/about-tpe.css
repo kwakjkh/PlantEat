@@ -17,8 +17,8 @@
 .the-plant-eat_about_main-section {
   position: absolute;
 }
-.line{
-  transition: all 0.5s
+.line {
+  transition: all 0.5s;
 }
 /* 첫번쨰 줄 =============================================================*/
 .the-plant-eat_about_main-section > .tech-1 > .line {
@@ -60,6 +60,7 @@
   max-width: 350px;
   height: 270px;
   border-top: 1px solid #fff;
+  z-index: 9;
 }
 /* 세번쨰 줄 =============================================================*/
 .the-plant-eat_about_main-section > .tech-3 > .line {
@@ -124,6 +125,7 @@
   background-color: #fff;
   position: absolute;
   top: -8px;
+  cursor: pointer;
 }
 .tech-3.bgLogo-active > .line > .line3-2 {
   width: 40%;
@@ -136,6 +138,7 @@
   position: absolute;
   right: 0;
   top: -8px;
+  cursor: pointer;
 }
 .click-ani {
   cursor: pointer;
@@ -158,73 +161,122 @@
   }
 }
 
+/* 배경 로고 */
+.the-plant-eat_flip.bg-m_line1-after {
+  left: calc(50% + 30%);
+}
+.the-plant-eat_flip.bg-m_line2-after {
+  left: calc(50% - 30%);
+}
+/* 선 */
+.tech-1 > .line.m_line1-after {
+  right: calc(50% - 30%);
+}
+.tech-2 > .line.m_line2-after {
+  right: calc(50% - 30%);
+}
+.tech-3 > .line.m_line3-after {
+  left: calc(50% - 30%);
+}
+.tech-1 > .line.hide {
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
+}
+.tech-2 > .line.hide {
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
+}
+.tech-3 > .line.hide {
+  opacity: 0;
+  width: 0;
+  transition: all 0.2s;
+}
+
+/* 기술 정보 ======================================================== */
 .tech-infos {
   z-index: -1;
   position: absolute;
   width: 50px;
+  height: 500px;
   /* height: 50px; */
   background-color: rgb(255, 255, 255);
   opacity: 0;
   transition: all 0.5s;
   transition-delay: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+.info_close-bt {
+  width: 30px;
+  height: 30px;
+  background-color: aquamarine;
+}
 .tech-infos.info_active {
   opacity: 1;
   width: 200%;
 }
-.tech-1 .info_active.info_active> h1, h2, h3{
+.tech-1 .tech-infos.info_active > h1,
+h2,
+h3,
+p,
+small {
   font-family: "Noto Sans KR", sans-serif !important;
 }
-.tech-1 .info_active.info_active{
+.tech-1 .tech-infos.info_active {
+  width: 300%;
+}
+.tech-2 .tech-infos.info_active {
+  width: 150%;
+}
+.tech-3 .tech-infos.info_active {
+  width: 300%;
+}
+/*테크 인포 이미지 및 텍스트 css */
+
+.tech-infos > .infos-txt {
+  padding: 10px 10px 0;
+}
+.tech-infos > .infos-txt > .infos-txt-title {
+  display: flex;
+  justify-content: space-between;
+}
+.tech-infos > .infos-txt > .infos-abt {
+  display: flex;
+  gap: 8px;
+  margin: 2px 5px;
+}
+.infos-abt > li {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* 1 */
+.tech-1 .tech-infos {
   left: -300%;
-  width: 300%;
+  transform: translate(-15px, -70px);
 }
-.tech-2 .info_active.info_active{
+/* 2 */
+.tech-2 .tech-infos {
   left: -200%;
+  transform: translate(15px, -290px);
 }
-.tech-3 .info_active.info_active{
+/* 3 */
+.tech-3 .tech-infos {
   right: -300%;
-  width: 300%;
+  transform: translate(15px, -205px);
 }
-
-
-
-
-
-
-
-
-
-/* 배경 로고 */
-.the-plant-eat_flip.bg-m_line1-after {
-  left: calc(50% + 30%);
+.tech-infos-img {
+  width: 100%;
+  display: flex;
 }
-.the-plant-eat_flip.bg-m_line2-after{
-  left: calc(50% - 30%);
-}
-.tech-1 > .line.m_line1-after {
-  right: calc(50% - 30%);
-}
-/* 선 */
-.tech-2 > .line.m_line2-after{
-  right: calc(50% - 30%);
-}
-.tech-3 > .line.m_line3-after{
-  left: calc(50% - 30%);
-}
-.tech-1 > .line.hide{
-  opacity: 0;
-  width: 0;
-  transition: all 0.2s;
-}
-.tech-2 > .line.hide{
-  opacity: 0;
-  width: 0;
-  transition: all 0.2s;
-}
-.tech-3 > .line.hide{
-  opacity: 0;
-  width: 0;
-  transition: all 0.2s;
+.tech-infos-img > img {
+  width: 100%;
 }
