@@ -25,98 +25,88 @@
 #prducts-xilk-tet {
   color: #ff642c;
 }
-.prducts {
-  display: flex ;
-}
+
 /* prducts list */
 
-.prducts-xilk {
-  width: 25%;
-  position: relative;
-  margin: auto;
-  /* display: flex; */
-
-  display: flex;
-
+.prducts img {
+  /* width: calc(100% / 4); */
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+  display: flex !important;
 }
 .prducts p {
   font-size: 20px;
 }
-.prducts-xilk .item-img {
-  /* width: calc(100% / 4); */
+
+.item-info-list {
+  color: #034934;
 }
+
+.prducts-info {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* 장바구니 버튼 */
+.item-bt {
+  position: relative;
+}
+.item-bt a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.prducts .shop_basket {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+/* .prducts-xilk */
+.prducts-xilk {
+  width: 25%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
 .prducts-xilk .item-img a img {
   width: 100%;
 }
 
 /* prducts-mayo */
-.prducts-mayo {
-  width: 25%;
-  position: relative;
-  margin: auto;
-  display: flex ;
+.prducts-mayo .item-img {
+  width: 25%
 }
-.prducts-mayo .item-img img {
-  width: 100%;
-  height: 100%;
-
-
-}
- .prducts img {
-  width: calc(100% / 4);
-
-  height: 100%;
-  margin: 0 10px;
-display: flex !important;
+.products-mayo {
+  text-align: center; /* 중앙 정렬 */
 }
 
-.item-bt {
-  position: relative;
+.item {
+  display: inline-block; /* 각 아이템을 인라인 블록으로 설정 */
+  vertical-align: top; /* 세로 정렬 */
+  margin: 10px; /* 아이템 간의 간격 */
+  width: 200px; /* 아이템의 고정 너비 */
 }
-.item-bt a {
-  /* height: auto; */
+
+.item-img,
+.item-bt,
+.products-info {
   display: block;
-  border-radius: 5px 5px 0 0;
-  position: relative;
+  text-align: center;
+  margin-bottom: 10px; /* 각 섹션 간의 여백 */
 }
-.shop_basket {
-  width: 50px !important;
-  height: 50px;
-  right: 15px;
-  bottom: 25px;
-
-.prducts img {
-  width: 300px;
-  height: 300px;
-}
-.prducts .shop_basket {
-
-  position: absolute;
-  right:10px ;
-  bottom: 10px;
-  width: 50px;
-  height: 50px;
-}
-.item-info-list{
-  color: #034934;
-}
-.item-info-list span {
-  float: left;
-  font-size: 20px;
-}
-
-.item-info-list .pPrice {
-  margin-left: 5px;
-  font-size: 20px;
-}
-
-
-.prducts-xilk{
-
+/* 카테고리별 전시 */
+.prducts-xilk {
+  /* display: block; */
   display: none;
 }
 .prducts-mayo {
   display: block;
+  /* display: none; */
 }
 .prducts-Snack {
   display: none;
@@ -126,5 +116,3 @@ display: flex !important;
 }
 
 @media screen and();
-
-
