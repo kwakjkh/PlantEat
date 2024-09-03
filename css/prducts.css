@@ -78,27 +78,14 @@
 }
 
 /* prducts-mayo */
-.prducts-mayo .item-img {
-  width: 25%
+.prducts-mayo {
+  display: flex;
+  width: 25%;
 }
-.products-mayo {
-  text-align: center; /* 중앙 정렬 */
-}
-
-.item {
-  display: inline-block; /* 각 아이템을 인라인 블록으로 설정 */
-  vertical-align: top; /* 세로 정렬 */
-  margin: 10px; /* 아이템 간의 간격 */
-  width: 200px; /* 아이템의 고정 너비 */
+.item-img {
+  width: 100%;
 }
 
-.item-img,
-.item-bt,
-.products-info {
-  display: block;
-  text-align: center;
-  margin-bottom: 10px; /* 각 섹션 간의 여백 */
-}
 /* 카테고리별 전시 */
 .prducts-xilk {
   /* display: block; */
