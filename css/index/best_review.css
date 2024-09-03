@@ -10,10 +10,18 @@
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 65px;
+  padding-bottom: 35px;
+}
+.best-review .swiper-wrapper{
+  padding : 30px 20px;
 }
 .best-review .swiper-slide {
   aspect-ratio: 1/1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.best-review .swiper-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .review-image {
@@ -24,11 +32,11 @@
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
-.review-text{
+.review-text {
   padding: 20px 15px;
   position: relative;
 }
-.review-title{
+.review-title {
   margin-top: 15px;
 }
 .review-title a {
@@ -51,24 +59,24 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.review-name{
+.review-name {
   font-size: 13px;
   margin-top: 25px;
   color: #555;
   padding-bottom: 30px;
 }
-.review-name span{
+.review-name span {
   margin-left: 10px;
   padding-left: 10px;
   border-left: 0.5px solid #ddd;
 }
-.review-product{
+.review-product {
   display: flex;
   align-items: center;
   padding-top: 10px;
   border-top: 0.5px solid #ddd;
 }
-.review-product a{
+.review-product a {
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -76,7 +84,7 @@
   font-size: 15px;
   color: #555;
 }
-.review-product a img{
+.review-product a img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
