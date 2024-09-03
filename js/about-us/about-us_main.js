@@ -2,13 +2,19 @@ window.addEventListener("load", function () {
   // 버튼 클릭시 이동
   const itsBetter = this.document.getElementById("about_itsBetter");
   const thePlantEat = this.document.getElementById("about_thePlantEat");
-  itsBetter.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".about_its-better").scrollIntoView({ behavior: "smooth" });
+  const itsBetterWrap = this.document.querySelector(".about_its-better")
+  const thePlantEatWrap = this.document.querySelector(".about_the-plant-eat")
+  itsBetter.addEventListener("click", function () {
+    this.classList.add("title-active")
+    thePlantEat.classList.remove("title-active")
+    itsBetterWrap.classList.add("about-display")
+    thePlantEatWrap.classList.remove("about-display")
   });
-  thePlantEat.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".about_the-plant-eat").scrollIntoView({ behavior: "smooth" });
+  thePlantEat.addEventListener("click", function () {
+    this.classList.add("title-active")
+    itsBetter.classList.remove("title-active")
+    thePlantEatWrap.classList.add("about-display")
+    itsBetterWrap.classList.remove("about-display")
   });
   // 잇츠베러 클릭 영역
   const eatsBetterMore = document.querySelector(".its-better_middle-img_after");
@@ -133,6 +139,19 @@ window.addEventListener("load", function () {
   // if (tpeBgVideo.paused) {
   //   tpeBgVideo.play();
   // }
+  const thePlantEatThink_Bg = this.document.querySelector(".the-plant-eat-s-think-bg")
+  const waypoint_plantEat_p_bg = new Waypoint({
+    element: document.querySelector(".about_the-plant-eat"),
+    handler: function (direction) {
+      // console.log(direction);
+      if (direction === "down") {
+        thePlantEatThink_Bg.classList.add("think-bg-active")
+      } else {
+        thePlantEatThink_Bg.classList.remove("think-bg-active")
+      }
+    },
+    offset: "10%",
+  });
   const waypoint_plantEat = new Waypoint({
     element: document.querySelector(".about_the-plant-eat"),
     handler: function (direction) {
