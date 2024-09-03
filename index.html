@@ -40,6 +40,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index/index.js"></script>
+    <!-- AOS.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div id="container">
@@ -47,8 +50,8 @@
         <div class="inner">
           <a href="#" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
           <ul class="header-nav">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
             <li><a href="#">EVENT</a></li>
             <li><a href="#">COMMUNITY</a></li>
           </ul>
@@ -72,18 +75,16 @@
         <div class="swiper sw-banner">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
+              <a href="#"> </a>
+            </div>
+            <div class="swiper-slide">
               <a href="#">
-                
+                <img src="images/banner/eatsbetter.png" alt="잇츠베러" />
               </a>
             </div>
             <div class="swiper-slide">
               <a href="#">
-                <img src="images/banner/eatsbetter.png" alt="잇츠베러">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="images/banner/theplanteat.png" alt="더플랜잇">
+                <img src="images/banner/theplanteat.png" alt="더플랜잇" />
               </a>
             </div>
           </div>
@@ -99,7 +100,7 @@
       <section class="hot-item">
         <div class="inner">
           <h2>HOT ITEM</h2>
-          <ul class="hot-item-list">
+          <ul class="hot-item-list"  data-aos="fade-up" data-aos-duration="900" data-offset="-500">
             <li>
               <div>
                 <a href="#"><img src="images/hot_item/cookie.png" alt="제로슈가쿠키" /></a>
@@ -180,13 +181,13 @@
           <div class="mini-banner-box"><a href="">자세히 보기 +</a></div>
         </div>
       </section>
-      <section class="best-review">
+      <section class="best-review" >
         <h2>BEST REVIEW</h2>
         <div class="inner">
-          <div class="swiper sw-review">
+          <div class="swiper sw-review" data-aos="fade-up" data-aos-duration="900" data-offset="-500">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#" class="review-image"><img src="images/review/review1.png" alt="리뷰1" / ></a>
+                <a href="#" class="review-image"><img src="images/review/review1.PNG" alt="리뷰1" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
                   <div class="review-title"><a href="#">기대이상으로 맛나네염</a></div>
@@ -200,7 +201,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="review-image"><img src="images/review/review2.png" alt="리뷰2" / ></a>
+                <a href="#" class="review-image"><img src="images/review/review2.PNG" alt="리뷰2" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
                   <div class="review-title"><a href="#">다이어트 중에도 간편하고 부담없이 즐기기 좋습니다.</a></div>
@@ -214,13 +215,13 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="review-image"><img src="images/review/review3.png" alt="리뷰3" / ></a>
+                <a href="#" class="review-image"><img src="images/review/review3.PNG" alt="리뷰3" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
                   <div class="review-title"><a href="#">처음시켰는데 생각보다 간편하고 맛있고 단백질도 많이 함유 되어있어서 좋아요.</a></div>
                   <div class="review-p"><a href="#">간편하게 준비할 수 있어 바쁜 날에도 부담 없이 즐길 수 있어요. 단백질이 풍부해 건강한 식사로 딱입니다!</a></div>
                   <div class="review-name">
-                    <p>네****<span>2024/06/15</span></p>
+                    <p>네****<span>2024/07/04</span></p>
                   </div>
                   <div class="review-product">
                     <a href="#"><img src="images/review/july.product.png" alt="제품이미지" />잇츠베러 프로틴 누들 5P</a>
@@ -228,13 +229,13 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="review-image"><img src="images/review/review4.png" alt="리뷰4" / ></a>
+                <a href="#" class="review-image"><img src="images/review/review4.PNG" alt="리뷰4" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
                   <div class="review-title"><a href="#">건강한 식사에 딱 좋아요!</a></div>
                   <div class="review-p"><a href="#">고소하고 부드러워 매일 부담 없이 즐길 수 있어요. 영양도 풍부해 건강한 아침으로 추천합니다.</a></div>
                   <div class="review-name">
-                    <p>네****<span>2024/06/15</span></p>
+                    <p>네****<span>2024/08/21</span></p>
                   </div>
                   <div class="review-product">
                     <a href="#"><img src="images/review/august-product.jpg" alt="제품이미지" />XILK(씰크) 오트블렌드 950ml 1팩/1박스(8팩)</a>
