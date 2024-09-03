@@ -219,10 +219,10 @@
   width: 200%;
 }
 .tech-1 .tech-infos.info_active > h1,
-h2,
-h3,
-p,
-small {
+.tech-1 .tech-infos.info_active >h2,
+.tech-1 .tech-infos.info_active >h3,
+.tech-1 .tech-infos.info_active >p,
+.tech-1 .tech-infos.info_active >small {
   font-family: "Noto Sans KR", sans-serif !important;
 }
 .tech-1 .tech-infos.info_active {
