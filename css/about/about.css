@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("about-tpe.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* 어바웃 메뉴 리스트 */
 .about_wrap {
   z-index: 0;
@@ -65,9 +66,10 @@
 .the-plant-eat_about_main-bg {
   display: none;
 }
-.about-display {
+.the-plant-eat_about_main-bg.about-display {
   display: block;
 }
+
 /* 잇츠베러 ======================================================================*/
 
 .its-better_txt {
@@ -99,6 +101,8 @@
   width: 100%;
   margin: 0 auto 80px;
   font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  color: #0000007a;
 }
 .its-better_img {
   padding-left: 108px;
@@ -289,9 +293,23 @@
   width: 100%;
 }
 .better-Point-Txt > h3 {
-  font-size: 22px;
+  font-size: 23px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 900;
+  padding-top: 30px;
+  letter-spacing: -0.03em;
+}
+.better-Point-Txt > h3 > strong{
+  font-family: "Inter", sans-serif;
+  font-weight: 980;
+  letter-spacing: 0.03em;
+}
+.better-Point-Txt > p{
+  margin-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight:700;
+  color: #0000007a;
+  
 }
 
 /* 더플랜잇 ==========================================================================*/
@@ -330,6 +348,8 @@
   width: 100%;
   margin: 0 auto 80px;
   font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  color: #0000007a;
 }
 .the-plant-eat_explain {
   text-align: center;
@@ -496,6 +516,12 @@
     flex-direction: column;
     justify-content: center;
   }
+  .better-Point-list{
+    margin: 0 15px;
+  }
+  .better-Point-list > li{
+    margin: 0 15px;
+  }
   .its-better_i_info.more-infoActive {
     margin-top: 80px;
   }
@@ -517,6 +543,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .its-better_mover {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .its-better_middle-img {
     width: 544px;
@@ -542,6 +573,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    transition: all 0.5s;
   }
   .its-better_i_info.more-infoActive {
     height: 400px;
@@ -568,6 +600,7 @@
   }
   .its-better_i_info.more-infoActive {
     width: 100%;
+    height: 200px;
   }
   .its-better_txt > h3 {
     font-size: 20px;
@@ -594,12 +627,64 @@
   .better-Point-list {
     flex-direction: column;
   }
+  .better-Point-list > li {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+  }
+  .better-Point-list > li:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .better-Point-list > li > .better-Point-img,
+  .better-Point-list > li > .better-Point-Txt {
+    width: calc(100% / 2);
+  }
+  .better-Point-list > li > .better-Point-Txt {
+    padding: 0 10px;
+  }
+  .better-Point-list > li > .better-Point-img {
+    padding: 10px;
+    box-shadow: 1px 1px 3px 2px #00000042 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .better-Point-list > li > .better-Point-img-1 {
+    background: url("../../images/etx/mobile-Better-point-img-1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .better-Point-list > li > .better-Point-img-2 {
+    background: url("../../images/etx/mobile-Better-point-img-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .better-Point-list > li > .better-Point-img-3 {
+    background: url("../../images/etx/mobile-Better-point-img-3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .better-Point-list > li > .better-Point-img > img {
+    display: none;
+  }
+  .better-Point-list{
+    margin: 0;
+  }
+  .better-Point-list > li{
+    margin: 0;
+  }
   /* 잇츠베러 이미지 반응형 */
+  .its-better_more-info {
+    height: 800px;
+  }
   .its-better_img {
     width: 100%;
-    height: 100%;
-    max-height: 800px;
+    height: auto;
+    /* max-height: 700px; */
     padding: 20px;
+  }
+  .its-better_img-wrapping{
+    height: auto;
+    max-height: 800px
   }
   .its-better_middle-img {
     position: relative;
@@ -639,6 +724,38 @@
     width: 100%;
     margin-left: 0;
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 600px){
+  .its-better_more-info {
+    height: 650px;
+    overflow: hidden;
+  }
+  .its-better_img {
+    width: 100%;
+    height: auto;
+    /* max-height: 700px; */
+    padding: 20px;
+  }
+  .its-better_img-wrapping{
+    height: auto;
+    max-height: 650px
+  }
+}
+@media screen and (max-width: 500px){
+  .its-better_more-info {
+    height: 550px;
+    overflow: hidden;
+  }
+  .its-better_img {
+    width: 100%;
+    height: auto;
+    /* max-height: 700px; */
+    padding: 20px;
+  }
+  .its-better_img-wrapping{
+    height: auto;
+    max-height: 550px
   }
 }
 @media screen and (max-width: 420px) {
