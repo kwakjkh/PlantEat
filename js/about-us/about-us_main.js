@@ -4,27 +4,32 @@ window.addEventListener("load", function () {
   const thePlantEat = this.document.getElementById("about_thePlantEat");
   const itsBetterWrap = this.document.querySelector(".about_its-better")
   const thePlantEatWrap = this.document.querySelector(".about_the-plant-eat")
+  const thePlantEatTech = this.document.querySelector(".the-plant-eat_about_main-bg")
   itsBetter.addEventListener("click", function () {
     this.classList.add("title-active")
     thePlantEat.classList.remove("title-active")
     itsBetterWrap.classList.add("about-display")
     thePlantEatWrap.classList.remove("about-display")
+    thePlantEatTech.classList.remove("about-display")
   });
   thePlantEat.addEventListener("click", function () {
     this.classList.add("title-active")
     itsBetter.classList.remove("title-active")
     thePlantEatWrap.classList.add("about-display")
     itsBetterWrap.classList.remove("about-display")
+    thePlantEatTech.classList.add("about-display")
   });
   // 잇츠베러 클릭 영역
   const eatsBetterMore = document.querySelector(".its-better_middle-img_after");
   eatsBetterMore.addEventListener("click", function () {
     eatsBetterMore.style.display = "none";
+    const eatsAllwrap = document.querySelector(".its-better_img")//잇츠베러 상품 전체 영역
     const eatsClicking = document.querySelector(".its-better_img"); //앗츠베러 상품 이미지
     const eAboutInfo = document.querySelector(".its-better_i_info"); //잇츠베러 상품 정보
     const goAShop = document.querySelector(".go_a__shop"); //잇츠베러 상품 바로 가기 버튼
     const ePbtList = document.querySelector(".its-better_a_pbt_list"); //잇츠베러 다른 상품 리스트
     const ePbtList1080 = document.querySelector(".its-better_a_pbt-1080"); //잇츠베러 다른 상품 리스트 1080
+    eatsAllwrap.classList.add("its-better_img-wrapping")
     eatsClicking.classList.add("its-better_mover");
     eAboutInfo.classList.add("more-infoActive");
     goAShop.classList.add("go_a__shop-active");
