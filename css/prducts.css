@@ -27,24 +27,27 @@
 }
 
 /* prducts list */
-
+.prducts{
+  display: flex;
+}
 .prducts img {
   /* width: calc(100% / 4); */
   width: 100%;
   height: 100%;
   margin: 0 10px;
-  display: flex !important;
+  /* display: flex !important; */
 }
-.prducts p {
+.prducts-name {
   font-size: 20px;
-}
-
-.item-info-list {
-  color: #034934;
-}
-
-.prducts-info {
   margin-left: 20px;
+}
+.prducts-pice {
+  margin-left: 20px;
+  color: #000;
+  font-size: 25px;
+}
+.item-img {
+  width: 100%;
   font-size: 20px;
 }
 
@@ -70,7 +73,6 @@
   width: 25%;
   position: relative;
   margin: auto;
-  display: flex;
 }
 
 .prducts-xilk .item-img a img {
@@ -78,28 +80,75 @@
 }
 
 /* prducts-mayo */
-.prducts-mayo {
-  display: flex;
-  width: 25%;
+.prducts > .prducts-moyo {
+display: flex;
 }
-.item-img {
-  width: 100%;
+.mayo{
+width: 25%;
+}
+.prducts-moyo > ul {
+  margin-left: 10px;
 }
 
+
+/* prducts-Snack  */
+
+/* prducts-protein  */
+.prducts >.prducts-protein {
+  display: flex;
+}
+.protein{
+  width: 25%;
+}
+.prducts-protein > ul {
+  margin-left: 10px;
+}
+.protein > .item-img {
+  margin-bottom: 10px;
+
+}
+
+.protein > li {
+  line-height: 20px;
+  color: #000;
+}
+.or-pice {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  padding: 10px 5px 10px 20px;
+  float: left;
+}
+.o-pice {
+  font-size: 18px;
+  float: right;
+  padding: 10px;
+  color: #ff642c;
+}
+.p-pice {
+  font-size: 20px;
+  padding: 30px 0px 0px 0px;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
 /* 카테고리별 전시 */
 .prducts-xilk {
   /* display: block; */
   display: none;
 }
-.prducts-mayo {
-  display: block;
-  /* display: none; */
+.prducts-moyo {
+  /* display: block; */
+  display: none;
 }
 .prducts-Snack {
+  /* display: block; */
   display: none;
 }
 .prducts-protein {
-  display: none;
+  display: block;
+  /* display: none; */
 }
 
 @media screen and();
