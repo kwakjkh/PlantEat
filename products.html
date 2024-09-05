@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/prducts.css" />
+    <script src="js/products/prducts.js"></script>
   </head>
   <body>
     <div class="prducts-wrap">
@@ -22,25 +23,25 @@
               <ul class="prducts-icon">
                 <li>
                   <button class="icon-button">
-                    <img src="images/icons/icon_xilk.png" alt="xilkIcon" />
+                    <img src="images/icons/xilk-icon.png" alt="xilkIcon" />
                     <p id="prducts-xilk-tet">식물성 우유</p>
                   </button>
                 </li>
                 <li>
                   <button class="icon-button">
-                    <img src="images/icons/icon_mayo.png" alt="mayoIcon" />
+                    <img src="images/icons/mayo-icon.png" alt="mayoIcon" />
                     <p>마요/소스</p>
                   </button>
                 </li>
                 <li>
                   <button class="icon-button">
-                    <img src="images/icons/icon_Snack.png" alt="SnackIcon" />
+                    <img src="images/icons/snack-icon.png" alt="SnackIcon" />
                     <p>크래커/쿠키</p>
                   </button>
                 </li>
                 <li>
                   <button class="icon-button">
-                    <img src="images/icons/icon_protein.png" alt="proteinIcon" />
+                    <img src="images/icons/protein-icon.png" alt="proteinIcon" />
                     <p>식물성 단백질</p>
                   </button>
                 </li>
@@ -49,27 +50,81 @@
             <!--prducts list  -->
             <div class="prducts">
               <!--  prducts-xilk-->
-              <div class="prducts-xilk ">
-                <div class="item-img">
-                  <a href="#"><img src="images/xilk/xilk-1.jpg" alt="xilk" /></a>
-                </div>
-                <div class="item-bt">
-                  <a href="#">
-                    <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
-                  </a>
-                </div>
-                <div class="prducts-info">
-                  <a href="#">
-                    <ul class="item-info-list">
-                      <li>
-                        <p class="prducts-name">XILK 오트블렌드 950ml 1팩</p>
-                      </li>
-                      <li>
-                        <p class="prducts-pice">3,960원</p>
-                      </li>
-                    </ul>
-                  </a>
-                </div>
+              <div class="prducts-xilk">
+                <ul class="xilk">
+                  <li class="item-img">
+                    <a href="#"><img src="images/xilk/xilk-1.jpg" alt="xilk" /></a>
+                  </li>
+                  <li class="item-bt">
+                    <a href="#">
+                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p class="prducts-name">XILK 오트블렌드 오리지널 950ml</p>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="or-pice">4,000원</span>
+                  </li>
+                  <li>
+                    <span class="o-pice">5%</span>
+                  </li>
+                  <li>
+                    <span class="p-pice">3,800원</span>
+                  </li>
+                </ul>
+                <!--  prducts-xilk2-->
+                <ul class="xilk">
+                  <li class="item-img">
+                    <a href="#"><img src="images/xilk/xilk-2.jpg" alt="xilk" /></a>
+                  </li>
+                  <li class="item-bt">
+                    <a href="#">
+                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p class="prducts-name">XILK 오트블렌드 카페 950ml</p>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="or-pice">4,000원</span>
+                  </li>
+                  <li>
+                    <span class="o-pice">5%</span>
+                  </li>
+                  <li>
+                    <span class="p-pice">3,800원</span>
+                  </li>
+                </ul>
+                <!--  prducts-xilk3-->
+                <ul class="xilk">
+                  <li class="item-img">
+                    <a href="#"><img src="images/xilk/xilk-3.jpg" alt="xilk" /></a>
+                  </li>
+                  <li class="item-bt">
+                    <a href="#">
+                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p class="prducts-name">XILK 오트블렌드 곡물 950ml</p>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="or-pice">4,000원</span>
+                  </li>
+                  <li>
+                    <span class="o-pice">5%</span>
+                  </li>
+                  <li>
+                    <span class="p-pice">3,800원</span>
+                  </li>
+                </ul>
               </div>
               <!-- prducts-mayo -->
               <div class="prducts-moyo">
@@ -305,60 +360,6 @@
                 <ul class="creker">
                   <li class="item-img">
                     <a href="#">
-                      <img src="images/cracker/main_black bean_Cracker.png" alt="black bean" class="mainImg" />
-                    </a>
-                  </li>
-                  <li class="item-bt">
-                    <a href="#">
-                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p class="prducts-name">잇츠베러 약콩크래커 45g</p>
-                    </a>
-                  </li>
-                  <li>
-                    <span class="or-pice">3,500원</span>
-                  </li>
-                  <li>
-                    <span class="o-pice">20%</span>
-                  </li>
-                  <li>
-                    <span class="p-pice">2,800원</span>
-                  </li>
-                </ul>
-                <!--크래커2  -->
-                <ul class="creker">
-                  <li class="item-img">
-                    <a href="#">
-                      <img src="images/cracker/main_Choco_Cracker.png" alt="Choco" class="mainImg" />
-                    </a>
-                  </li>
-                  <li class="item-bt">
-                    <a href="#">
-                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p class="prducts-name">잇츠베러 초코시나몬크래커 45g</p>
-                    </a>
-                  </li>
-                  <li>
-                    <span class="or-pice">3,500원</span>
-                  </li>
-                  <li>
-                    <span class="o-pice">20%</span>
-                  </li>
-                  <li>
-                    <span class="p-pice">2,800원</span>
-                  </li>
-                </ul>
-                <!--크래커3  -->
-                <ul class="creker">
-                  <li class="item-img">
-                    <a href="#">
                       <img src="images/cracker/main_earlerey_Cracker.png" alt="earlerey" class="mainImg" />
                     </a>
                   </li>
@@ -382,7 +383,7 @@
                     <span class="p-pice">2,800원</span>
                   </li>
                 </ul>
-                <!--크래커4  -->
+                <!--크래커2  -->
                 <ul class="creker">
                   <li class="item-img">
                     <a href="#">
@@ -409,7 +410,7 @@
                     <span class="p-pice">2,800원</span>
                   </li>
                 </ul>
-                <!--크래커5  -->
+                <!--크래커3  -->
                 <ul class="creker">
                   <li class="item-img">
                     <a href="#">
@@ -530,7 +531,32 @@
                 <!--choco_protein  -->
                 <ul class="protein">
                   <li class="item-img">
-                    <a href="#"> <img src="images/protein/main_blackbean_protein.png" alt="blackbean_protein" class="mainImg" /> </a>
+                    <a href="#"> <img src="images/protein/main_choco_protein.png" alt="blackbean_protein" class="mainImg" /> </a>
+                  </li>
+                  <li class="item-bt">
+                    <a href="#">
+                      <img src="images/icons/icon_shop_basket.png" alt="shop_basket" class="shop_basket" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p class="prducts-name">뷰티프로틴파우더 초코시나몬 720g</p>
+                    </a>
+                  </li>
+                  <li>
+                    <span class="or-pice">36,800원</span>
+                  </li>
+                  <li>
+                    <span class="o-pice">10%</span>
+                  </li>
+                  <li>
+                    <span class="p-pice">33,120원</span>
+                  </li>
+                </ul>
+                <!--blackbean__choco_protein  -->
+                <ul class="protein">
+                  <li class="item-img">
+                    <a href="#"> <img src="images/protein/main blackbean_choco_protein.png" alt="blackbean_choco" class="mainImg" /> </a>
                   </li>
                   <li class="item-bt">
                     <a href="#">
@@ -543,13 +569,13 @@
                     </a>
                   </li>
                   <li>
-                    <span class="or-pice">36,800원</span>
+                    <span class="or-pice">73,600원</span>
                   </li>
                   <li>
-                    <span class="o-pice">10%</span>
+                    <span class="o-pice">15%</span>
                   </li>
                   <li>
-                    <span class="p-pice">33,120원</span>
+                    <span class="p-pice">62,500원</span>
                   </li>
                 </ul>
               </div>
