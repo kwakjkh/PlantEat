@@ -1,28 +1,31 @@
 @charset "utf-8";
 .banner{
+    position: relative;
     width: 100%;
     /* padding-top: 110px; */
+    z-index: 1 !important;
 }
 .sw-banner{
-    
+    position: relative;
+    z-index: 1 !important;
     width: 100%;
 }
 .sw-banner a{
     width: 100%;
     display: block;
     position: relative;
+    z-index: 1 !important;
 }
 .sw-banner a img{
     width: 100%;
     display: block;
     position: relative;
+    z-index: 1 !important;
 }
-.header {
-    transition: top 0.3s ease-in-out; /* 부드럽게 숨기고 나타나도록 설정 */
-    top: 0;
-  }
-  
-
+.sw-banner .swiper-slide{
+    position: relative;
+    z-index: 1 !important;
+}
 
   .banner.hide{
     margin-top: 110px;

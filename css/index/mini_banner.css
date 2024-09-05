@@ -54,3 +54,12 @@
     bottom: 7px;
     position: absolute;
 }
+@media screen and (max-width : 1200px){
+    .mini-banner .inner::after{
+        background-image: none;
+    }
+    .mini-banner p{
+        font-size: 30px;
+    }
+
+}

@@ -5,7 +5,7 @@
   padding-top: 105px;
   padding-bottom: 110px;
 }
-.hot-item .inner{
+.hot-item .inner {
   padding: 0 20px;
 }
 .hot-item h2 {
@@ -16,28 +16,27 @@
 .hot-item a {
   font-family: "Noto Sans KR", sans-serif;
 }
-.hot-item-list {
-  width: 100%;
+.hot-item .swiper-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 65px;
 }
-.hot-item-list > li {
+.hot-item .swiper-slide {
   width: 18%;
 }
-.hot-item-list li a {
+.hot-item .swiper-slide a {
   width: 100%;
   display: block;
   position: relative;
 }
-.hot-item-list li a img {
+.hot-item .swiper-slide a img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 5px 5px 0 0;
   position: relative;
 }
-.hot-item-list li a:first-child:after {
+.hot-item .swiper-slide a:first-child:after {
   content: "";
   background-image: url("../../images/icons/icon_shop_basket.png");
   width: 50px;
@@ -72,22 +71,16 @@
 .hot-item-price p {
   font-size: 25px;
   font-weight: bold;
-  /* display: block; */
   padding-top: 3px;
 }
 .hot-item-discount {
   font-size: 12px;
   color: #a0a0a0;
   text-decoration: line-through;
-  /* position: absolute;
-    left: 5px; */
-  /* float: left; */
 }
 .hot-item-rate {
   font-size: 18px;
   color: #ff642c;
   font-weight: bold;
-  /* position: absolute;
-    right: 5px; */
   float: right;
 }

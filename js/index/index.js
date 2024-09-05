@@ -1,5 +1,21 @@
 window.addEventListener("load", function () {
   AOS.init();
+  const navPop = this.document.querySelector(".nav-pop")
+  const mobileHeader = this.document.querySelector(".mobile-header")
+  const headerClose = this.document.querySelector(".header-close")
+  navPop.addEventListener("click",function(){
+    mobileHeader.classList.add("mobile-header-active")
+  })
+  headerClose.addEventListener("click",function(){
+    mobileHeader.classList.remove("mobile-header-active")
+  })
+
+
+
+
+
+
+
   const swBanner = new Swiper(".sw-banner", {
     slidesPerView: 1,
     loop: true,
@@ -7,7 +23,42 @@ window.addEventListener("load", function () {
       delay: 2500,
       disableOnInteraction: false,
     },
+    // on: {
+    //   init: function () {
+    //     const slides = document.querySelectorAll(".swiper-slide");
+    //     slides.forEach(slide => {
+    //       slide.style.zIndex = "1";
+    //     });
+    //   },
+    //   resize: function () {
+    //     const slides = document.querySelectorAll(".swiper-slide");
+    //     slides.forEach(slide => {
+    //       slide.style.zIndex = "1";
+    //     });
+    //   },
+    // },
+    // watchSlidesVisibility: true,
   });
+  
+
+  window.addEventListener("resize", function () {
+    swBanner.update();
+    document.querySelector(".sw-banner").style.zIndex = "1"; // 다시 z-index 설정
+    
+    
+  });
+  const swItem = new Swiper(".sw-item",{
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop:true,
+    breakpoints: {
+      1200:{
+        slidesPerView: 5,
+        spaceBetween: 20
+      }
+    }
+  })
+
   const swReview = new Swiper(".sw-review", {
     navigation: {
       nextEl: ".swiper-button-next",

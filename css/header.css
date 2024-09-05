@@ -4,19 +4,27 @@
   position: relative;
   height: 110px;
   color: #034934;
-  
+
   background-color: rgba(255, 255, 255, 1);
+
+  transition: top 0.3s ease-in-out; /* 부드럽게 숨기고 나타나도록 설정 */
+  top: 0;
+  z-index: 99999;
 }
-.mobile-header-nav{
+
+.mobile-header-nav {
   display: none;
 }
-.header.active{
+.header-close{
+  display: none;
+}
+.header.active {
   background-color: rgba(255, 255, 255, 0.5);
   height: 90px;
   position: fixed;
-  z-index: 999999;
+  z-index: 99999;
 }
-.header.hide{
+.header.hide {
   visibility: hidden;
 }
 .header .inner {
@@ -49,12 +57,12 @@
   float: left;
 }
 .header-right {
+  float: right;
   display: flex;
   width: 400px;
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  float: right;
 }
 .header-right li {
   padding-right: 25px;
@@ -82,7 +90,7 @@
   right: 10px;
   top: 12.5px;
 }
-.mobile-search{
+.mobile-search {
   display: none;
   background-image: url("../images/icons/top-search.png");
   background-repeat: no-repeat;
@@ -95,11 +103,39 @@
 .header-right a img {
   height: 40px;
 }
-@media screen and (max-width : 1200px){
-  .header-nav{
+@media screen and (max-width: 1200px) {
+  .header-nav {
     display: none;
   }
-  .nav-close{
+  .mobile-header {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(3, 73, 52, 1);
+    z-index: 999999;
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .header-close {
+    display: block;
+    width: 23px;
+    height: 23px;
+    color: transparent;
+    background-image: url("../images/icons/close.png")  ;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+  .mobile-header-active {
+    right: calc(100% - 300px);
+  }
+  .nav-pop {
     float: left;
     background-color: transparent;
     background-image: url("../images/icons/menu-mo.png");
@@ -111,26 +147,31 @@
     display: inline;
     margin: 15px;
   }
-  .mobile-header-nav{
-    position: fixed;
-  top: 50%;
-  left: 100%;
-  width: 450px;
 
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.84);
-  z-index: 999999;
-  padding: 50px;
-  transition: all 0.3s ease-in-out;
+  .mobile-header-nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    position: absolute;
   }
-  .header-right{
+  .mobile-header-nav li{
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+  }
+  .mobile-header-nav li a {
+    color: white;
+  }
+  .header-right {
     width: 195px;
   }
 
-  .header-search{
+  .header-search {
     display: none;
   }
-  .mobile-search{
-    display: block;
+  .mobile-search {
+    display: inline-block;
   }
 }

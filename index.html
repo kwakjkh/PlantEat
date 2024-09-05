@@ -46,17 +46,18 @@
   </head>
   <body>
     <div id="container">
+      <nav class="mobile-header">
+        <button class="header-close">닫기</button>
+        <ul class="mobile-header-nav">
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+        </ul>
+      </nav>
       <header class="header">
-        <div class="mobile-header">
-          <ul class="mobile-header-nav">
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="#">EVENT</a></li>
-            <li><a href="#">COMMUNITY</a></li>
-          </ul>
-        </div>
         <div class="inner">
-          <button class="nav-close"></button>
+          <button class="nav-pop"></button>
           <a href="#" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
           <ul class="header-nav">
             <li><a href="about-us.html">ABOUT US</a></li>
@@ -112,9 +113,10 @@
       <section class="hot-item">
         <div class="inner">
           <h2>HOT ITEM</h2>
-          <ul class="hot-item-list" data-aos="fade-up" data-aos-duration="900" data-offset="-500">
-            <li>
-              <div>
+          <div class="swiper-container sw-item">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 1 -->
+              <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/cookie.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
                   <span>설탕도 ZERO 콜레스레롤도 ZERO!</span>
@@ -126,9 +128,9 @@
                   <p>16,200</p>
                 </div>
               </div>
-            </li>
-            <li>
-              <div>
+          
+              <!-- 슬라이드 2 -->
+              <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/scone.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
                   <span>달걀 1.5개의 단백질 가득!</span>
@@ -140,9 +142,9 @@
                   <p>10,900</p>
                 </div>
               </div>
-            </li>
-            <li>
-              <div>
+          
+              <!-- 슬라이드 3 -->
+              <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/protein.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
                   <span>식물성 단백질부터 콜라겐까지!</span>
@@ -154,9 +156,9 @@
                   <p>62,500</p>
                 </div>
               </div>
-            </li>
-            <li>
-              <div>
+          
+              <!-- 슬라이드 4 -->
+              <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/cracker.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
                   <span>칼로리는 DOWN 단백질은 UP!</span>
@@ -168,22 +170,20 @@
                   <p>16,200</p>
                 </div>
               </div>
-            </li>
-            <li>
-              <div>
+          
+              <!-- 슬라이드 5 -->
+              <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/mayo.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
                   <span>약콩으로 만들어 건강하고 고소한</span>
                   <p>잇츠베러마요</p>
                 </a>
                 <div class="hot-item-price">
-                  <span class="hot-item-discount"></span>
-                  <div class="hot-item-rate"></div>
                   <p>5,900</p>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="mini-banner2 mini-banner">
