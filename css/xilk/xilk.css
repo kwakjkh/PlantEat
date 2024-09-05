@@ -1,0 +1,222 @@
+@charset "utf-8";
+@import url("xilk-responsive.css");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Luckiest+Guy&family=Nerko+One&display=swap");
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.xilk > .inner {
+  height: 500px;
+}
+/* 실크 인트로 ================================================================================= */
+.xilk-intro {
+  margin-top: 200px;
+  text-align: center;
+}
+.xilk-intro-txt > h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 129px;
+  color: #ff642c;
+  text-shadow: 0 1px 0 #a14900, 0 2px 0 #a14900, 0 3px 0 #a14900, 0 4px 0 #a14900, 0 5px 0 #a14900, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.xilk-intro-txt h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.xilk-intro-txt h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.xilk-intro-txt h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #a14900, 0 2px 0 #a14900, 0 3px 0 #a14900, 0 4px 0 #a14900, 0 5px 0 #a14900, 0 6px 0 #a14900, 0 7px 0 #a14900, 0 8px 0 #a14900, 0 9px 0 #a14900, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+.xilk-intro-txt-bg {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 1200px;
+  background-color: rgb(24, 21, 180);
+}
+.xilk-intro-txt-bg > img {
+  width: 100%;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.418));
+}
+/* 실크 설명 ================================================================================= */
+.xilk-explain {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto 60px;
+}
+.xilk-explain-txt > .txt-1 > h1,
+.xilk-explain-txt > .txt-2 > h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ff642c;
+  padding-top: 40px;
+}
+.xilk-explain-txt p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000000b6;
+  word-spacing: 0.05rem;
+  padding: 10px 0 20px;
+  line-height: 27px;
+}
+/* 실크 영양성분 =================================================================================*/
+.xilk-nutritionFacts {
+  background-color: #2cc3ff;
+}
+.left-xilk-carton,
+.right-xilk-carton {
+  width: 100%;
+  height: 350px;
+}
+.left-xilk-carton {
+  background-color: #ff642c;
+  display: flex;
+  align-items: center;
+}
+.left-xilk-carton .xilk-carton-nutritionFacts {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/xilk/xilk-n-info-bg.png") right no-repeat;
+  background-size: contain;
+}
+.left-xilk-carton > .xilk-carton-n-txt {
+  width: 100%;
+}
+.left-xilk-carton > .xilk-carton-n-txt > h1 {
+  color: #fff;
+}
+.right-xilk-carton {
+  background-color: #f1e1cc;
+  display: flex;
+  align-items: center;
+}
+.right-xilk-carton > .xilk-carton-n-txt {
+  width: 100%;
+  text-align: right;
+}
+.right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
+  font-size: 25px;
+  font-weight: 900;
+}
+.right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000b6;
+  margin-top: 10px;
+}
+.right-xilk-carton .xilk-carton-p-nutritionFacts {
+  width: 100%;
+  height: 100%;
+}
+.xilk-carton-n-txt > h2{
+  font-size: 20px;
+  margin-top: 40px;
+}
+/* 실크 활용법 =================================================================================*/
+.xilk-use {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.xilk-use > .xilk-use-txt {
+  margin: 120px 0 80px;
+  text-align: center;
+}
+.xilk-use > .xilk-use-txt > h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0.08rem;
+}
+.xilk-use > .xilk-use-txt > p{
+  padding: 10px 0 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000b6;
+  word-spacing: 0.05rem;
+  line-height: 27px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.xilk-use-motion-wrap {
+  width: 100%;
+}
+.xilk-use-motion-wrap > .use-to-food,
+.xilk-use-motion-wrap > .use-to-drink {
+  display: flex;
+  width: 100%;
+}
+.xilk-use-motion-wrap > .use-to-drink {
+  flex-direction: row-reverse;
+}
+.xilk-use-img {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.xilk-use-img > img {
+  width: 100%;
+  position: relative;
+}
+.xilk-use-motion-wrap > .use-to-food > .xilk-use-img::after {
+  content: "XILK를 베이스로 만든 비건 크림 파스타";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  padding-bottom: 10px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.384);
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.xilk-use-motion-wrap > .use-to-food > .xilk-use-img:hover::after {
+  opacity: 1;
+}
+.xilk-use-motion-wrap > .use-to-drink > .xilk-use-img::after {
+  content: "우유 대신 XILK를 첨가한 카페 라떼";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.384);
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  display: flex;
+}
+.xilk-use-motion-wrap > .use-to-drink > .xilk-use-img:hover::after {
+  opacity: 1;
+}
+.xilk-use-food-txt,
+.xilk-use-drink-txt {
+  width: 100%;
+}
+.xilk-use-drink-txt {
+  text-align: right;
+}
+.xilk-use-food-txt > .use-txt-wrap,
+.xilk-use-drink-txt > .use-txt-wrap {
+  padding: 20px;
+}

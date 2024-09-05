@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url("about-tpe.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* 어바웃 메뉴 리스트 */
 .about_wrap {
   z-index: 0;
@@ -111,7 +111,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: aqua;
+  background-color: rgb(243, 236, 229);
+  border: 1px solid #ff969634;
   border-radius: 500px;
   display: flex;
   /* justify-content: center; */
@@ -180,6 +181,8 @@
   height: 544px;
 }
 .its-better_i_info > h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 35px;
   transform: translateX(60px);
   transition: all 0.5s;
 }
@@ -197,6 +200,7 @@
   opacity: 1;
 }
 .its-better_i_info > p {
+  font-family: "Noto Sans KR", sans-serif;
   transform: translateX(80px);
   opacity: 0;
   transition: all 0.5s;
@@ -206,11 +210,23 @@
   transform: translateX(20px);
   opacity: 1;
 }
+.its-better-i-data_sub1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #00000085;
+}
+.its-better-i-data_sub2 {
+  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 30px;
+  color: #00000085;
+}
 /* 잇츠베러 상품 보러가기 */
 .go_a__shop {
   padding: 8px 30px;
   border-radius: 50px;
   position: absolute;
+  top: 40px;
   right: 0;
   opacity: 0;
   transition: opacity 0.5s;
@@ -226,9 +242,9 @@
 }
 /* 잇츠베러 다른 상품 상세 설명 더보기 ================================================ */
 .its-better_a_pbt_list {
-  height: 100px;
+  height: 80px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   position: absolute;
   bottom: 0;
   /* background-color: rgb(214, 140, 43); */
@@ -237,12 +253,19 @@
   transition-delay: 0.4s;
 }
 .its-better_a_pbt_list > li {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
 }
 .its-better_a_pbt_list > li > img {
   width: 100%;
+  opacity: 0.3;
+}
+.its-better_a_pbt_list > li > img.about-icon-toggle {
+  opacity: 1;
+}
+.its-better_a_pbt_list > li:hover > img {
+  opacity: 1;
 }
 .a_pbt_list-active {
   opacity: 1;
@@ -269,9 +292,18 @@
 }
 .its-better_a_pbt_list-1080 > li > img {
   width: 100%;
+  opacity: 0.3;
 }
-
-/* 잇츠베러의 better-point */
+.its-better_a_pbt_list-1080 > li > img.about-icon-toggle-1080 {
+  opacity: 1;
+}
+.its-better_a_pbt_list-1080 > li:hover > img {
+  opacity: 1;
+}
+.a_pbt_list-active-1080 {
+  opacity: 1;
+}
+/* 잇츠베러의 better-point============================================================== */
 .its-better_Better-Point {
   text-align: center;
 }
@@ -299,17 +331,16 @@
   padding-top: 30px;
   letter-spacing: -0.03em;
 }
-.better-Point-Txt > h3 > strong{
+.better-Point-Txt > h3 > strong {
   font-family: "Inter", sans-serif;
   font-weight: 980;
   letter-spacing: 0.03em;
 }
-.better-Point-Txt > p{
+.better-Point-Txt > p {
   margin-top: 10px;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight:700;
+  font-weight: 700;
   color: #0000007a;
-  
 }
 
 /* 더플랜잇 ==========================================================================*/
@@ -478,7 +509,7 @@
     border-radius: 90px 0 0 0;
   }
 }
-@media screen and (max-width: 1222px) {
+@media screen and (max-width: 1223px) {
   .its-better_txt > .its-better_logo {
     margin-left: 20px;
   }
@@ -509,6 +540,7 @@
   }
   .its-better_a_pbt_list-1080 {
     flex-direction: row;
+    justify-content: space-around;
   }
   .its-better_for1080 {
     display: flex;
@@ -516,10 +548,10 @@
     flex-direction: column;
     justify-content: center;
   }
-  .better-Point-list{
+  .better-Point-list {
     margin: 0 15px;
   }
-  .better-Point-list > li{
+  .better-Point-list > li {
     margin: 0 15px;
   }
   .its-better_i_info.more-infoActive {
@@ -566,6 +598,7 @@
     opacity: 1;
   }
   .its-better_a_pbt_list-1080 {
+    height: 100%;
     flex-direction: column;
   }
   .its-better_for1080 {
@@ -646,7 +679,7 @@
   }
   .better-Point-list > li > .better-Point-img {
     padding: 10px;
-    box-shadow: 1px 1px 3px 2px #00000042 ;
+    box-shadow: 1px 1px 3px 2px #00000042;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -666,10 +699,10 @@
   .better-Point-list > li > .better-Point-img > img {
     display: none;
   }
-  .better-Point-list{
+  .better-Point-list {
     margin: 0;
   }
-  .better-Point-list > li{
+  .better-Point-list > li {
     margin: 0;
   }
   /* 잇츠베러 이미지 반응형 */
@@ -682,9 +715,9 @@
     /* max-height: 700px; */
     padding: 20px;
   }
-  .its-better_img-wrapping{
+  .its-better_img-wrapping {
     height: auto;
-    max-height: 800px
+    max-height: 800px;
   }
   .its-better_middle-img {
     position: relative;
@@ -726,7 +759,7 @@
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .its-better_more-info {
     height: 650px;
     overflow: hidden;
@@ -737,12 +770,19 @@
     /* max-height: 700px; */
     padding: 20px;
   }
-  .its-better_img-wrapping{
+  .its-better_img-wrapping {
     height: auto;
-    max-height: 650px
+    max-height: 650px;
+  }
+  .its-better_a_pbt_list-1080 {
+    align-items: center;
+    width: 50px;
+  }
+  .its-better_a_pbt_list-1080 >li{
+    width: 100%;
   }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .its-better_more-info {
     height: 550px;
     overflow: hidden;
@@ -753,12 +793,24 @@
     /* max-height: 700px; */
     padding: 20px;
   }
-  .its-better_img-wrapping{
+  .its-better_img-wrapping {
     height: auto;
-    max-height: 550px
+    max-height: 550px;
+  }
+  .its-better_a_pbt_list-1080 {
+    align-items: center;
+    width: 40px;
+  }
+  .its-better_a_pbt_list-1080 >li{
+    width: 100%;
   }
 }
 @media screen and (max-width: 420px) {
-  /* .its-better_for1080 {
-  } */
+  .its-better_a_pbt_list-1080 {
+    align-items: center;
+    width: 35px;
+  }
+  .its-better_a_pbt_list-1080 >li{
+    width: 100%;
+  }
 }

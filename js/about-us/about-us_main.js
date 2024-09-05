@@ -2,34 +2,34 @@ window.addEventListener("load", function () {
   // 버튼 클릭시 이동
   const itsBetter = this.document.getElementById("about_itsBetter");
   const thePlantEat = this.document.getElementById("about_thePlantEat");
-  const itsBetterWrap = this.document.querySelector(".about_its-better")
-  const thePlantEatWrap = this.document.querySelector(".about_the-plant-eat")
-  const thePlantEatTech = this.document.querySelector(".the-plant-eat_about_main-bg")
+  const itsBetterWrap = this.document.querySelector(".about_its-better");
+  const thePlantEatWrap = this.document.querySelector(".about_the-plant-eat");
+  const thePlantEatTech = this.document.querySelector(".the-plant-eat_about_main-bg");
   itsBetter.addEventListener("click", function () {
-    this.classList.add("title-active")
-    thePlantEat.classList.remove("title-active")
-    itsBetterWrap.classList.add("about-display")
-    thePlantEatWrap.classList.remove("about-display")
-    thePlantEatTech.classList.remove("about-display")
+    this.classList.add("title-active");
+    thePlantEat.classList.remove("title-active");
+    itsBetterWrap.classList.add("about-display");
+    thePlantEatWrap.classList.remove("about-display");
+    thePlantEatTech.classList.remove("about-display");
   });
   thePlantEat.addEventListener("click", function () {
-    this.classList.add("title-active")
-    itsBetter.classList.remove("title-active")
-    thePlantEatWrap.classList.add("about-display")
-    itsBetterWrap.classList.remove("about-display")
-    thePlantEatTech.classList.add("about-display")
+    this.classList.add("title-active");
+    itsBetter.classList.remove("title-active");
+    thePlantEatWrap.classList.add("about-display");
+    itsBetterWrap.classList.remove("about-display");
+    thePlantEatTech.classList.add("about-display");
   });
   // 잇츠베러 클릭 영역
   const eatsBetterMore = document.querySelector(".its-better_middle-img_after");
   eatsBetterMore.addEventListener("click", function () {
     eatsBetterMore.style.display = "none";
-    const eatsAllwrap = document.querySelector(".its-better_img")//잇츠베러 상품 전체 영역
+    const eatsAllwrap = document.querySelector(".its-better_img"); //잇츠베러 상품 전체 영역
     const eatsClicking = document.querySelector(".its-better_img"); //앗츠베러 상품 이미지
     const eAboutInfo = document.querySelector(".its-better_i_info"); //잇츠베러 상품 정보
     const goAShop = document.querySelector(".go_a__shop"); //잇츠베러 상품 바로 가기 버튼
     const ePbtList = document.querySelector(".its-better_a_pbt_list"); //잇츠베러 다른 상품 리스트
     const ePbtList1080 = document.querySelector(".its-better_a_pbt-1080"); //잇츠베러 다른 상품 리스트 1080
-    eatsAllwrap.classList.add("its-better_img-wrapping")
+    eatsAllwrap.classList.add("its-better_img-wrapping");
     eatsClicking.classList.add("its-better_mover");
     eAboutInfo.classList.add("more-infoActive");
     goAShop.classList.add("go_a__shop-active");
@@ -40,6 +40,12 @@ window.addEventListener("load", function () {
   const ePbtListLi = document.querySelectorAll(".its-better_a_pbt_list li img"); //잇츠베러 다른 상품 리스트 li
   ePbtListLi.forEach(function (img) {
     img.addEventListener("click", function () {
+      // 모든 요소에서 .about-icon-toggle 클래스를 제거
+      ePbtListLi.forEach((icons) => icons.classList.remove("about-icon-toggle"));
+
+      // 클릭된 요소에만 .about-icon-toggle 클래스를 추가
+      img.classList.add("about-icon-toggle");
+
       const dataImgSrc = this.getAttribute("data-img_src");
       const dataImgAlt = this.getAttribute("data-img_alt");
       const dataTitle = this.getAttribute("data-title");
@@ -89,6 +95,10 @@ window.addEventListener("load", function () {
   const ePbtListLi1080 = document.querySelectorAll(".its-better_a_pbt_list-1080 li img"); //잇츠베러 다른 상품 리스트 li
   ePbtListLi1080.forEach(function (img) {
     img.addEventListener("click", function () {
+      // 모든 요소에서 .about-icon-toggle 클래스를 제거
+      ePbtListLi1080.forEach((icons1080) => icons1080.classList.remove("about-icon-toggle-1080"));
+      // 클릭된 요소에만 .about-icon-toggle 클래스를 추가
+      img.classList.add("about-icon-toggle-1080");
       const dataImgSrc = this.getAttribute("data-img_src");
       const dataImgAlt = this.getAttribute("data-img_alt");
       const dataTitle = this.getAttribute("data-title");
@@ -144,15 +154,15 @@ window.addEventListener("load", function () {
   // if (tpeBgVideo.paused) {
   //   tpeBgVideo.play();
   // }
-  const thePlantEatThink_Bg = this.document.querySelector(".the-plant-eat-s-think-bg")
+  const thePlantEatThink_Bg = this.document.querySelector(".the-plant-eat-s-think-bg");
   const waypoint_plantEat_p_bg = new Waypoint({
     element: document.querySelector(".about_the-plant-eat"),
     handler: function (direction) {
       // console.log(direction);
       if (direction === "down") {
-        thePlantEatThink_Bg.classList.add("think-bg-active")
+        thePlantEatThink_Bg.classList.add("think-bg-active");
       } else {
-        thePlantEatThink_Bg.classList.remove("think-bg-active")
+        thePlantEatThink_Bg.classList.remove("think-bg-active");
       }
     },
     offset: "10%",
@@ -197,8 +207,6 @@ window.addEventListener("load", function () {
     });
   });
 
-
-
   const cAni_1 = this.document.querySelector(".line1-after");
   const cAni_1Line = this.document.querySelector(".tech-1 .line");
   const cAni_2 = this.document.querySelector(".line2-after");
@@ -230,14 +238,14 @@ window.addEventListener("load", function () {
     cAni_1Line.classList.add("hide");
     cAni_2Line.classList.add("hide");
   });
-  const info_closebtn = this.document.querySelectorAll(".info_close-bt")
-  info_closebtn.forEach((info_closebtns)=>{
-    info_closebtns.addEventListener("click", function(){
-      const closebtns_infos = info_closebtns.closest('.tech');
+  const info_closebtn = this.document.querySelectorAll(".info_close-bt");
+  info_closebtn.forEach((info_closebtns) => {
+    info_closebtns.addEventListener("click", function () {
+      const closebtns_infos = info_closebtns.closest(".tech");
       const techInfo = closebtns_infos.querySelector(".tech-infos");
-      if(closebtns_infos) {
-        techInfo.classList.remove("info_active")
-        thePlantEatMore.classList.remove("bg-m_line1-after")
+      if (closebtns_infos) {
+        techInfo.classList.remove("info_active");
+        thePlantEatMore.classList.remove("bg-m_line1-after");
         thePlantEatMore.classList.remove("bg-m_line2-after");
         cAni_1Line.classList.remove("m_line1-after");
         cAni_2Line.classList.remove("m_line2-after");
@@ -246,6 +254,6 @@ window.addEventListener("load", function () {
         cAni_2Line.classList.remove("hide");
         cAni_3Line.classList.remove("hide");
       }
-    })
-  })
+    });
+  });
 });
