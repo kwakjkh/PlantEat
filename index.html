@@ -83,6 +83,13 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-search-bar">
+          <div class="mobile-src-bar">
+            <input type="text">
+            <img src="images/icons/top-search.png" alt="검색">
+          </div>
+          <button><img src="images/icons/close.png" alt="닫기"></button>
+        </div>
       </header>
       <section class="banner">
         <div class="swiper sw-banner">
@@ -113,7 +120,7 @@
       <section class="hot-item">
         <div class="inner">
           <h2>HOT ITEM</h2>
-          <div class="swiper-container sw-item">
+          <div class="swiper sw-item" data-aos="fade-up" data-aos-duration="900" data-offset="-500">
             <div class="swiper-wrapper">
               <!-- 슬라이드 1 -->
               <div class="swiper-slide">
@@ -193,11 +200,11 @@
           <div class="mini-banner-box"><a href="">자세히 보기 +</a></div>
         </div>
       </section>
-      <section class="best-review">
+      <section class="best-review" >
         <h2>BEST REVIEW</h2>
         <div class="inner">
-          <div class="swiper sw-review" data-aos="fade-up" data-aos-duration="900" data-offset="-500">
-            <div class="swiper-wrapper">
+          <div class="swiper sw-review" >
+            <div class="swiper-wrapper" >
               <div class="swiper-slide">
                 <a href="#" class="review-image"><img src="images/review/review1.PNG" alt="리뷰1" / ></a>
                 <div class="review-text">
@@ -255,8 +262,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="sw-next sw-bt"></div>
+            <div class="sw-prev sw-bt"></div>
           </div>
         </div>
       </section>

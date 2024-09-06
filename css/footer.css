@@ -90,3 +90,46 @@
   margin-top: 12px;
   margin-bottom: 4px;
 }
+@media screen and (max-width : 1200px){
+  .upper-footer{
+    height: auto;
+  }
+  .footer-nav{
+    clear: both;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+  .footer-sns{
+    clear: both;
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .footer-sns li{
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .footer-info, .footer-contact{
+    display: block;
+    float: none;
+    width: 85%;
+  }
+}
+@media screen and (max-width : 500px){
+.footer-nav{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-nav > li{
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}

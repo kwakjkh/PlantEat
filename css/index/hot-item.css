@@ -12,18 +12,19 @@
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+  padding-bottom: 45px;
 }
 .hot-item a {
   font-family: "Noto Sans KR", sans-serif;
 }
-.hot-item .swiper-wrapper {
+/* .hot-item .swiper-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 65px;
 }
 .hot-item .swiper-slide {
   width: 18%;
-}
+} */
 .hot-item .swiper-slide a {
   width: 100%;
   display: block;
@@ -84,3 +85,4 @@
   font-weight: bold;
   float: right;
 }
+

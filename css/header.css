@@ -15,7 +15,7 @@
 .mobile-header-nav {
   display: none;
 }
-.header-close{
+.header-close {
   display: none;
 }
 .header.active {
@@ -23,6 +23,10 @@
   height: 90px;
   position: fixed;
   z-index: 99999;
+  backdrop-filter: blur(10px); /* 배경을 흐리게 설정 */
+}
+.nav-close {
+  display: none;
 }
 .header.hide {
   visibility: hidden;
@@ -95,13 +99,16 @@
   background-image: url("../images/icons/top-search.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border: none;
   background-color: transparent;
 }
 .header-right a img {
-  height: 40px;
+  height: 30px;
+}
+.nav-pop {
+  visibility: hidden;
 }
 @media screen and (max-width: 1200px) {
   .header-nav {
@@ -123,7 +130,7 @@
     width: 23px;
     height: 23px;
     color: transparent;
-    background-image: url("../images/icons/close.png")  ;
+    background-image: url("../images/icons/close.png");
     background-color: transparent;
     background-size: contain;
     border: none;
@@ -136,16 +143,18 @@
     right: calc(100% - 300px);
   }
   .nav-pop {
+    visibility: visible;
     float: left;
     background-color: transparent;
     background-image: url("../images/icons/menu-mo.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border: none;
     display: inline;
     margin: 15px;
+    cursor: pointer;
   }
 
   .mobile-header-nav {
@@ -155,7 +164,7 @@
     top: 100px;
     position: absolute;
   }
-  .mobile-header-nav li{
+  .mobile-header-nav li {
     width: 100%;
     margin-top: 30px;
     padding-bottom: 20px;
@@ -165,13 +174,79 @@
     color: white;
   }
   .header-right {
-    width: 195px;
+    width: 165px;
   }
 
-  .header-search {
+  .header-right li:first-child {
     display: none;
   }
   .mobile-search {
     display: inline-block;
+  }
+  .mobile-search-bar {
+    background-color: rgba(3, 73, 52, 0.98);
+    padding: 10px;
+    position: relative;
+    height: 60px;
+    opacity: 0; /* 투명도를 0으로 설정해서 처음에 안 보이게 */
+    transform: translateY(-20px); /* 살짝 위로 이동한 상태로 시작 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 부드러운 애니메이션 */
+    visibility: hidden; /* 요소가 사라진 상태에서 공간도 차지하지 않도록 */
+  }
+  .mobile-search-bar.active {
+    opacity: 1; /* 투명도를 1로 변경해서 보이게 함 */
+    transform: translateY(0); /* 제자리로 이동 */
+    visibility: visible; /* 보이게 설정 */
+  }
+  .mobile-src-bar {
+    position: relative;
+  }
+  .mobile-src-bar input {
+    width: 80%;
+    max-width: 330px;
+    height: 40px;
+    border: none;
+    background-color: #eff2f1;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 40px;
+    position: absolute;
+    right: 50px;
+  }
+  .mobile-src-bar img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 7.5px;
+    right: 65px;
+  }
+  .mobile-search-bar button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-search-bar button img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-pop {
+    visibility: visible;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .header-logo {
+    height: 80%;
+    margin-top: 11px;
+    padding-right: 0;
+  }
+  .header-right li:first-child {
+    display: none;
   }
 }
