@@ -193,7 +193,9 @@
   width: 0;
   transition: all 0.2s;
 }
-
+.tech-1{
+  z-index: 999;
+}
 /* 기술 정보 ======================================================== */
 .tech-infos {
   z-index: -1;
@@ -208,21 +210,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  visibility: hidden;
 }
 .info_close-bt {
   width: 30px;
   height: 30px;
   background-color: aquamarine;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .tech-infos.info_active {
   opacity: 1;
   width: 200%;
+  visibility: visible;
 }
 .tech-1 .tech-infos.info_active > h1,
-.tech-1 .tech-infos.info_active >h2,
-.tech-1 .tech-infos.info_active >h3,
-.tech-1 .tech-infos.info_active >p,
-.tech-1 .tech-infos.info_active >small {
+.tech-1 .tech-infos.info_active > h2,
+.tech-1 .tech-infos.info_active > h3,
+.tech-1 .tech-infos.info_active > p,
+.tech-1 .tech-infos.info_active > small {
   font-family: "Noto Sans KR", sans-serif !important;
 }
 .tech-1 .tech-infos.info_active {
@@ -279,4 +286,77 @@
 }
 .tech-infos-img > img {
   width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .the-plant-eat_about_main-section > .tech-1 > .line {
+    max-width: 400px;
+  }
+  .the-plant-eat_about_main-section > .tech-2 > .line {
+    max-width: 300px;
+  }
+  .tech-2 .tech-infos {
+    left: -170% !important;
+    transform: translate(15px, -290px);
+  }
+  .the-plant-eat_about_main-section > .tech-3 > .line {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .the-plant-eat_about_main-section > .tech-1 > .line {
+    max-width: 300px;
+  }
+  .the-plant-eat_about_main-section > .tech-2 > .line {
+    max-width: 300px;
+  }
+  .tech-2 .tech-infos {
+    left: -170%;
+    transform: translate(15px, -290px);
+  }
+  .the-plant-eat_about_main-section > .tech-3 > .line {
+    max-width: 300px;
+  }
+  .tech-infos h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .the-plant-eat_about_main-section > .tech-1 > .line {
+    max-width: 200px;
+  }
+  .the-plant-eat_about_main-section > .tech-2 > .line {
+    max-width: 200px;
+  }
+  .tech-1 .tech-infos {
+    max-width: none;
+    transform: translate(-180px, -70px);
+  }
+  .tech-2 .tech-infos {
+    max-width: none;
+    left: -200%;
+    transform: translate(-70px, -290px);
+  }
+  .tech-3 .tech-infos {
+    max-width: none;
+    transform: translate(180px, -205px);
+  }
+  .tech-1 .tech-infos.info_active {
+    width: 400px;
+  }
+  .tech-2 .tech-infos.info_active {
+    width: 400px;
+  }
+  .tech-3 .tech-infos.info_active {
+    width: 400px;
+  }
+  .the-plant-eat_about_main-section > .tech-3 > .line {
+    max-width: 200px;
+  }
+  .tech-infos h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 810px){
+
 }

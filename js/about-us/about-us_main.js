@@ -155,18 +155,6 @@ window.addEventListener("load", function () {
   //   tpeBgVideo.play();
   // }
   const thePlantEatThink_Bg = this.document.querySelector(".the-plant-eat-s-think-bg");
-  const waypoint_plantEat_p_bg = new Waypoint({
-    element: document.querySelector(".about_the-plant-eat"),
-    handler: function (direction) {
-      // console.log(direction);
-      if (direction === "down") {
-        thePlantEatThink_Bg.classList.add("think-bg-active");
-      } else {
-        thePlantEatThink_Bg.classList.remove("think-bg-active");
-      }
-    },
-    offset: "10%",
-  });
   const waypoint_plantEat = new Waypoint({
     element: document.querySelector(".about_the-plant-eat"),
     handler: function (direction) {
@@ -190,6 +178,38 @@ window.addEventListener("load", function () {
       }
     },
     offset: "-40%",
+  });
+  const waypoint_plantEat_exTxt = new Waypoint({
+    element: document.querySelector(".about_the-plant-eat"),
+    handler: function (direction) {
+      // console.log(direction);
+      const explain_p_1 = document.querySelectorAll(".the-plant-eat_explain > .first-p");
+      const explain_p_2 = document.querySelector(".the-plant-eat_explain > .second-p");
+      if (direction === "down") {
+        explain_p_1.forEach(function (p_s) {
+          p_s.classList.add("ex-p-active");
+        });
+        explain_p_2.classList.add("ex-p-active");
+      } else {
+        explain_p_1.forEach(function (p_s) {
+          p_s.classList.remove("ex-p-active");
+        });
+        explain_p_2.classList.add("ex-p-active");
+      }
+    },
+    offset: "10%",
+  });
+  const waypoint_plantEat_p_bg = new Waypoint({
+    element: document.querySelector(".about_the-plant-eat"),
+    handler: function (direction) {
+      // console.log(direction);
+      if (direction === "down") {
+        thePlantEatThink_Bg.classList.add("think-bg-active");
+      } else {
+        thePlantEatThink_Bg.classList.remove("think-bg-active");
+      }
+    },
+    offset: "10%",
   });
 
   // .click-ani 요소들을 선택

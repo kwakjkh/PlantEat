@@ -1,6 +1,14 @@
 @charset "utf-8";
 @import url("about-tpe.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+/* 어바웃 공통영역 */
+.br768{
+  display: none;
+}
+
+
 /* 어바웃 메뉴 리스트 */
 .about_wrap {
   z-index: 0;
@@ -386,20 +394,48 @@
   text-align: center;
   margin-top: 140px;
 }
+.the-plant-eat_explain p,
+.the-plant-eat_explain h1,
+.the-plant-eat_explain h2,
+.the-plant-eat_explain h3,
+.the-plant-eat_explain strong{
+  font-family: "Noto Sans KR", sans-serif;
+}
+.the-plant-eat_explain > .first-p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #00000099;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.5s;
+}
+.the-plant-eat_explain > .first-p:first-of-type{
+  transition-delay: 0s;
+}
+.the-plant-eat_explain > .first-p.ex-p-active{
+  opacity: 1;
+}
+.the-plant-eat_explain > .first-p > strong{
+  color: #000000;
+}
 /* 더 플랜잇은 생각했어요 */
-.the-plant-eat_explain > .the-plant-eat-s-think {
+.the-plant-eat_explain >.second-p > .the-plant-eat-s-think {
   height: 80px;
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 900;
   padding-top: 40px;
+  margin-top: 100px;
 }
 /* 망가지는 지구와 지속되는 소비 사이에서 우리가 할수 있는 일은 무엇일까? */
-.the-plant-eat_explain > .the-plant-eat-s-think-p {
+.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-p {
   position: relative;
   font-size: 22px;
   padding: 20px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  color: #042416cb;
 }
-.the-plant-eat_explain > .the-plant-eat-s-think-bg {
+.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-bg {
   margin: 0 auto;
   width: 0;
   height: 10vw;
@@ -409,7 +445,7 @@
   transition: width 0.6s ease-in-out;
   transform: translateY(-125px);
 }
-.the-plant-eat_explain > .the-plant-eat-s-think-bg.think-bg-active {
+.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-bg.think-bg-active {
   width: 100%;
 }
 /* 우리는 육류의 소비량이 늘어나며 생긴 문제점을 돌아보았어요 */
@@ -493,6 +529,14 @@
   .its-better_more-info {
     margin: 0 30px;
     width: calc(100% - 60px);
+  }
+}
+@media screen and (max-width: 1500px) {
+  .the-plant-eat_flip {
+    width: 270px;
+    /* max-width: 400px; */
+    height: 270px;
+    /* max-height: 400px; */
   }
 }
 @media screen and (max-width: 1400px) {
@@ -612,6 +656,12 @@
     height: 400px;
     margin-top: 0;
   }
+  .the-plant-eat_flip {
+    width: 200px;
+    /* max-width: 400px; */
+    height: 200px;
+    /* max-height: 400px; */
+  }
 }
 @media screen and (max-width: 960px) {
   .its-better_subtxt {
@@ -624,6 +674,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  /* 행렬 정리 공통영역 */
+  .br768{
+    display: block;
+  }
   /* 잇츠베러 상단 택스트 반응형 ====================*/
   .its-better_txt {
     height: 120px;
@@ -679,7 +733,7 @@
   }
   .better-Point-list > li > .better-Point-img {
     padding: 10px;
-    box-shadow: 1px 1px 3px 2px #00000042;
+    box-shadow: 1px 1px 3px 2px #00000012;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -751,12 +805,22 @@
     left: 274px;
     top: 37px;
   }
+  .the-plant-eat-s-think-p{
+    line-height: 23px !important;
+    font-size: 18px !important;
+  }
+  .the-plant-eat-s-think-bg{
+    transform: translateY(-75px) !important;
+  }
   .the-plant-eat_subtxt {
     font-size: 14px;
     text-align: center;
     width: 100%;
     margin-left: 0;
     padding: 0 20px;
+  }
+  .the-plant-eat_explain{
+    margin: 0 20px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -778,7 +842,7 @@
     align-items: center;
     width: 50px;
   }
-  .its-better_a_pbt_list-1080 >li{
+  .its-better_a_pbt_list-1080 > li {
     width: 100%;
   }
 }
@@ -801,7 +865,7 @@
     align-items: center;
     width: 40px;
   }
-  .its-better_a_pbt_list-1080 >li{
+  .its-better_a_pbt_list-1080 > li {
     width: 100%;
   }
 }
@@ -810,7 +874,7 @@
     align-items: center;
     width: 35px;
   }
-  .its-better_a_pbt_list-1080 >li{
+  .its-better_a_pbt_list-1080 > li {
     width: 100%;
   }
 }

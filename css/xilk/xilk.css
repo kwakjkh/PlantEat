@@ -77,6 +77,7 @@ body {
 .xilk-nutritionFacts {
   background-color: #2cc3ff;
 }
+
 .left-xilk-carton,
 .right-xilk-carton {
   width: 100%;
@@ -86,6 +87,11 @@ body {
   background-color: #ff642c;
   display: flex;
   align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.7s ease-in-out;
+}
+.left-xilk-carton.carton_active{
+  transform: translateX(0);
 }
 .left-xilk-carton .xilk-carton-nutritionFacts {
   width: 100%;
@@ -103,6 +109,11 @@ body {
   background-color: #f1e1cc;
   display: flex;
   align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.7s ease-in-out;
+}
+.right-xilk-carton.carton_active{
+  transform: translateX(0);
 }
 .right-xilk-carton > .xilk-carton-n-txt {
   width: 100%;
