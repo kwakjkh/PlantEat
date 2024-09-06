@@ -1,32 +1,38 @@
 @charset "utf-8";
-@import url("prducts1.css");
 /*prducts 카테고리  */
-.prducts-main {
-  width: 1000px;
-  margin: 0 auto;
-}
 .icon-button {
   border: none;
   background-color: none;
-  width: 95px;
-  height: 75%;
+  /* width: 95px;
+  height: 75%; */
+ padding: 7%;
   float: left;
   outline: none;
   background-color: transparent;
+  filter: brightness(0);
 }
 .icon-button img {
   width: 100%;
   height: 100%;
 }
+.icon-button.active{
+  filter: brightness(1);
+}
 .prducts-icon {
   display: flex;
-  margin: 100px;
-  justify-content: space-evenly;
+  width: 60%;
+  max-width: 480px;
+  gap: 25px;
+  /* background-color: blueviolet; */
+  margin: 100px auto;
+}
+.prducts-icon > li {
+  width: calc(100% / 4);
 }
 .prducts-icon > li > button > p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 1000;
-  color: #034934;
+  color: #d10606;
 }
 #prducts-xilk-tet {
   color: #ff642c;
@@ -102,8 +108,8 @@
 /* .prducts-xilk */
 .prducts-xilk {
   justify-content: center;
-  display: flex;
-  /* display: none; */
+  /* display: flex; */
+  display: none;
 }
 .xilk {
   width: calc(100% / 4);
@@ -111,11 +117,13 @@
 .prducts-xilk > ul {
   margin-left: 10px;
 }
-
-/* prducts-mayo */
-.prducts-moyo {
+.card.active{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+/* prducts-mayo */
+.prducts-moyo {
   display: none;
 }
 .mayo {
@@ -127,10 +135,10 @@
 
 /* prducts-Snack  */
 .prducts-Snack {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   display: none;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .scon,
 .creker,
@@ -143,8 +151,8 @@
 }
 /* prducts-protein  */
 .prducts-protein {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   display: none;
 }
 .protein {
