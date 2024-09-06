@@ -1,20 +1,14 @@
 window.addEventListener("load", function () {
   AOS.init();
-  const navPop = this.document.querySelector(".nav-pop")
-  const mobileHeader = this.document.querySelector(".mobile-header")
-  const headerClose = this.document.querySelector(".header-close")
-  navPop.addEventListener("click",function(){
-    mobileHeader.classList.add("mobile-header-active")
-  })
-  headerClose.addEventListener("click",function(){
-    mobileHeader.classList.remove("mobile-header-active")
-  })
-
-
-
-
-
-
+  const navPop = this.document.querySelector(".nav-pop");
+  const mobileHeader = this.document.querySelector(".mobile-header");
+  const headerClose = this.document.querySelector(".header-close");
+  navPop.addEventListener("click", function () {
+    mobileHeader.classList.add("mobile-header-active");
+  });
+  headerClose.addEventListener("click", function () {
+    mobileHeader.classList.remove("mobile-header-active");
+  });
 
   const swBanner = new Swiper(".sw-banner", {
     slidesPerView: 1,
@@ -39,35 +33,54 @@ window.addEventListener("load", function () {
     // },
     // watchSlidesVisibility: true,
   });
-  
 
   window.addEventListener("resize", function () {
     swBanner.update();
     document.querySelector(".sw-banner").style.zIndex = "1"; // 다시 z-index 설정
-    
-    
   });
-  const swItem = new Swiper(".sw-item",{
-    slidesPerView: 4,
+  const swItem = new Swiper(".sw-item", {
+    slidesPerView: 2,
     spaceBetween: 20,
-    loop:true,
+    loop: true,
     breakpoints: {
-      1200:{
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      900: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1200: {
         slidesPerView: 5,
-        spaceBetween: 20
-      }
-    }
-  })
+        spaceBetween: 20,
+      },
+    },
+  });
 
   const swReview = new Swiper(".sw-review", {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".sw-next",
+      prevEl: ".sw-prev",
     },
-    slidesPerView: 3,
-    spaceBetween: 40,
+    slidesPerView: 2,
+    spaceBetween: 20,
     loop: true,
+    breakpoints:{
+      800:{
+        slidesPerView:3,
+        spaceBetween:30
+      },
+      1200:{
+        slidesPerView:3,
+        spaceBetween:40
+      }
+    }
   });
+
+
+
+
 
   // 높이 값을 계산하는 함수
   function calculateHeights() {
@@ -118,4 +131,14 @@ window.addEventListener("load", function () {
     totalHeight = calculateHeights(); // 높이 값 재계산
     handleScroll(); // 현재 스크롤 위치에 따른 처리
   });
+
+  const mbSrc = this.document.querySelector(".mobile-search")
+  const mbSrcBar = this.document.querySelector(".mobile-search-bar")
+  const mbClose = this.document.querySelector(".mobile-search-bar > button")
+  mbSrc.addEventListener("click",function(){
+    mbSrcBar.classList.toggle("active")
+  })
+  mbClose.addEventListener("click", function() {
+    mbSrcBar.classList.remove("active");
+});
 });
