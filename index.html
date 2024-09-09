@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T7Q4LRBM");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>더플랜잇샵</title>
@@ -45,8 +59,22 @@
     <!-- AOS.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXM7WDZLG9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CXM7WDZLG9");
+    </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7Q4LRBM" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="container">
       <nav class="mobile-header">
         <button class="header-close">닫기</button>
@@ -98,27 +126,43 @@
           <div class="swiper sw-banner">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#"> </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="images/banner/eatsbetter.png" alt="잇츠베러" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="images/banner/theplanteat.png" alt="더플랜잇" />
+                <a href="about-us.html">
+                  <img src="images/banner/banner.png" alt="배너" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="mini-banner1 mini-banner">
+      <section class="category">
         <div class="inner">
-          <span>2세트 이상 구매시 5%</span>
-          <p>3세트 이상 구매시 10% 할인 이벤트 진행 중!</p>
-          <div class="mini-banner-box"><a href="">자세히 보기 +</a></div>
+          <h2>EAT'S BETTER PRODUCT</h2>
+          <ul>
+            <li>
+              <a href="products.html#xilk">
+                <img src="images/xilk/xilk-1.jpg" alt="실크" />
+                <p>식물성 우유</p>
+              </a>
+            </li>
+            <li>
+              <a href="products.html#mayo">
+                <img src="images/mayo/mayo.jpg" alt="마요네즈" />
+                <p>식물성 마요</p>
+              </a>
+            </li>
+            <li>
+              <a href="products.html#cookie">
+                <img src="images/tea_cookie/cookie.png" alt="쿠키" />
+                <p>식물성 쿠키</p>
+              </a>
+            </li>
+            <li>
+              <a href="products.html#protein">
+                <img src="images/protein/main_choco_protein.png" alt="프로틴" />
+                <p>식물성 단백질</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="hot-item">
@@ -130,7 +174,7 @@
               <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/cookie.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
-                  <span>설탕도 ZERO 콜레스레롤도 ZERO!</span>
+                  <span>설탕도 <strong>ZERO</strong> 콜레스레롤도 <strong>ZERO!</strong></span>
                   <p>제로 슈가 쿠키 3종</p>
                 </a>
                 <div class="hot-item-price">
@@ -144,7 +188,7 @@
               <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/scone.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
-                  <span>달걀 1.5개의 단백질 가득!</span>
+                  <span><strong>달걀 1.5개</strong>의 단백질 가득!</span>
                   <p>잇츠베러 프로틴스콘</p>
                 </a>
                 <div class="hot-item-price">
@@ -158,7 +202,7 @@
               <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/protein.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
-                  <span>식물성 단백질부터 콜라겐까지!</span>
+                  <span><strong>식물성 단백질</strong>부터 <strong>콜라겐</strong>까지!</span>
                   <p>잇츠베러 뷰티프로틴 파우더</p>
                 </a>
                 <div class="hot-item-price">
@@ -172,7 +216,7 @@
               <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/cracker.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
-                  <span>칼로리는 DOWN 단백질은 UP!</span>
+                  <span>칼로리는 <strong>DOWN</strong> 단백질은 <strong>UP!</strong></span>
                   <p>잇츠베러 크래커</p>
                 </a>
                 <div class="hot-item-price">
@@ -186,7 +230,7 @@
               <div class="swiper-slide">
                 <a href="#"><img src="images/hot_item/mayo.png" alt="제로슈가쿠키" /></a>
                 <a href="#" class="hot-item-name">
-                  <span>약콩으로 만들어 건강하고 고소한</span>
+                  <span><strong>약콩</strong>으로 만들어 건강하고 고소한</span>
                   <p>잇츠베러마요</p>
                 </a>
                 <div class="hot-item-price">
@@ -209,7 +253,7 @@
         <div class="inner">
           <div class="swiper sw-review">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide review-may">
                 <a href="#" class="review-image"><img src="images/review/review1.PNG" alt="리뷰1" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
@@ -223,7 +267,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide review-june">
                 <a href="#" class="review-image"><img src="images/review/review2.PNG" alt="리뷰2" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
@@ -237,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide review-july">
                 <a href="#" class="review-image"><img src="images/review/review3.PNG" alt="리뷰3" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
@@ -251,7 +295,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide review-august">
                 <a href="#" class="review-image"><img src="images/review/review4.PNG" alt="리뷰4" / ></a>
                 <div class="review-text">
                   <img src="images/review/review-star-5.png" alt="별점" />
