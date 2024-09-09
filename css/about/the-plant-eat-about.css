@@ -1,0 +1,79 @@
+@charset "utf-8";
+.about-tit {
+  height: 400px;
+  background: url("../../images/etx/tpe_about_bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+.the-plant-eat-w-logo {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.the-plant-eat-w-logo > img {
+  width: 100%;
+}
+.main-tit {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(18, 71, 52);
+  padding: 20px 60px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-tit > h1 {
+  color: white;
+  margin: 0 auto 20px;
+  font-size: 38px;
+}
+.main-tit > p {
+  color: white;
+  margin: 0 auto 15px;
+}
+@media screen and (max-width: 1100px) {
+  .main-tit {
+    margin: 0 80px;
+    width: calc(100% - 160px);
+    max-width: none;
+    left: 0;
+    transform: translate(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-tit {
+    margin: 0 60px;
+    width: calc(100% - 120px);
+    bottom: -120px;
+    padding: 20px 60px;
+  }
+  .the-plant-eat-w-logo{
+    width: 350px;
+  }
+  .main-tit > h1 {
+    color: white;
+    margin: 0 auto 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .main-tit {
+    margin: 0 40px;
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+  }
+  .the-plant-eat-w-logo{
+    width: 280px;
+  }
+  .main-tit > h1 {
+    color: white;
+    margin: 0 auto 20px;
+    font-size: 24px;
+  }
+}
