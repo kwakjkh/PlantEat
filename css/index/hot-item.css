@@ -12,7 +12,7 @@
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
 }
 .hot-item a {
   font-family: "Noto Sans KR", sans-serif;
@@ -85,4 +85,7 @@
   font-weight: bold;
   float: right;
 }
-
+.hot-item strong{
+  color: #ff642c;
+  font-weight: bold;
+}

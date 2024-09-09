@@ -1,29 +1,7 @@
 window.addEventListener("load", function () {
   AOS.init();
 
-  const swBanner = new Swiper(".sw-banner", {
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    // on: {
-    //   init: function () {
-    //     const slides = document.querySelectorAll(".swiper-slide");
-    //     slides.forEach(slide => {
-    //       slide.style.zIndex = "1";
-    //     });
-    //   },
-    //   resize: function () {
-    //     const slides = document.querySelectorAll(".swiper-slide");
-    //     slides.forEach(slide => {
-    //       slide.style.zIndex = "1";
-    //     });
-    //   },
-    // },
-    // watchSlidesVisibility: true,
-  });
+
 
   window.addEventListener("resize", function () {
     swBanner.update();
@@ -74,4 +52,14 @@ window.addEventListener("load", function () {
 
 
 
+});
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.location.hash === '#mayo') {
+    const mayoButton = document.querySelector('#mayo button');
+    if (mayoButton) {
+      mayoButton.click();
+    } else {
+      console.log('Mayo button not found!');
+    }
+  }
 });
