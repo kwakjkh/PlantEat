@@ -401,22 +401,29 @@
 .the-plant-eat_explain strong{
   font-family: "Noto Sans KR", sans-serif;
 }
+.slogan{
+  width: 100%;
+  max-width: 1000px;
+  height: 246px;
+  background-color:rgb(18, 71, 52);
+  margin: 0 auto;
+  border-radius: 8px;
+}
 .the-plant-eat_explain > .first-p{
   font-size: 20px;
   font-weight: 500;
   color: #00000099;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  transition-delay: 0.5s;
-}
-.the-plant-eat_explain > .first-p:first-of-type{
-  transition-delay: 0s;
-}
-.the-plant-eat_explain > .first-p.ex-p-active{
-  opacity: 1;
 }
 .the-plant-eat_explain > .first-p > strong{
   color: #000000;
+}
+.the-plant-eat_explain >.second-p{
+  height: 190px;
+}
+.the-plant-eat_explain >.second-p.ex-p-active{
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.8s;
 }
 /* 더 플랜잇은 생각했어요 */
 .the-plant-eat_explain >.second-p > .the-plant-eat-s-think {
@@ -453,10 +460,22 @@
   font-size: 24px;
   font-weight: 700;
   margin-right: 20%;
+  color: #00000085;
+}
+.the-plant-eat_explain >.ex-strong{
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.the-plant-eat_explain >h5 >.ex-strong{
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
 }
 .the-plant-eat_explain > p {
   line-height: 40px;
 }
+
 /* 더 플랜잇 상세 페이지 */
 /* 기술 및 방향성 */
 .the-plant-eat_about_main-bg {
