@@ -1,4 +1,8 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* menu-title */
+
 /*prducts 카테고리  */
 .icon-button {
   border: none;
@@ -23,7 +27,6 @@
   width: 60%;
   max-width: 480px;
   gap: 25px;
-  /* background-color: blueviolet; */
   margin: 100px auto;
 }
 .prducts-icon > li {

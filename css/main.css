@@ -7,6 +7,8 @@
 /* css 연결 */
 @import url("header.css");
 @import url("footer.css");
+@import url("index.css");
+
 * {
   padding: 0;
   margin: 0;
