@@ -110,7 +110,60 @@
 .nav-pop {
   visibility: hidden;
 }
+.mobile-search-bar{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
+  .mobile-search-bar {
+    display: block;
+    background-color: rgba(3, 73, 52, 0.98);
+    padding: 10px;
+    position: relative;
+    height: 60px;
+    opacity: 0; /* 투명도를 0으로 설정해서 처음에 안 보이게 */
+    transform: translateY(-20px); /* 살짝 위로 이동한 상태로 시작 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 부드러운 애니메이션 */
+    visibility: hidden; /* 요소가 사라진 상태에서 공간도 차지하지 않도록 */
+  }
+  .mobile-search-bar.active {
+    opacity: 1; /* 투명도를 1로 변경해서 보이게 함 */
+    transform: translateY(0); /* 제자리로 이동 */
+    visibility: visible; /* 보이게 설정 */
+  }
+  .mobile-src-bar {
+    position: relative;
+  }
+  .mobile-src-bar input {
+    width: 80%;
+    max-width: 330px;
+    height: 40px;
+    border: none;
+    background-color: #eff2f1;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 40px;
+    position: absolute;
+    right: 50px;
+  }
+  .mobile-src-bar img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 7.5px;
+    right: 65px;
+  }
+  .mobile-search-bar button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-search-bar button img {
+    width: 100%;
+  }
   .header-nav {
     display: none;
   }
@@ -183,57 +236,10 @@
   .mobile-search {
     display: inline-block;
   }
-  .mobile-search-bar {
-    background-color: rgba(3, 73, 52, 0.98);
-    padding: 10px;
-    position: relative;
-    height: 60px;
-    opacity: 0; /* 투명도를 0으로 설정해서 처음에 안 보이게 */
-    transform: translateY(-20px); /* 살짝 위로 이동한 상태로 시작 */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* 부드러운 애니메이션 */
-    visibility: hidden; /* 요소가 사라진 상태에서 공간도 차지하지 않도록 */
-  }
-  .mobile-search-bar.active {
-    opacity: 1; /* 투명도를 1로 변경해서 보이게 함 */
-    transform: translateY(0); /* 제자리로 이동 */
-    visibility: visible; /* 보이게 설정 */
-  }
-  .mobile-src-bar {
-    position: relative;
-  }
-  .mobile-src-bar input {
-    width: 80%;
-    max-width: 330px;
-    height: 40px;
-    border: none;
-    background-color: #eff2f1;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 40px;
-    position: absolute;
-    right: 50px;
-  }
-  .mobile-src-bar img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 7.5px;
-    right: 65px;
-  }
-  .mobile-search-bar button {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    background-color: transparent;
-    border: none;
-  }
-  .mobile-search-bar button img {
-    width: 100%;
-  }
+
 }
 @media screen and (max-width: 600px) {
+  
   .nav-pop {
     visibility: visible;
     width: 60px;
