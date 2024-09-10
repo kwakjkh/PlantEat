@@ -9,7 +9,25 @@
   font-size: 16px;
 }
 }
+@media screen and (max-width : 1200px) {
+  .prducts-wrap >.inner > .menu-title-wrap{
+    padding-top: 80px;
+    height: 150px;
+  }
+
+  }
 @media screen and (max-width : 802px) {
+  .prducts-wrap >.inner > .menu-title{
+    padding-top: 60px;
+    height: 100px;
+  }
+  .prducts-wrap >.inner > .menu-title-wrap> h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .prducts-wrap >.inner > .menu-title-wrap> .menu-subtitle {
+    font-size: 12px;
+  }
   .prducts-icon{
     width: 50%;
    gap: 5px;
@@ -17,5 +35,34 @@
   }
   .icon-button p{
     display: none;
+  }
+ }
+ @media screen and (max-width : 600px){
+  .prducts-wrap >.inner > .menu-title-wrap{
+    padding-top: 30px;
+    height: 100px;
+  }
+  .prducts-wrap >.inner > .menu-title{
+    padding: 0px;
+    height: 0px;
+  }
+  .prducts-wrap >.inner > .menu-title-wrap> h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .prducts-wrap >.inner > .menu-title-wrap> .menu-subtitle {
+    display: none;
+  }
+  .prducts-main >.prducts-icon{
+    width: 40%;
+    gap: 5px;
+    margin:  auto;
+    margin-bottom: 10px;
+  }
+ }
+ @media screen and (max-width : 500px){
+  .prducts-xilk{
+    flex-direction: column;
+    flex-wrap: wrap;
   }
  }
