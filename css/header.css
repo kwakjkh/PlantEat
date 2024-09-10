@@ -19,10 +19,10 @@
   display: none;
 }
 .header.active {
-  background-color: rgba(255, 255, 255, 0.5);
   height: 90px;
   position: fixed;
   z-index: 99999;
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px); /* 배경을 흐리게 설정 */
 }
 .nav-close {
@@ -59,6 +59,35 @@
   justify-content: space-between;
   align-items: center;
   float: left;
+}
+.header-nav li{
+  height: 100%;
+  align-content: center;
+}
+.about-us{
+  
+  display: none;
+  flex-direction: column;
+  font-size: 16px;
+  padding-bottom: 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 110px;
+}
+.about-us.active{
+  top: 90px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); /* 배경을 흐리게 설정 */
+}
+.about-us li{
+  padding: 10px;
+}
+.about-us li a{
+  font-size: 16px;
+}
+.header-nav li:hover ul{
+  display: flex;
 }
 .header-right {
   float: right;
@@ -217,14 +246,18 @@
     top: 100px;
     position: absolute;
   }
-  .mobile-header-nav li {
+  .mobile-header-nav > li {
     width: 100%;
     margin-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid white;
   }
   .mobile-header-nav li a {
     color: white;
+  }
+  .mobile-header-nav li p{
+    color: white;
+    font-family: "Oswald", sans-serif;
   }
   .header-right {
     width: 165px;
@@ -235,6 +268,19 @@
   }
   .mobile-search {
     display: inline-block;
+  }
+
+  .mobile-about-us{
+    display: none;
+  }
+  .mobile-about-us li{
+
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .mobile-about-us.active{
+    display: flex;
+    flex-direction: column;
   }
 
 }
