@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/* menu-title */
+@import url("prducts/prducts1.css");
 
 /*prducts 카테고리  */
 .icon-button {
@@ -9,7 +9,7 @@
   background-color: none;
   /* width: 95px;
   height: 75%; */
- padding: 7%;
+  padding: 7%;
   float: left;
   outline: none;
   background-color: transparent;
@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
 }
-.icon-button.active{
+.icon-button.active {
   filter: brightness(1);
 }
 .prducts-icon {
@@ -27,7 +27,7 @@
   width: 60%;
   max-width: 480px;
   gap: 25px;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 .prducts-icon > li {
   width: calc(100% / 4);
@@ -120,7 +120,7 @@
 .prducts-xilk > ul {
   margin-left: 10px;
 }
-.card.active{
+.card.active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
