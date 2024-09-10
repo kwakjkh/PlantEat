@@ -1,7 +1,7 @@
 @charset "utf-8";
 .about-tit {
   height: 400px;
-  background: linear-gradient( to top, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.349)), url("../../images/xilk/xilk-drink-ex.jpg") no-repeat center;
+  background: linear-gradient( to top, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.349)), url("../../images/mayo/Fresh_Mayo_3.png") no-repeat center;
   background-size: cover;
   position: relative;
   display: block;
@@ -98,57 +98,4 @@
     font-size: 16px;
     font-weight: 500;
     color: #333333d3;
-}
-@media screen and (max-width: 1100px) {
-  .main-tit {
-    margin: 0 80px;
-    width: calc(100% - 160px);
-    max-width: none;
-    left: 0;
-    transform: translate(0);
-  }
-}
-@media screen and (max-width: 768px) {
-  .about-tit {
-    height: 300px;
-  }
-  .main-tit {
-    margin: 0 60px;
-    width: calc(100% - 120px);
-    bottom: -120px;
-    padding: 20px 60px;
-  }
-  .the-plant-eat-w-logo {
-    width: 250px;
-  }
-  .about-txt {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 200px;
-    padding: 0px;
-  }
-  .main-tit > h1 {
-    color: white;
-    margin: 0 auto 20px;
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .about-tit {
-    height: 240px;
-  }
-  .main-tit {
-    margin: 0 40px;
-    width: calc(100% - 80px);
-    padding: 20px 40px;
-  }
-  .the-plant-eat-w-logo {
-    width: 150px;
-  }
-  .main-tit > h1 {
-    color: white;
-    margin: 0= auto 20px;
-    font-size: 24px;
-  }
 }
