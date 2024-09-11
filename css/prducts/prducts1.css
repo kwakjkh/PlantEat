@@ -9,10 +9,18 @@
   font-size: 16px;
 }
 }
+@media screen and (max-width : 1360px){
+  .prducts>.card>ul>li>a>.prducts-name{
+      white-space: nowrap;        /* 텍스트를 한 줄로 유지 */
+      overflow: hidden;           /* 넘치는 부분을 숨김 */
+      text-overflow: ellipsis;    /* 말줄임표(...) 표시 */
+}
+}
 @media screen and (max-width : 1200px) {
   .prducts-wrap >.inner > .menu-title-wrap{
     padding-top: 80px;
     height: 150px;
+
   }
 
   }
@@ -36,6 +44,8 @@
   .icon-button p{
     display: none;
   }
+  /* 줄바꿈 */
+
  }
  @media screen and (max-width : 600px){
   .prducts-wrap >.inner > .menu-title-wrap{
