@@ -1,13 +1,13 @@
 @charset "utf-8";
 .about-tit {
   height: 400px;
-  background: linear-gradient( to top, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.349)), url("../../images/xilk/xilk-drink-ex.jpg") no-repeat center;
+  background:  url("../../images/etx/tpe_about_bg.png") no-repeat center;
   background-size: cover;
   position: relative;
   display: block;
 }
 .the-plant-eat-w-logo {
-  width: 190px;
+  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;

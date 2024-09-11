@@ -2,12 +2,10 @@
 @import url("about-tpe.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
 /* 어바웃 공통영역 */
-.br768{
+.br768 {
   display: none;
 }
-
 
 /* 어바웃 메뉴 리스트 */
 .about_wrap {
@@ -398,35 +396,35 @@
 .the-plant-eat_explain h1,
 .the-plant-eat_explain h2,
 .the-plant-eat_explain h3,
-.the-plant-eat_explain strong{
+.the-plant-eat_explain strong {
   font-family: "Noto Sans KR", sans-serif;
 }
-.slogan{
+.slogan {
   width: 100%;
   max-width: 1000px;
   height: 246px;
-  background-color:rgb(18, 71, 52);
+  background-color: rgb(18, 71, 52);
   margin: 0 auto;
   border-radius: 8px;
 }
-.the-plant-eat_explain > .first-p{
+.the-plant-eat_explain > .first-p {
   font-size: 20px;
   font-weight: 500;
   color: #00000099;
 }
-.the-plant-eat_explain > .first-p > strong{
+.the-plant-eat_explain > .first-p > strong {
   color: #000000;
 }
-.the-plant-eat_explain >.second-p{
+.the-plant-eat_explain > .second-p {
   height: 190px;
 }
-.the-plant-eat_explain >.second-p.ex-p-active{
+.the-plant-eat_explain > .second-p.ex-p-active {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
   transition-delay: 0.8s;
 }
 /* 더 플랜잇은 생각했어요 */
-.the-plant-eat_explain >.second-p > .the-plant-eat-s-think {
+.the-plant-eat_explain > .second-p > .the-plant-eat-s-think {
   height: 80px;
   font-size: 40px;
   font-weight: 900;
@@ -434,7 +432,7 @@
   margin-top: 100px;
 }
 /* 망가지는 지구와 지속되는 소비 사이에서 우리가 할수 있는 일은 무엇일까? */
-.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-p {
+.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-p {
   position: relative;
   font-size: 22px;
   padding: 20px 0;
@@ -442,7 +440,7 @@
   font-weight: 500;
   color: #042416cb;
 }
-.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-bg {
+.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-bg {
   margin: 0 auto;
   width: 0;
   height: 10vw;
@@ -452,7 +450,7 @@
   transition: width 0.6s ease-in-out;
   transform: translateY(-125px);
 }
-.the-plant-eat_explain  >.second-p > .the-plant-eat-s-think-bg.think-bg-active {
+.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-bg.think-bg-active {
   width: 100%;
 }
 /* 우리는 육류의 소비량이 늘어나며 생긴 문제점을 돌아보았어요 */
@@ -462,12 +460,12 @@
   margin-right: 20%;
   color: #00000085;
 }
-.the-plant-eat_explain >.ex-strong{
+.the-plant-eat_explain > .ex-strong {
   font-size: 24px;
   font-weight: 900;
   font-family: "Noto Sans KR", sans-serif;
 }
-.the-plant-eat_explain >h5 >.ex-strong{
+.the-plant-eat_explain > h5 > .ex-strong {
   font-size: 24px;
   font-weight: 900;
   font-family: "Oswald", sans-serif;
@@ -694,7 +692,7 @@
 }
 @media screen and (max-width: 768px) {
   /* 행렬 정리 공통영역 */
-  .br768{
+  .br768 {
     display: block;
   }
   /* 잇츠베러 상단 택스트 반응형 ====================*/
@@ -782,6 +780,12 @@
   .its-better_more-info {
     height: 800px;
   }
+  .its-better_i_info > h1 {
+    font-size: 28px;
+  }
+  .its-better_i_info > p:first-of-type {
+    font-size: 16px;
+  }
   .its-better_img {
     width: 100%;
     height: auto;
@@ -824,11 +828,11 @@
     left: 274px;
     top: 37px;
   }
-  .the-plant-eat-s-think-p{
+  .the-plant-eat-s-think-p {
     line-height: 23px !important;
     font-size: 18px !important;
   }
-  .the-plant-eat-s-think-bg{
+  .the-plant-eat-s-think-bg {
     transform: translateY(-75px) !important;
   }
   .the-plant-eat_subtxt {
@@ -838,7 +842,7 @@
     margin-left: 0;
     padding: 0 20px;
   }
-  .the-plant-eat_explain{
+  .the-plant-eat_explain {
     margin: 0 20px;
   }
 }
@@ -876,6 +880,9 @@
     /* max-height: 700px; */
     padding: 20px;
   }
+  .its-better_i_info > h1 {
+    font-size: 20px;
+}
   .its-better_img-wrapping {
     height: auto;
     max-height: 550px;
@@ -887,6 +894,9 @@
   .its-better_a_pbt_list-1080 > li {
     width: 100%;
   }
+  .its-better_i_info > p:first-of-type {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 420px) {
   .its-better_a_pbt_list-1080 {
@@ -895,5 +905,11 @@
   }
   .its-better_a_pbt_list-1080 > li {
     width: 100%;
+  }
+  .go_a__shop,
+  .go_a__shop-active{
+    padding: 3px 10px;
+    font-size: 12px;
+    top: 3px;
   }
 }

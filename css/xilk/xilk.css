@@ -11,13 +11,13 @@ body {
 
 .about-tit {
   height: 400px;
-  background: url("../../images/etx/tpe_about_bg.png") no-repeat center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.349)), url("../../images/xilk/xilk-drink-ex.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   display: block;
 }
 .the-plant-eat-w-logo {
-  width: 300px;
+  width: 190px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,7 +30,7 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: rgb(18, 71, 52);
+  background-color: #ff642c;
   padding: 20px 60px;
   border-radius: 5px;
   position: absolute;
@@ -144,7 +144,7 @@ body {
   width: 100%;
   max-width: 1000px;
   height: 1200px;
-  background: url("../../images/xilk/xilk-1.jpg") no-repeat center;
+  background: url("../../images/xilk/xlik-intro-bg.png") no-repeat center;
   background-size: cover;
 }
 .xilk-intro-txt-bg > img {
@@ -254,6 +254,7 @@ body {
   font-weight: 900;
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: 0.08rem;
+  color: #ff642c;
 }
 .xilk-use > .xilk-use-txt > p {
   padding: 10px 0 0 0;
@@ -332,4 +333,30 @@ body {
 .xilk-use-food-txt > .use-txt-wrap,
 .xilk-use-drink-txt > .use-txt-wrap {
   padding: 20px;
+}
+.use-txt-wrap > h1{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+.use-txt-wrap > h3{
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 20px;
+  color: #000000b6;
+}
+.use-txt-wrap > p{
+  font-family: "Noto Sans KR", sans-serif;
+}
+.recipe-more {
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 10px 30px;
+  margin: 0 20px 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.recipe-more:hover {
+  background-color: #ff642c;
+  color: #fff;
+  border: 1px solid #a1480062;
 }

@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ABOUT 잇츠베러</title>
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" href="css/about/about.css" /> -->
+    <link rel="stylesheet" href="css/about/about.css" />
     <link rel="stylesheet" href="css/about/eats-better.css" />
     <!-- <script src="js/about-us/jquery-1.10.2.min.js"></script> -->
+    <!-- about js -->
+    <!-- <script src="js/about-us/about_jquery.js"></script> -->
+    <script src="js/about-us/about-us_eats-better.js"></script>
+    <!-- AOS 적용 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS 적용 js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 웨이 포인트 적용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <body>
@@ -63,7 +72,8 @@
               <img src="images/logo/eats-better-white-logo.png" alt="더 플랜잇 로고 화이트" />
             </div>
             <div class="main-tit">
-              <h1>EAT PLANTS <br />FOR THE PLANET</h1>
+              <h1>EAT BETTER! 
+                <br>IT’S BETTER!</h1>
               <p>Jacob Yang</p>
             </div>
           </div>
@@ -75,11 +85,166 @@
             </div>
             <h1>더 플랜잇은 지속가능하고 맛있는 식물성 단백질 식품과 솔루션을 제공하는 기업입니다.</h1>
           </div>
-          <div class="sub-txt-wrap">
-            <p>
-              (주)더플랜잇은 Eat Plants, For The Planet ( 지구를 위해서 식물을 먹자 ) 를 슬로건으로 육류의 과소비를 줄이고 지구의 환경과 인류의 건강을 위해 식물성 식품을 섭취하자는 의미입니다. 전지구적인 육류의 과도한 생산과 소비는 탄소배출량을 크게 증가시켰을 뿐만 아니라 글로벌 영양 불균형을 일으켜
-              다양한 형태로 인류와 지구의 환경에 부정적인 영향을 미쳤습니다. 이에 더플랜잇은 기술발전과 더불어 인류와 자연의 공존을 고민하면서 최선의 솔루션의 하나로 순식물성 식품 개발에 집중하고 있습니다.
-            </p>
+          <div class="about_its-better about-display">
+            <div class="its-better_txt">
+              <div class="its-better_logo">
+                <img src="images/logo/itsbetter-text-logo.png" alt="잇츠베러로고" />
+              </div>
+              <h3>IT'S BETTER</h3>
+            </div>
+            <!-- 택스트영역 -->
+            <div class="its-better_subtxt">
+              플랜잇샵에서 판매되는 상품 브랜드인 잇츠베러는 <br />
+              영양 불균형 문제를 가진 현대인들의 지속가능한 건강식을 돕는 순 식물성 식품 브랜드 입니다.
+            </div>
+            <div class="its-better_more-info">
+              <div class="its-better_img">
+                <div class="its-better_for1080">
+                  <div class="its-better_middle-img">
+                    <div class="its-better_middle-img_after">CLICK</div>
+                    <img src="images/scon/main_lemonberry-scon.jpg" alt="잇츠베러_about_메인이미지_스콘" class="ib_display-img" />
+                  </div>
+                  <div class="its-better_a_pbt-1080">
+                    <ul class="its-better_a_pbt_list-1080">
+                      <li class="scon">
+                        <img
+                          class="about-icon-toggle-1080"
+                          src="images/scon/main_lemonberry-scon.jpg"
+                          alt="스콘"
+                          data-img_src="images/scon/main_lemonberry-scon.jpg"
+                          data-img_alt="잇츠베러_about_메인이미지_스콘"
+                          data-title="잇츠베러 스콘"
+                          data-sub1="포슬포슬 촉촉한 비건 스콘!"
+                          data-sub2="아몬드 분말과 콩으로 만들어져 버터가 들어있는 일반 스콘 처럼
+                          고소하고 식감이 부드러워요!"
+                        />
+                      </li>
+                      <li class="cookie">
+                        <img
+                          src="images/icons/cracker-cookie-icon-red.png"
+                          alt="쿠키/ 크래커"
+                          data-img_src="images/cracker/Eat's_Better_Cracker_Choco_Cinnamon_5.png"
+                          data-img_alt="잇츠베러_about_메인이미지_쿠키"
+                          data-title="잇츠베러 쿠키"
+                          data-sub1="바삭하고 담백한 제로 슈거 쿠키"
+                          data-sub2="설탕이 들어있지 않아 더욱 건강하면서도 대체제인 말티톨을 사용하여 칼로리가 낮은게 특징이에요, 40g 중 6g 이나 단백질이 함유되어 운동중에 먹어도 부담이 적어요  "
+                        />
+                      </li>
+                      <li class="mayo">
+                        <img
+                          src="images/icons/mayo-icon-red.png"
+                          alt="마요"
+                          data-title="잇츠베러 마요"
+                          data-img_src="images/mayo/Fresh_Mayo_4.png"
+                          data-img_alt="잇츠베러_about_메인이미지_마요"
+                          data-sub1="약콩을 베이스로 만들어져 더욱 고소한 '국내 유일' 비건 인증이 완료된 마요네즈"
+                          data-sub2="국내 비건 마요 제품중에서 유일하게 비건식품임을 인정받은 '잇츠베러마요'는 국내산 약콩으로 만들어 원재료의 성분까지도 믿고 드실수 있는 제품이에요"
+                        />
+                      </li>
+                      <li class="cracker">
+                        <img
+                          src="images/icons/protein-icon-red.png"
+                          alt="프로틴"
+                          data-img_src="images/cracker/Eat's_Better_Cracker_Choco_Cinnamon_3.png"
+                          data-img_alt="잇츠베러_about_메인이미지_크래커"
+                          data-title="잇츠베러 크래커"
+                          data-sub1="다양하게 골라먹을수 있는 6가지 맛의 크래커"
+                          data-sub2="정제되지않은 원재료(통밀가루, 비정제사탕수수설탕 등)을 사용하여 방부제의 함유량을 줄이고,  튀기는 방식대신 오븐에 굽는 방법을 채택하여 고소하고 우유, 요거트등과 함께 먹어도 쉽게 눅눅해지지 않아요!"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="its-better_i_info">
+                  <h1 class="its-better-i-data_title">잇츠베러 스콘</h1>
+                  <p class="its-better-i-data_sub1">포슬포슬 촉촉한 비건 스콘!</p>
+                  <p class="its-better-i-data_sub2">아몬드 분말과 콩으로 만들어져 버터가 들어있는 일반 스콘 처럼 고소하고 식감이 부드러워요!</p>
+                  <button class="go_a__shop">상품 보러가기</button>
+                  <div class="its-better_a_pbt">
+                    <ul class="its-better_a_pbt_list">
+                      <li class="scon">
+                        <img
+                          class="about-icon-toggle"
+                          src="images/scon/main_lemonberry-scon.jpg"
+                          alt="스콘"
+                          data-img_src="images/scon/main_lemonberry-scon.jpg"
+                          data-img_alt="잇츠베러_about_메인이미지_스콘"
+                          data-title="잇츠베러 스콘"
+                          data-sub1="포슬포슬 촉촉한 비건 스콘!"
+                          data-sub2="아몬드 분말과 콩으로 만들어져 버터가 들어있는 일반 스콘 처럼
+                          고소하고 식감이 부드러워요!"
+                        />
+                      </li>
+                      <li class="cookie">
+                        <img
+                          src="images/icons/cracker-cookie-icon-red.png"
+                          alt="쿠키/크래커"
+                          data-img_src="images/cracker/Eat's_Better_Cracker_Choco_Cinnamon_5.png"
+                          data-img_alt="잇츠베러_about_메인이미지_쿠키"
+                          data-title="잇츠베러 쿠키"
+                          data-sub1="바삭하고 담백한 제로 슈거 쿠키"
+                          data-sub2="설탕이 들어있지 않아 더욱 건강하면서도 대체제인 말티톨을 사용하여 칼로리가 낮은게 특징이에요, 40g 중 6g 이나 단백질이 함유되어 운동중에 먹어도 부담이 적어요  "
+                        />
+                      </li>
+                      <li class="mayo">
+                        <img
+                          src="images/icons/mayo-icon-red.png"
+                          alt="마요"
+                          data-title="잇츠베러 마요"
+                          data-img_src="images/mayo/Fresh_Mayo_4.png"
+                          data-img_alt="잇츠베러_about_메인이미지_마요"
+                          data-sub1="약콩을 베이스로 만들어져 더욱 고소한 '국내 유일' 비건 인증이 완료된 마요네즈"
+                          data-sub2="국내 비건 마요 제품중에서 유일하게 비건식품임을 인정받은 '잇츠베러마요'는 국내산 약콩으로 만들어 원재료의 성분까지도 믿고 드실수 있는 제품이에요"
+                        />
+                      </li>
+                      <li class="cracker">
+                        <img
+                          src="images/icons/protein-icon-red.png"
+                          alt="프로틴"
+                          data-img_src="images/cracker/Eat's_Better_Cracker_Choco_Cinnamon_3.png"
+                          data-img_alt="잇츠베러_about_메인이미지_크래커"
+                          data-title="잇츠베러 크래커"
+                          data-sub1="다양하게 골라먹을수 있는 6가지 맛의 크래커"
+                          data-sub2="정제되지않은 원재료(통밀가루, 비정제사탕수수설탕 등)을 사용하여 방부제의 함유량을 줄이고,  튀기는 방식대신 오븐에 굽는 방법을 채택하여 고소하고 우유, 요거트등과 함께 먹어도 쉽게 눅눅해지지 않아요!"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="its-better_Better-Point">
+              <h1>잇츠베러의 BETTER Point</h1>
+              <ul class="better-Point-list">
+                <li>
+                  <div class="better-Point-img better-Point-img-1">
+                    <img src="images/etx/about-sub-1.png" alt="어바웃_Better-poin이미지1" />
+                  </div>
+                  <div class="better-Point-Txt">
+                    <h3><strong>100%</strong> 식물성 단백질</h3>
+                    <p>잇츠베러의 전 제품엔 계란, 우유, 버터, 팜유 등 동물성 재료가 일체 들어가지 않았어요. <br />다양한 이유로 동물성 식품의 섭취를 줄이고자 하는 분들께 맛있는 식물성 식품을 전합니다.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="better-Point-img better-Point-img-2">
+                    <img src="images/etx/about-sub-2.png" alt="어바웃_Better-poin이미지2" />
+                  </div>
+                  <div class="better-Point-Txt">
+                    <h3>건강한 영양성분</h3>
+                    <p>바쁜 현대인이라고 영양 성분까지 놓칠 수는 없죠. 한 끼를 먹더라도 건강하게! <br />여러분의 지속가능하고 건강한 한 끼 식사를 응원해요.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="better-Point-img better-Point-img-3">
+                    <img src="images/etx/about-sub-3.png" alt="어바웃_Better-poin이미지3" />
+                  </div>
+                  <div class="better-Point-Txt">
+                    <h3>좋은 원재료, 최소한의 첨가물</h3>
+                    <p>유통기한을 늘리기 위한 화학 합성보존제를 사용하지 않고, <br />좋은 원재료와 최소한의 첨가물만 넣어 건강하게 만들었어요</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
