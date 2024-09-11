@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("xilk-responsive.css");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Luckiest+Guy&family=Nerko+One&display=swap");
 html,
 body {
@@ -114,6 +115,9 @@ body {
   margin-top: 200px;
   text-align: center;
 }
+h2{
+  color:#a14900;
+}
 .xilk-intro-txt > h1 span {
   position: relative;
   top: 20px;
@@ -178,6 +182,7 @@ body {
 /* 실크 영양성분 =================================================================================*/
 .xilk-nutritionFacts {
   background-color: #2cc3ff;
+  overflow: hidden;
 }
 
 .left-xilk-carton,
@@ -334,17 +339,17 @@ body {
 .xilk-use-drink-txt > .use-txt-wrap {
   padding: 20px;
 }
-.use-txt-wrap > h1{
+.use-txt-wrap > h1 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 30px;
   font-weight: 900;
 }
-.use-txt-wrap > h3{
+.use-txt-wrap > h3 {
   font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 20px;
   color: #000000b6;
 }
-.use-txt-wrap > p{
+.use-txt-wrap > p {
   font-family: "Noto Sans KR", sans-serif;
 }
 .recipe-more {
