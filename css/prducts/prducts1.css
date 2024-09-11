@@ -22,8 +22,45 @@
     height: 150px;
 
   }
-
   }
+  @media screen and (max-width : 980px){
+    .card>ul>li>a>.prducts-name{
+      font-size: 18px;
+    }
+    .card>ul>li>.or-pice{
+      font-size: 17px;
+      font-weight: 1000;
+    }
+    .card>ul>li>.o-pice{
+      font-size: 17px;
+      font-weight: 1000;
+    }
+    .card>ul>li>.p-pice{
+      font-size: 20px;
+    
+  }}
+  @media screen and (max-width : 900px) {
+    .prducts >.card>ul>li>a> .shop_basket {
+      width: 38px;
+      height: 38px;
+    }
+.card>ul>li>a>.prducts-name{
+  font-size: 18px;
+}
+.card>ul>li>.or-pice{
+  font-size: 17px;
+  font-weight: 1000;
+}
+.card>ul>li>.o-pice{
+  font-size: 17px;
+  font-weight: 1000;
+}
+.card>ul>li>.p-pice{
+  font-size: 20px;
+
+}
+  }
+
 @media screen and (max-width : 802px) {
   .prducts-wrap >.inner > .menu-title{
     padding-top: 60px;
@@ -44,9 +81,34 @@
   .icon-button p{
     display: none;
   }
+  .prducts >.card>ul>li>a> .shop_basket {
+    width: 40px;
+    height: 40px;
+  }
   /* 줄바꿈 */
 
  }
+ @media screen and (max-width : 790px){
+  .card>ul{
+    width: 30%;
+  }
+
+ }
+ @media screen and (max-width : 770px){
+  .card{
+    flex-direction: column;
+    align-content: center;
+  }
+.prducts-icon{
+  width: 40%;
+  gap: 5px;
+  margin: 0 ;
+}
+ }
+ @media screen and (max-width : 665px){
+  .card>ul{
+    width: 35%;
+ }}
  @media screen and (max-width : 600px){
   .prducts-wrap >.inner > .menu-title-wrap{
     padding-top: 30px;
@@ -68,11 +130,46 @@
     gap: 5px;
     margin:  auto;
     margin-bottom: 10px;
+    
+  }
+  .prducts >.card>ul>li>a> .shop_basket {
+    width: 35px;
+    height: 35px;
   }
  }
+ @media screen and (max-width : 580px){
+  .card>ul{
+  width: 40%;
+ }}
  @media screen and (max-width : 500px){
-  .prducts-xilk{
+  .card{
     flex-direction: column;
-    flex-wrap: wrap;
+    align-content: center;
+  }
+.item-img{
+  width: 100%;
+}
+.card>ul{
+  width: 45%;
+}
+ }
+ @media screen and (max-width : 440px){
+  .card>ul{
+    width: 50%;
+  }
+ }
+ @media screen and (max-width : 400px){
+  .card>ul{
+    width: 55%;
+  }
+ }
+ @media screen and (max-width : 360px){
+  .card>ul{
+    width: 60%;
+  }
+ }
+ @media screen and (max-width : 340px){
+  .card>ul{
+    width: 65%;
   }
  }
