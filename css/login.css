@@ -1,0 +1,44 @@
+@charset "utf-8";
+.log-in{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.log-in h2{
+    font-size: 50px;
+}
+.id , .pw{
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #bbb;
+}
+.log-in p{
+    display: inline;
+    margin-right: 20px;
+}
+.log-in button{
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    max-width: 400px;
+    border: none;
+    background-color: #034934;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.log-in > ul{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.log-in ul li{
+    width: 33%;
+}

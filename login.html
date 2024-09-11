@@ -3,82 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="ko">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>로그인</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/login.css" />
-      </head>
-      <body>
-        <div id="container">
-          <nav class="mobile-header">
-            <button class="header-close">닫기</button>
-            <ul class="mobile-header-nav">
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <li><a href="products.html">PRODUCTS</a></li>
-              <li><a href="#">EVENT</a></li>
-              <li><a href="#">COMMUNITY</a></li>
-            </ul>
-          </nav>
-          <header class="header">
-            <div class="inner">
-              <button class="nav-pop"></button>
-              <a href="index.html" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
-              <ul class="header-nav">
-                <li><a href="about-us.html">ABOUT US</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">COMMUNITY</a></li>
-              </ul>
-              <ul class="header-right">
-                <li>
-                  <div class="header-search">
-                    <input type="text" />
-                    <img src="images/icons/top-search.png" alt="검색" />
-                  </div>
-                </li>
-                <li>
-                  <button class="mobile-search"></button>
-                </li>
-                <li>
-                  <a href="#"><img src="images/icons/icon _shopping-cart_.png" alt="장바구니" /></a>
-                </li>
-                <li>
-                  <a href="login.html"><img src="images/icons/icon _User_.png" alt="회원정보" /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="mobile-search-bar">
-              <div class="mobile-src-bar">
+    <div id="container">
+      <nav class="mobile-header">
+        <button class="header-close">닫기</button>
+        <ul class="mobile-header-nav">
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="inner">
+          <button class="nav-pop"></button>
+          <a href="index.html" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
+          <ul class="header-nav">
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+          </ul>
+          <ul class="header-right">
+            <li>
+              <div class="header-search">
                 <input type="text" />
                 <img src="images/icons/top-search.png" alt="검색" />
               </div>
-              <button><img src="images/icons/close.png" alt="닫기" /></button>
-            </div>
-          </header>
-          <section class="log-in">
-            <h1>Login</h1>
-            <input type="text" class="id" placeholder="아이디" />
-            <input type="text" class="pw" placeholder="비밀번호" />
-            <input type="checkbox" /> 아이디 저장 <input type="checkbox" /> 자동 로그인
-            <button>로그인</button>
-            <ul>
-              <li><a href="#">아이디 찾기</a></li>
-              <li><a href="#">비밀번호 찾기</a></li>
-              <li><a href="#">회원가입</a></li>
-            </ul>
-            <a href="#" class="sns-login kakao-login">네이버로 로그인</a>
-            <a href="#" class="sns-login naver-login">카카오로 로그인</a>
-          </section>
+            </li>
+            <li>
+              <button class="mobile-search"></button>
+            </li>
+            <li>
+              <a href="#"><img src="images/icons/icon _shopping-cart_.png" alt="장바구니" /></a>
+            </li>
+            <li>
+              <a href="login.html"><img src="images/icons/icon _User_.png" alt="회원정보" /></a>
+            </li>
+          </ul>
         </div>
-      </body>
-    </html>
+        <div class="mobile-search-bar">
+          <div class="mobile-src-bar">
+            <input type="text" />
+            <img src="images/icons/top-search.png" alt="검색" />
+          </div>
+          <button><img src="images/icons/close.png" alt="닫기" /></button>
+        </div>
+      </header>
+      <section class="log-in">
+        <div class="inner">
+          <h2>Login</h2>
+          <input type="text" class="id" placeholder="아이디" />
+          <input type="text" class="pw" placeholder="비밀번호" />
+          <input type="checkbox" / class="save-id">
+          <p>아이디 저장</p>
+          <input type="checkbox" / class="auto-login">
+          <p>자동 로그인</p>
+          <button>로그인</button>
+          <ul>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+          <a href="#" class="sns-login kakao-login">네이버로 로그인</a>
+          <a href="#" class="sns-login naver-login">카카오로 로그인</a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
