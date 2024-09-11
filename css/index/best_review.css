@@ -41,6 +41,7 @@
 }
 .review-title {
   margin-top: 15px;
+  
 }
 .review-title a {
   display: block;
@@ -166,5 +167,11 @@ left: 50px;
     width: 36px;
     height: 100px;
     left: 20px;
+  }
+  .review-title a{
+    font-size: 15px;
+  }
+  .review-p a{
+    font-size: 13px;
   }
 }
