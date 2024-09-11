@@ -42,6 +42,9 @@
 }
 
 /* prducts list */
+.card{
+  margin-bottom: 20px;
+}
 .prducts {
   display: flex;
 }
@@ -58,7 +61,8 @@
 
 .prducts-name {
   font-size: 20px;
-  margin-left: 20px;
+  margin: 5px 20px 0;
+
 }
 .prducts-pice {
   margin-left: 20px;
@@ -84,11 +88,12 @@
 }
 .p-pice {
   font-size: 20px;
-  padding: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
   float: left;
   font-size: 25px;
   font-weight: bold;
   color: #000;
+  padding-top: 10px;
 }
 
 /* 장바구니 버튼 */
@@ -160,7 +165,7 @@
 }
 .protein {
   width: calc(100% / 4);
-  height: 100%;
+  /* height: 100%; */
 }
 .prducts-protein > ul {
   margin-left: 10px;
@@ -173,3 +178,4 @@
 .protein > li > .p-pice {
   padding-top: 7px;
 }
+
