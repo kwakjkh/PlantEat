@@ -58,22 +58,10 @@
   width: 100%;
 }
 .about_its-better {
-  display: none;
-}
-.about_its-better.about-display {
-  display: block;
+  margin-top: 300px;
 }
 .about_the-plant-eat {
-  display: none;
-}
-.about_the-plant-eat.about-display {
-  display: block;
-}
-.the-plant-eat_about_main-bg {
-  display: none;
-}
-.the-plant-eat_about_main-bg.about-display {
-  display: block;
+  margin-top: 300px;
 }
 
 /* 잇츠베러 ======================================================================*/
@@ -81,7 +69,7 @@
 .its-better_txt {
   display: block;
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -315,6 +303,12 @@
 }
 .its-better_Better-Point > h1 {
   margin: 100px 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.its-better_Better-Point > h1 > strong {
+  font-size: 40px;
+  color: rgb(228, 36, 36);
+  font-weight: 900;
 }
 .better-Point-list {
   display: flex;
@@ -352,8 +346,8 @@
 /* 더플랜잇 ==========================================================================*/
 .the-plant-eat_txt {
   position: relative;
-  max-width: 1200px;
   width: 100%;
+  max-width: 1000px;
   height: 150px;
   margin: 0 auto;
   display: flex;
@@ -383,14 +377,18 @@
 .the-plant-eat_subtxt {
   max-width: 858px;
   width: 100%;
+  max-width: 858px;
   margin: 0 auto 80px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   color: #0000007a;
 }
 .the-plant-eat_explain {
-  text-align: center;
   margin-top: 140px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 .the-plant-eat_explain p,
 .the-plant-eat_explain h1,
@@ -399,16 +397,8 @@
 .the-plant-eat_explain strong {
   font-family: "Noto Sans KR", sans-serif;
 }
-.slogan {
-  width: 100%;
-  max-width: 1000px;
-  height: 246px;
-  background-color: rgb(18, 71, 52);
-  margin: 0 auto;
-  border-radius: 8px;
-}
 .the-plant-eat_explain > .first-p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #00000099;
 }
@@ -481,7 +471,7 @@
   height: 600px;
   background-color: #00000046;
   position: relative;
-  z-index: -999;
+  z-index: 1;
 }
 .the-plant-eat_about_main-section {
   width: 100%;
@@ -882,7 +872,7 @@
   }
   .its-better_i_info > h1 {
     font-size: 20px;
-}
+  }
   .its-better_img-wrapping {
     height: auto;
     max-height: 550px;
@@ -907,7 +897,7 @@
     width: 100%;
   }
   .go_a__shop,
-  .go_a__shop-active{
+  .go_a__shop-active {
     padding: 3px 10px;
     font-size: 12px;
     top: 3px;
