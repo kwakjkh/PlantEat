@@ -4,6 +4,7 @@
   width: 100%;
 }
 .best-review .inner {
+  max-width: 1400px;
   padding: 0 20px;
 }
 .best-review h2 {
@@ -174,4 +175,23 @@ left: 50px;
   .review-p a{
     font-size: 13px;
   }
+}
+@media screen and (max-width:450px){
+.review-text{
+  padding: 10px 5px;
+}
+  .review-text img{
+  height: 15px;
+}
+.review-title{
+  margin-top: 10px;
+}
+.review-p{
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.review-product a img{
+  width: 35px;
+  height: 35px;
+}
 }

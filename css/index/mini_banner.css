@@ -24,10 +24,10 @@
     margin-top: 34px;
 }
 .mini-banner1{
-    background-color: rgba(5, 103, 38, 0.25);
+    background-color: rgba(255, 100, 44, 0.25);
 }
 .mini-banner2{
-    background-color: rgba(255, 100, 44, 0.25);
+    background-color: rgba(5, 103, 38, 0.25);
 }
 .mini-banner .inner{
     position: relative;
@@ -62,4 +62,12 @@
         font-size: 30px;
     }
 
+}
+@media screen and (max-width:470px){
+    .mini-banner {
+        padding-top: 30px;
+    }
+    .mini-banner p{
+        line-height: 1.2;
+    }
 }

@@ -6,6 +6,7 @@
   padding-bottom: 110px;
 }
 .hot-item .inner {
+  max-width: 1400px;
   padding: 0 20px;
 }
 .hot-item h2 {

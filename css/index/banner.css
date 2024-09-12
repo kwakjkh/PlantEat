@@ -1,32 +1,77 @@
 @charset "utf-8";
-.banner{
-    position: relative;
-    width: 100%;
-    /* padding-top: 110px; */
-    z-index: 1 !important;
+.banner {
+  position: relative;
+  width: 100%;
+  /* padding-top: 110px; */
+  z-index: 1 !important;
 }
-.sw-banner{
-    position: relative;
-    z-index: 1 !important;
-    width: 100%;
+.sw-banner {
+  position: relative;
+  z-index: 1 !important;
+  width: 100%;
 }
-.sw-banner a{
-    width: 100%;
-    display: block;
-    position: relative;
-    z-index: 1 !important;
+.sw-banner a {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1 !important;
 }
-.sw-banner a img{
-    width: 100%;
-    display: block;
-    position: relative;
-    z-index: 1 !important;
+.sw-banner a img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1 !important;
 }
-.sw-banner .swiper-slide{
-    position: relative;
-    z-index: 1 !important;
+.sw-banner .swiper-slide {
+  position: relative;
+  z-index: 1 !important;
 }
 
-  .banner.hide{
-    margin-top: 110px;
+.banner.hide {
+  margin-top: 110px;
+}
+
+.mid-banner {
+    width: 100%;
+    aspect-ratio: 1600/484.38;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+  }
+  
+  .mid-banner a {
+    width: calc((100% - 1500px) / 2 + 1500px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+  
+  }
+  .mid-banner a img {
+    width: 100%;
+  }
+  .bottom-banner {
+    width: 100%;
+    aspect-ratio: 1600/484.38;
+    position: relative;
+    display: block;
+  }
+  .bottom-banner a {
+    width: calc((100% - 1500px) / 2 + 1500px);
+    height: 100%;
+    right: 0;
+    position: absolute;
+  }
+  .bottom-banner a img {
+    width: 100%;
+  }
+  @media screen and (max-width:1500px){
+  .mid-banner a , .bottom-banner a{
+    width: 100%;
+  }
+  .mid-banner , .bottom-banner{
+    aspect-ratio: 1400/437.5;
+  }
+  .mid-banner{
+    margin-top: 0;
+  }
   }
