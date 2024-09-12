@@ -6,6 +6,12 @@
 .br768 {
   display: none;
 }
+.br-600 {
+  display: none;
+}
+.br-420{
+  display: none;
+}
 
 /* 어바웃 메뉴 리스트 */
 .about_wrap {
@@ -388,7 +394,7 @@
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
+  padding-left: 100px;
 }
 .the-plant-eat_explain p,
 .the-plant-eat_explain h1,
@@ -397,58 +403,12 @@
 .the-plant-eat_explain strong {
   font-family: "Noto Sans KR", sans-serif;
 }
-.the-plant-eat_explain > .first-p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #00000099;
-}
-.the-plant-eat_explain > .first-p > strong {
-  color: #000000;
+.the-plant-eat-s-think{
+  padding-bottom: 10px;
 }
 .the-plant-eat_explain > .second-p {
+  padding: 10px 0;
   height: 190px;
-}
-.the-plant-eat_explain > .second-p.ex-p-active {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  transition-delay: 0.8s;
-}
-/* 더 플랜잇은 생각했어요 */
-.the-plant-eat_explain > .second-p > .the-plant-eat-s-think {
-  height: 80px;
-  font-size: 40px;
-  font-weight: 900;
-  padding-top: 40px;
-  margin-top: 100px;
-}
-/* 망가지는 지구와 지속되는 소비 사이에서 우리가 할수 있는 일은 무엇일까? */
-.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-p {
-  position: relative;
-  font-size: 22px;
-  padding: 20px 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
-  color: #042416cb;
-}
-.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-bg {
-  margin: 0 auto;
-  width: 0;
-  height: 10vw;
-  max-height: 130px;
-  background: url("../../images/etx/the-plant-eat_txt-p3_bg.png") no-repeat center;
-  background-size: cover;
-  transition: width 0.6s ease-in-out;
-  transform: translateY(-125px);
-}
-.the-plant-eat_explain > .second-p > .the-plant-eat-s-think-bg.think-bg-active {
-  width: 100%;
-}
-/* 우리는 육류의 소비량이 늘어나며 생긴 문제점을 돌아보았어요 */
-.the-plant-eat-s-search {
-  font-size: 24px;
-  font-weight: 700;
-  margin-right: 20%;
-  color: #00000085;
 }
 .the-plant-eat_explain > .ex-strong {
   font-size: 24px;
@@ -461,7 +421,7 @@
   font-family: "Oswald", sans-serif;
 }
 .the-plant-eat_explain > p {
-  line-height: 40px;
+  line-height: 30px;
 }
 
 /* 더 플랜잇 상세 페이지 */
@@ -740,7 +700,6 @@
   }
   .better-Point-list > li > .better-Point-img {
     padding: 10px;
-    box-shadow: 1px 1px 3px 2px #00000012;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -810,12 +769,12 @@
     height: 120px;
   }
   .the-plant-eat_txt > .the-plant-eat_logo {
-    width: 280px;
+    width: 250px;
   }
   .the-plant-eat_txt > h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 20px;
-    left: 274px;
+    left: 245px;
     top: 37px;
   }
   .the-plant-eat-s-think-p {
@@ -833,10 +792,13 @@
     padding: 0 20px;
   }
   .the-plant-eat_explain {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 600px) {
+  .br-600 {
+    display: block;
+  }
   .its-better_more-info {
     height: 650px;
     overflow: hidden;
@@ -857,6 +819,12 @@
   }
   .its-better_a_pbt_list-1080 > li {
     width: 100%;
+  }
+  .better-Point-Txt > p {
+    font-size: 14px;
+  }
+  .better-Point-list > li {
+    min-height: 250px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -887,8 +855,17 @@
   .its-better_i_info > p:first-of-type {
     font-size: 13px;
   }
+  .better-Point-Txt > h3 {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 420px) {
+  .br-420{
+    display: block;
+  }
+  .br-none-420 {
+    display: none;
+  }
   .its-better_a_pbt_list-1080 {
     align-items: center;
     width: 35px;
@@ -901,5 +878,11 @@
     padding: 3px 10px;
     font-size: 12px;
     top: 3px;
+  }
+  .better-Point-list > li {
+    min-height: 200px;
+  }
+  .better-Point-Txt > p {
+    font-size: 12px;
   }
 }

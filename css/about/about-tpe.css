@@ -24,11 +24,11 @@
 .the-plant-eat_about_title {
   text-align: center;
   font-family: "Noto Sans KR", sans-serif;
+  margin: 70px 0;
 }
 .the-plant-eat_about_title > strong {
   font-size: 40px;
   color: #056726;
-
   font-weight: 900;
 }
 
@@ -232,10 +232,10 @@
   top: 2px;
   border: none;
 }
-.info_close-bt:hover > span{
-  background-color: black
+.info_close-bt:hover > span {
+  background-color: black;
 }
-.info_close-bt > span{
+.info_close-bt > span {
   width: 100%;
   height: 2px;
   display: block;
@@ -245,7 +245,7 @@
   transform: translateY(-50%) rotate(45deg);
   background-color: rgb(107, 107, 107);
 }
-.info_close-bt > span:last-of-type{
+.info_close-bt > span:last-of-type {
   transform: translateY(-50%) rotate(-45deg);
 }
 .tech-infos.info_active {
@@ -278,16 +278,16 @@
   display: flex;
   justify-content: space-between;
 }
-.tech-infos > .infos-txt > .infos-txt-title > h2{
+.tech-infos > .infos-txt > .infos-txt-title > h2 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
   font-weight: 800;
 }
-.tech-infos > .infos-txt > .infos-txt-title > h2 > small{
+.tech-infos > .infos-txt > .infos-txt-title > h2 > small {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
 }
-.infos-txt-p{
+.infos-txt-p {
   font-family: "Noto Sans KR", sans-serif;
 }
 .tech-infos > .infos-txt > .infos-abt {
@@ -439,11 +439,49 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 790px){
-  .the-plant-eat_about_main-bg{
+@media screen and (max-width: 790px) {
+  .the-plant-eat_about_main-bg {
     display: none;
   }
-  .mobile-the-plant-eat_about_main-bg{
+  .mobile-the-plant-eat_about_main-bg {
     display: block !important;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper{
+    position: relative;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 40px ;
+    background-color: #034934;
+    color: #fff;
+  }
+
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .img-s {
+    width: 100%;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .img-s > img {
+    width: 100%;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .txt-s {
+    padding: 10px 20px;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .txt-s > h2 {
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .txt-s small {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .txt-s > .infos-txt-p {
+    font-size: 15px;
+  }
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-pagination{
+    position: absolute;
+    top: 0px;
+    height: 20px;
   }
 }
