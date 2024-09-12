@@ -95,23 +95,14 @@
 
  }
  @media screen and (max-width : 770px){
-  .card{
-    flex-direction: column;
-    align-content: center;
-  }
-  .card > .protein{
 
-  }
 .prducts-icon{
   width: 40%;
   gap: 5px;
   margin: 0 ;
 }
  }
- /* @media screen and (max-width : 665px){
-  .card>ul{
-    width: 45%;
- }} */
+
  @media screen and (max-width : 600px){
   .prducts-wrap >.inner > .menu-title-wrap{
     padding-top: 30px;
@@ -183,7 +174,22 @@
     font-size: 16px;
   
   }
-  .card > .protein>ul>li>.o-pice{
-    font-size: 13px;
-  }
+.prducts-protein{
+  width: 100%;
+}
+.prducts-protein >.protein>li>a>.prducts-name{
+  padding: 0 0 0 0;
+}
+.prducts-protein>ul>li>.or-pice{
+  padding: 0 0 10px 3px;
+  font-size: 14px;
+}
+.prducts-protein>ul>li>.o-pice{
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+.prducts-protein>ul>li>.p-pice{
+  padding: 0 0 10px 2px;
+  font-size: 16px;
+}
 }
