@@ -90,7 +90,7 @@
  }
  @media screen and (max-width : 790px){
   .card>ul{
-    width: 30%;
+    width: 50%;
   }
 
  }
@@ -105,10 +105,10 @@
   margin: 0 ;
 }
  }
- @media screen and (max-width : 665px){
+ /* @media screen and (max-width : 665px){
   .card>ul{
-    width: 35%;
- }}
+    width: 45%;
+ }} */
  @media screen and (max-width : 600px){
   .prducts-wrap >.inner > .menu-title-wrap{
     padding-top: 30px;
@@ -126,50 +126,58 @@
     display: none;
   }
   .prducts-main >.prducts-icon{
-    width: 40%;
+  
     gap: 5px;
     margin:  auto;
     margin-bottom: 10px;
     
   }
-  .prducts >.card>ul>li>a> .shop_basket {
+  .prducts >.card >ul>li>a> .shop_basket {
     width: 35px;
     height: 35px;
   }
  }
- @media screen and (max-width : 580px){
+ /* @media screen and (max-width : 580px){
   .card>ul{
   width: 40%;
- }}
+ }} */
  @media screen and (max-width : 500px){
   .card{
     flex-direction: column;
     align-content: center;
   }
-.item-img{
-  width: 100%;
+  .card>ul>li>.o-pice{
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+  }
+  .card>ul>li>a> .prducts-name{
+    margin: 5px 10px 0;
+  }
+    .card>ul>li>.or-pice{
+    padding: 10px 10px 10px 10px;
+ }
 }
-.card>ul{
-  width: 45%;
+@media screen and (max-width : 400px){
+.menu-title-wrap> .menu-title{
+  display: flex;
 }
- }
- @media screen and (max-width : 440px){
-  .card>ul{
-    width: 50%;
+}
+ @media screen and (max-width : 320px){
+  .card>ul>li>a>.prducts-name{
+    font-size: 16px;
   }
- }
- @media screen and (max-width : 400px){
-  .card>ul{
-    width: 55%;
+  .card>ul>li>.or-pice{
+    font-size: 15px;
+    font-weight: 1000;
+ 
   }
- }
- @media screen and (max-width : 360px){
-  .card>ul{
-    width: 60%;
+  .card>ul>li>.o-pice{
+    font-size: 15px;
+    font-weight: 1000;
+    padding: 10px 0px 10px 0px;
   }
- }
- @media screen and (max-width : 340px){
-  .card>ul{
-    width: 65%;
+  .card>ul>li>.p-pice{
+    font-size: 16px;
+  
   }
  }

@@ -52,7 +52,7 @@
   /* width: calc(100% / 4); */
   width: 100%;
   height: 100%;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   display: flex !important;
 }
 .prducts > ul {
@@ -156,6 +156,7 @@
 }
 .prducts-Snack > ul {
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 /* prducts-protein  */
 .prducts-protein {
