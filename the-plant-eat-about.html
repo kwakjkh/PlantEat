@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about/about.css" />
     <link rel="stylesheet" href="css/about/the-plant-eat-about.css" />
-    <!-- <script src="js/about-us/jquery-1.10.2.min.js"></script> -->
-    <!-- about js -->
-    <!-- <script src="js/about-us/about_jquery.js"></script> -->
-    <script src="js/about-us/about-us_the_plant_eat.js"></script>
+
+    <script src="js/about-us/the_plant_eat/about-us_the_plant_eat.js"></script>
+    <script src="js/about-us/the_plant_eat/header.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -28,7 +27,14 @@
       <nav class="mobile-header">
         <button class="header-close">닫기</button>
         <ul class="mobile-header-nav">
-          <li><a href="about-us.html">ABOUT US</a></li>
+          <li>
+            <p>ABOUT US</p>
+            <ul class="mobile-about-us">
+              <li><a href="eats-better.html">Eats Better</a></li>
+              <li><a href="the-plant-eat-about.html">The Plant Eat</a></li>
+              <li><a href="xilk.html">Xilk</a></li>
+            </ul>
+          </li>
           <li><a href="products.html">PRODUCTS</a></li>
           <li><a href="#">EVENT</a></li>
           <li><a href="#">COMMUNITY</a></li>
@@ -39,7 +45,14 @@
           <button class="nav-pop"></button>
           <a href="index.html" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
           <ul class="header-nav">
-            <li><a href="about-us.html">ABOUT US</a></li>
+            <li>
+              <a href="#">ABOUT US</a>
+              <ul class="about-us">
+                <li><a href="eats-better.html">Eats Better</a></li>
+                <li><a href="the-plant-eat-about.html">The Plant Eat</a></li>
+                <li><a href="xilk.html">Xilk</a></li>
+              </ul>
+            </li>
             <li><a href="products.html">PRODUCTS</a></li>
             <li><a href="#">EVENT</a></li>
             <li><a href="#">COMMUNITY</a></li>
@@ -92,18 +105,18 @@
           </div>
           <div class="the-plant-eat_subtxt">더 플랜잇은 지속가능하고 맛있는 식물성 단백질 식품과 솔루션을 제공하는 기업입니다.</div>
           <div class="the-plant-eat_explain">
-            <p class="first-p">총 탄소 배출량의 25%를 만들어내는 <strong>식품생산</strong></p>
-            <p class="first-p">그리고 그 탄소배출량의 대부분을 만들어내는 <strong>육류생산 과정.</strong></p>
+            <h3 class="the-plant-eat-s-think">더 플랜잇은 생각했어요</h3>
+            <p class="first-p">총 탄소 배출량의 25%를 만들어내는 <strong>식품생산</strong>
+            <br>그리고 그 탄소배출량의 대부분을 만들어내는 <strong>육류생산 과정.</strong></p>
             <div class="second-p">
-              <h3 class="the-plant-eat-s-think">더 플랜잇은 생각했어요</h3>
               <p class="the-plant-eat-s-think-p">망가지는 지구와 지속되는 식품 소비 사이에서 <br class="br768" />우리가 할수 있는 일은 무엇일까?</p>
               <div class="the-plant-eat-s-think-bg"></div>
             </div>
             <p class="the-plant-eat-s-search">우리는 먼저 육류의 소비량이 늘어나며 생긴 문제점을 돌아보았어요</p>
             <p>
-              육류의 과소비로 인한 축산, <br />
-              및 탄소 배출 그리고 비만, 당뇨등의 질병.
+              육류의 과소비로 인한 축산 및 탄소 배출, 그리고 비만, 당뇨등의 질병.
             </p>
+            <br>
             <p>그 모든 문제를 해결하는 최고의 방안을 위해</p>
             <h4 class="ex-strong">더플랜잇은</h4>
             <h5><strong class="ex-strong">Eat Plants, For The Planet</strong>( 지구를 위해서 식물을 먹자 ) 를 슬로건으로</h5>
@@ -115,7 +128,7 @@
           </div>
         </div>
       </div>
-      <h1 class="the-plant-eat_about_title">더플랜잇의 <strong>CORE TECH</strong></h1>
+      <h1 class="the-plant-eat_about_title">더플랜잇의 <br class="br-420" /><strong>CORE TECH</strong></h1>
       <div class="the-plant-eat_about_main-bg">
         <div class="the-plant-eat_about_main-section">
           <div class="video">
@@ -220,13 +233,42 @@
         <div class="inner">
           <div class="swiper sw-mobile-the-plant-eat_about">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">메뉴 1</div>
-              <div class="swiper-slide">메뉴 2</div>
-              <div class="swiper-slide">메뉴 3</div>
-              <div class="swiper-slide">메뉴 4</div>
-              <div class="swiper-slide">메뉴 5</div>
-              <div class="swiper-slide">메뉴 6</div>
+              <div class="swiper-slide">
+                <div class="txt-s">
+                  <h2>
+                    데이터 기반 시뮬레이션 기술<br />
+                    <small>P.A.M.S(Plant-based Alternatives Making System)</small>
+                  </h2>
+                  <p class="infos-txt-p">동물성 및 식물성 원료와 식품을 분자 단위까지 분석하여 구축한 국내 최대 규모의 데이터베이스 기반 시뮬레이션 기술로 빠르고 정교하게 식물성 대체식품을 개발합니다.</p>
+                </div>
+                <div class="img-s">
+                  <img src="images/etx/about-1-5-bg-1-0.jpg" alt="더 플랜잇 기술 이미지" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="txt-s">
+                  <h2>
+                    대체 식품의 원천 원료
+                    <br />
+                    (클린라벨 식물성 단백질)
+                  </h2>
+                  <p class="infos-txt-p">콩 비린내, 알레르기, 소화저해 문제가 제거된 국내산 특수 대두 종자 하영콩(Non GMO)의 구성성분 변성을 최소화하는 독자적 가공 기술 보유하고 있습니다.</p>
+                </div>
+                <div class="img-s">
+                  <img src="images/etx/about-1-5-bg-2-0.jpg" alt="더 플랜잇 기술 이미지" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="txt-s">
+                  <h2>우수한 식물성 대체식품 공급</h2>
+                  <p class="infos-txt-p">‘잇츠베러(Eat’s Better)’ 브랜드를 통해 순식물성 단백질을 손쉽고 맛있게 먹을 제품(소스, 베이커리, HMR, 음료) 으로 직접 소개하고 있습니다.</p>
+                </div>
+                <div class="img-s">
+                  <img src="images/etx/about-1-5-bg-3-0.jpg" alt="더 플랜잇 기술 이미지" />
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>

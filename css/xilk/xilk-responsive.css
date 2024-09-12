@@ -66,6 +66,9 @@
     font-size: 17px !important;
     line-height: 23px !important;
   }
+  .xilk-intro-txt-bg > img {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.048)) !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .xilk-intro-txt > h2{
