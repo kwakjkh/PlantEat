@@ -1,5 +1,5 @@
 @charset "utf-8";
-.br-768{
+.br-768 {
   display: none;
 }
 @media screen and (max-width: 1500px) {
@@ -10,8 +10,32 @@
     padding: 20px !important;
   }
 }
+@media screen and (max-width: 1080px) {
+  .xilk-use-motion-wrap > .use-to-food,
+  .xilk-use-motion-wrap > .use-to-drink {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .xilk-use-drink-txt {
+    text-align: left !important;
+  }
+  .xilk-use > .xilk-use-txt {
+    margin: 120px 20px 80px !important;
+  }
+  .left-xilk-carton {
+    flex-direction: column !important;
+  }
+  .left-xilk-carton .xilk-carton-nutritionFacts {
+    background: url("../../images/xilk/xilk-n-info-bg.png") center no-repeat !important;
+    background-size: contain !important;
+  }
+  .left-xilk-carton > .xilk-carton-n-txt > h1{
+    text-align: center;
+    transform: translateY(-20px);
+  }
+}
 @media screen and (max-width: 768px) {
-  .br-768{
+  .br-768 {
     display: block;
   }
   .xilk-use > .xilk-use-txt > h1 {
@@ -38,21 +62,61 @@
     font-size: 18px !important;
     margin-top: 40px;
   }
+  .xilk-use > .xilk-use-txt > p {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .xilk-intro-txt > h2{
+    margin-bottom: 20px !important;
+    font-size: 16px;
+  }
   .right-xilk-carton {
     padding: 20px !important;
   }
   .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
-    font-size: 18px !important;
+    font-size: 16px !important;
+  }
+  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p{
+    font-size: 10px !important;
+  }
+  .br-1980{
+    display: none;
   }
   .xilk-carton-n-txt > h2 {
-    font-size: 18px !important;
-    margin-top: 40px;
+    font-size: 14px !important;
+    margin-top: 20px !important;
   }
-  .xilk-intro-txt > h1 > span{
+  .xilk-intro-txt > h1 > span {
     font-size: 80px !important;
     margin-bottom: 30px;
+  }
+  .left-xilk-carton,
+  .right-xilk-carton{
+    height: 250px !important;
+  }
+  .left-xilk-carton::after{
+    right: -250px !important;
+    border-top: 125px solid rgba(0, 0, 0, 0) !important;
+    border-right: 125px solid rgba(0, 255, 255, 0) !important;
+    border-left: 125px solid  #ff642c !important;
+    border-bottom: 125px solid rgba(0, 0, 0, 0 ) !important;
+  }
+  .left-xilk-carton::before{
+    right: -170px !important;
+    height: 20px !important;
+  }
+  .right-xilk-carton::after{
+    left: -250px !important;
+    border-top: 125px solid rgba(0, 0, 0, 0) !important;
+    border-right: 125px solid #f1e1cc !important;
+    border-left: 125px solid  rgba(0, 255, 255, 0) !important;
+    border-bottom: 125px solid rgba(0, 0, 0, 0 ) !important;
+  }
+  .right-xilk-carton::before{
+    left: -170px !important;
+    height: 20px !important;
   }
 }
 @media screen and (max-width: 420px) {
