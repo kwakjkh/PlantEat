@@ -9,7 +9,7 @@
 .br-600 {
   display: none;
 }
-.br-420{
+.br-420 {
   display: none;
 }
 
@@ -111,7 +111,9 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  background: url("../../images/etx/eats-better-circle_bg.png") no-repeat;
   background-color: rgb(243, 236, 229);
+  background-size: contain;
   border: 1px solid #ff969634;
   border-radius: 500px;
   display: flex;
@@ -124,6 +126,8 @@
   width: 100%;
   left: 0;
   transform: translateX(0);
+  background: url("../../images/etx/eats-better-circle_bg.png") no-repeat;
+  background-color: rgb(243, 236, 229);
 }
 .its-better_more-info {
   position: relative;
@@ -403,7 +407,7 @@
 .the-plant-eat_explain strong {
   font-family: "Noto Sans KR", sans-serif;
 }
-.the-plant-eat-s-think{
+.the-plant-eat-s-think {
   padding-bottom: 10px;
 }
 .the-plant-eat_explain > .second-p {
@@ -510,6 +514,8 @@
   .its-better_img {
     border-radius: 100px 0 0 0;
     gap: 10px;
+    background: url("../../images/etx/eats-better-circle_bg-1080.png") no-repeat;
+    background-color: rgb(243, 236, 229);
   }
   .its-better_img {
     padding-left: 108px;
@@ -532,6 +538,8 @@
   }
   .its-better_mover {
     padding-left: 60px;
+    background: none;
+    background-color: rgb(243, 236, 229);
   }
   .its-better_middle-img {
     width: 500px;
@@ -644,6 +652,11 @@
   /* 행렬 정리 공통영역 */
   .br768 {
     display: block;
+  }
+  .its-better_img{
+    background: none;
+    background-color: rgb(243, 236, 229);
+
   }
   /* 잇츠베러 상단 택스트 반응형 ====================*/
   .its-better_txt {
@@ -860,7 +873,7 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .br-420{
+  .br-420 {
     display: block;
   }
   .br-none-420 {
