@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("prducts/prducts1.css");
 
+/*prducts 제목  */
+.menu-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.menu-subtitle {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+}
+
 /*prducts 카테고리  */
 .icon-button {
   border: none;
@@ -14,6 +26,7 @@
   outline: none;
   background-color: transparent;
   filter: brightness(0);
+  opacity: 0.25;
 }
 .icon-button img {
   width: 100%;
@@ -21,6 +34,7 @@
 }
 .icon-button.active {
   filter: brightness(1);
+  opacity: 1;
 }
 .prducts-icon {
   display: flex;
@@ -35,16 +49,64 @@
 .prducts-icon > li > button > p {
   font-size: 13px;
   font-weight: 1000;
-  color: #d10606;
+  color: #034934;
 }
 #prducts-xilk-tet {
   color: #ff642c;
 }
+.mobile-cate-title {
+  text-align: center;
+  font-size: 5vw;
+}
+#xilk-color {
+  color: #ff642c;
+}
+.mobile-cate-title {
+  display: none;
+}
+.mobile-cate-title > h1 {
+  display: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  padding-bottom: 11vw;
+  color: #034934;
+}
+.mobile-cate-title > h1.active {
+  display: block;
+}
+
+/* prducts 공통영역 */
+.card {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+  /* background-color: aqua; */
+}
+.card > ul {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.card > ul > li {
+  width: 100%;
+}
+.card .txt-wrap {
+  width: 100%;
+  height: 10vw;
+  /* background-color: aqua; */
+  padding: 1.4vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .txt-wrap .price-wrap {
+  display: flex;
+  gap: 0.6vw;
+}
 
 /* prducts list */
-.card{
-  margin-bottom: 20px;
-}
+
 .prducts {
   display: flex;
 }
@@ -60,12 +122,11 @@
 }
 
 .prducts-name {
-  font-size: 20px;
-  margin: 5px 20px 0;
-
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  font-size: 1.4vw;
 }
 .prducts-pice {
-  margin-left: 20px;
   color: #000;
   font-size: 25px;
 }
@@ -74,26 +135,23 @@
   font-size: 20px;
 }
 .or-pice {
-  font-size: 18px;
+  font-size: 1.4vw;
   color: #a0a0a0;
   text-decoration: line-through;
-  padding: 10px 5px 10px 20px;
-  float: left;
 }
 .o-pice {
-  font-size: 20px;
-  float: right;
-  padding: 10px;
+  font-size: 1.4vw;
   color: #ff642c;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
 }
 .p-pice {
-  font-size: 20px;
-  padding: 10px 0px 10px 0px;
-  float: left;
-  font-size: 25px;
   font-weight: bold;
   color: #000;
-  padding-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 1.6vw;
 }
 
 /* 장바구니 버튼 */
@@ -122,9 +180,6 @@
 .xilk {
   width: calc(100% / 4);
 }
-.prducts-xilk > ul {
-  margin-left: 10px;
-}
 .card.active {
   display: flex;
   justify-content: center;
@@ -136,9 +191,6 @@
 }
 .mayo {
   width: calc(100% / 4);
-}
-.prducts-moyo > ul {
-  margin-left: 10px;
 }
 
 /* prducts-Snack  */
@@ -155,7 +207,6 @@
   width: calc(100% / 4);
 }
 .prducts-Snack > ul {
-  margin-left: 10px;
   margin-bottom: 20px;
 }
 /* prducts-protein  */
@@ -168,9 +219,6 @@
   width: calc(100% / 4);
   /* height: 100%; */
 }
-.prducts-protein > ul {
-  margin-left: 10px;
-}
 
 .protein > li {
   line-height: 30px;
@@ -179,4 +227,55 @@
 .protein > li > .p-pice {
   padding-top: 7px;
 }
-
+@media screen and (max-width: 1500px) {
+  .card .txt-wrap .price-wrap {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 802px) {
+  .mobile-cate-title {
+    display: block;
+  }
+  .prducts-icon {
+    margin: 80px auto 20px;
+}
+}
+@media screen and (max-width: 600px) {
+  .mobile-cate-title > h1 {
+    padding-bottom: 11vw;
+  }
+  .card .txt-wrap .price-wrap {
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .card > ul {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .card .txt-wrap {
+    width: 100%;
+    height: 30vw;
+    /* background-color: aqua; */
+    padding: 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .prducts-name {
+    font-size: 5.4vw;
+  }
+  .or-pice {
+    font-size: 5.4vw;
+    color: #a0a0a0;
+    text-decoration: line-through;
+  }
+  .o-pice {
+    font-size: 5.4vw;
+  }
+  .p-pice {
+    font-size: 6.6vw;
+  }
+}
