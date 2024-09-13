@@ -112,7 +112,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: url("../../images/etx/eats-better-circle_bg.png") no-repeat;
-  background-color: rgb(243, 236, 229);
+  background-color: rgb(255, 248, 241);
   background-size: contain;
   border: 1px solid #ff969634;
   border-radius: 500px;
@@ -127,7 +127,7 @@
   left: 0;
   transform: translateX(0);
   background: url("../../images/etx/eats-better-circle_bg.png") no-repeat;
-  background-color: rgb(243, 236, 229);
+  background-color: rgb(255, 248, 241);
 }
 .its-better_more-info {
   position: relative;
@@ -235,8 +235,12 @@
   opacity: 0;
   transition: opacity 0.5s;
   transition-delay: 0.4s;
-  border: 1px solid #00000085;
+  border: 2px solid #DF3E3B;
   background-color: #00000000;
+  color: #DF3E3B;
+  font-weight: 800;
+  font-family: "Noto Sans KR", sans-serif;
+
 }
 .go_a__shop:hover {
   background-color: #d329293a;
@@ -515,7 +519,7 @@
     border-radius: 100px 0 0 0;
     gap: 10px;
     background: url("../../images/etx/eats-better-circle_bg-1080.png") no-repeat;
-    background-color: rgb(243, 236, 229);
+    background-color: rgb(255, 248, 241);
   }
   .its-better_img {
     padding-left: 108px;
@@ -539,7 +543,7 @@
   .its-better_mover {
     padding-left: 60px;
     background: none;
-    background-color: rgb(243, 236, 229);
+    background-color: rgb(255, 248, 241);
   }
   .its-better_middle-img {
     width: 500px;
@@ -655,7 +659,7 @@
   }
   .its-better_img{
     background: none;
-    background-color: rgb(243, 236, 229);
+    background-color: rgb(255, 248, 241);
 
   }
   /* 잇츠베러 상단 택스트 반응형 ====================*/

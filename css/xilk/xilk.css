@@ -195,20 +195,20 @@ h2 {
   transform: translateX(-100%);
   transition: transform 0.7s ease-in-out;
 }
-.left-xilk-carton::after{
+.left-xilk-carton::after {
   content: "";
   height: 0;
   width: 0;
   border-top: 175px solid rgba(0, 0, 0, 0);
   border-right: 175px solid rgba(0, 255, 255, 0);
-  border-left: 175px solid  #ff642c;;
+  border-left: 175px solid #ff642c;
   border-bottom: 175px solid rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   right: -350px;
   z-index: 99;
 }
-.left-xilk-carton::before{
+.left-xilk-carton::before {
   content: "";
   height: 20px;
   width: 100px;
@@ -242,20 +242,20 @@ h2 {
   transform: translateX(100%);
   transition: transform 0.7s ease-in-out;
 }
-.right-xilk-carton::after{
+.right-xilk-carton::after {
   content: "";
   height: 0;
   width: 0;
   border-top: 175px solid rgba(0, 0, 0, 0);
   border-right: 175px solid #f1e1cc;
-  border-left: 175px solid  rgba(0, 0, 0, 0);;
+  border-left: 175px solid rgba(0, 0, 0, 0);
   border-bottom: 175px solid rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: -350px;
   z-index: 99;
 }
-.right-xilk-carton::before{
+.right-xilk-carton::before {
   content: "";
   height: 20px;
   width: 100px;
@@ -404,6 +404,22 @@ h2 {
 }
 .use-txt-wrap > p {
   font-family: "Noto Sans KR", sans-serif;
+}
+.readMore_active{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+#reading-more{
+  border: none;
+  color: #ff642c;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+}
+#reading-more:hover{
+  color: #a14900;
 }
 .recipe-more {
   font-weight: 700;
