@@ -42,8 +42,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/index/index.js"></script>
     <script src="js/products/prducts.js"></script>
+    <script src="js/products/header.js"></script>
     <!-- AOS.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,7 +55,14 @@
         <nav class="mobile-header">
           <button class="header-close">닫기</button>
           <ul class="mobile-header-nav">
-            <li><a href="about-us.html">ABOUT US</a></li>
+            <li>
+              <p>ABOUT US</p>
+              <ul class="mobile-about-us">
+                <li><a href="eats-better.html">Eats Better</a></li>
+                <li><a href="the-plant-eat-about.html">The Plant Eat</a></li>
+                <li><a href="xilk.html">Xilk</a></li>
+              </ul>
+            </li>
             <li><a href="products.html">PRODUCTS</a></li>
             <li><a href="#">EVENT</a></li>
             <li><a href="#">COMMUNITY</a></li>
@@ -64,9 +71,16 @@
         <header class="header">
           <div class="inner">
             <button class="nav-pop"></button>
-            <a href="#" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
+            <a href="index.html" class="header-logo"><img src="images/logo/planteat-text-logo.png" alt="로고" /></a>
             <ul class="header-nav">
-              <li><a href="about-us.html">ABOUT US</a></li>
+              <li>
+                <a href="#">ABOUT US</a>
+                <ul class="about-us">
+                  <li><a href="eats-better.html">Eats Better</a></li>
+                  <li><a href="the-plant-eat-about.html">The Plant Eat</a></li>
+                  <li><a href="xilk.html">Xilk</a></li>
+                </ul>
+              </li>
               <li><a href="products.html">PRODUCTS</a></li>
               <li><a href="#">EVENT</a></li>
               <li><a href="#">COMMUNITY</a></li>
@@ -85,9 +99,16 @@
                 <a href="#"><img src="images/icons/icon _shopping-cart_.png" alt="장바구니" /></a>
               </li>
               <li>
-                <a href="#"><img src="images/icons/icon _User_.png" alt="회원정보" /></a>
+                <a href="login.html"><img src="images/icons/icon _User_.png" alt="회원정보" /></a>
               </li>
             </ul>
+          </div>
+          <div class="mobile-search-bar">
+            <div class="mobile-src-bar">
+              <input type="text" />
+              <img src="images/icons/top-search.png" alt="검색" />
+            </div>
+            <button><img src="images/icons/close.png" alt="닫기" /></button>
           </div>
         </header>
         <!--prducts 제목 -->
