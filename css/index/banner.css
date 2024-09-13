@@ -44,7 +44,7 @@
     height: 100%;
     left: 0;
     position: absolute;
-  
+    overflow: hidden;
   }
   .mid-banner a img {
     width: 100%;
@@ -54,6 +54,7 @@
     aspect-ratio: 1600/484.38;
     position: relative;
     display: block;
+    overflow: hidden;
   }
   .bottom-banner a {
     width: calc((100% - 1500px) / 2 + 1500px);
