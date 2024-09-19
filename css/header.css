@@ -14,6 +14,14 @@
 
 .mobile-header-nav {
   display: none;
+  position: relative;
+}
+.mobile-arrow{
+  width: 25px;
+  height: 25px;
+position: absolute;
+right: 8px;
+top: 27px;
 }
 .header-close {
   display: none;
