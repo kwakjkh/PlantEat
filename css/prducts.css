@@ -221,7 +221,7 @@
 }
 
 .protein > li {
-  line-height: 30px;
+  /* line-height: 30px; */
   color: #000;
 }
 .protein > li > .p-pice {
@@ -231,6 +231,7 @@
   .card .txt-wrap .price-wrap {
     flex-direction: column;
   }
+  
 }
 @media screen and (max-width: 802px) {
   .mobile-cate-title {
