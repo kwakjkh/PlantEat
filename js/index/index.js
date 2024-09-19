@@ -1,6 +1,7 @@
 window.addEventListener("load", function () {
   AOS.init();
 
+  
 
 
   window.addEventListener("resize", function () {
@@ -8,16 +9,16 @@ window.addEventListener("load", function () {
     document.querySelector(".sw-banner").style.zIndex = "1"; // 다시 z-index 설정
   });
   const swItem = new Swiper(".sw-item", {
-    slidesPerView: 2,
+    slidesPerView: 2.2,
     spaceBetween: 20,
     loop: true,
     breakpoints: {
       600: {
-        slidesPerView: 3,
+        slidesPerView: 3.2,
         spaceBetween: 20,
       },
       900: {
-        slidesPerView: 4,
+        slidesPerView: 4.2,
         spaceBetween: 20,
       },
       1200: {
@@ -32,7 +33,7 @@ window.addEventListener("load", function () {
       nextEl: ".sw-next",
       prevEl: ".sw-prev",
     },
-    slidesPerView: 2,
+    slidesPerView: 2.2,
     spaceBetween: 20,
     loop: true,
     breakpoints:{
@@ -45,7 +46,26 @@ window.addEventListener("load", function () {
         spaceBetween:40
       }
     }
+    
   });
+
+      // 페이지 로드 시 및 창 크기 조정 시 함수를 실행
+      window.addEventListener('load', adjustAOSOffset);
+      window.addEventListener('resize', adjustAOSOffset);
+  function adjustAOSOffset() {
+    const midBanner = document.querySelector('.mid-banner');
+    const bottomBanner = document.querySelector('.bottom-banner');
+
+    if (window.innerWidth <= 768) {
+      // 넓이가 768px 이하일 때 AOS offset을 제거
+      midBanner.setAttribute('data-aos-offset', '-300');
+      bottomBanner.setAttribute('data-aos-offset', '-300');
+    } else {
+      // 넓이가 768px 이상일 때 AOS offset을 다시 설정
+      midBanner.setAttribute('data-aos-offset', '300');
+      bottomBanner.setAttribute('data-aos-offset', '300');
+    }
+  }
 
 
 

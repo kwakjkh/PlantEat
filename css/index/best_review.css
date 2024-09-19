@@ -5,7 +5,7 @@
 }
 .best-review .inner {
   max-width: 1400px;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 .best-review h2 {
   font-size: 40px;
@@ -13,9 +13,9 @@
   font-weight: bold;
   padding-bottom: 35px;
 }
-.best-review .swiper-wrapper{
+/* .best-review .swiper-wrapper{
   padding : 30px 20px;
-}
+} */
 .best-review .swiper-slide {
   height: auto; /* fallback */
   aspect-ratio: 1/1.6;
