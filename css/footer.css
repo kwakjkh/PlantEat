@@ -1,5 +1,6 @@
 @charset "utf-8";
 .footer {
+  margin-top: 105px;
   color: #034934;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -94,7 +95,7 @@
   .footer .inner{
     padding: 0 20px;
   }
-  .footer  p, .footer  a{
+  .footer-info  p, .footer-info  a{
     font-size: 12px;
   }
   .upper-footer{
@@ -141,7 +142,7 @@
     margin-right: 0;
   } */
    .footer-contact{
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 20px 0 ;
    }
 }
 @media screen and (max-width : 500px){
@@ -161,5 +162,14 @@
 }
 .footer-nav > li >a {
   color: white;
+}
+.upper-footer .inner{
+  padding: 0;
+}
+.contact-ph{
+  font-size: 25px;
+}
+.footer-contact p:nth-child(3){
+  font-size: 12px;
 }
 }

@@ -33,4 +33,27 @@ window.addEventListener("load", function () {
 
 
 
+const header = document.querySelector(".header");
+const login = this.document.querySelector(".log-in h2")
+function applyCSSOnScroll() {
+  // header의 높이를 가져옴
+  const headerHeight = header.offsetHeight;
+  // 현재 스크롤 위치가 header 높이보다 클 경우
+
+
+  if (window.scrollY >= headerHeight) {
+    // header.classList.remove("hide");
+    header.classList.add("active");
+    login.classList.add("active")
+  } else {
+    // header.classList.remove("hide");
+    header.classList.remove("active");
+    login.classList.remove("active")
+  }
+}
+
+// 스크롤할 때마다 applyCSSOnScroll 함수 실행
+window.addEventListener('scroll', applyCSSOnScroll);
+
+
 })

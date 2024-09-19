@@ -147,6 +147,9 @@
 .qAa-list {
   display: none;
 }
+.community.active{
+  margin-top: 110px;
+}
 @media screen and (max-width: 1080px) {
   .community-list > ul > li > a > span > img {
     width: 16px;
@@ -213,6 +216,11 @@
   .under-active-500px {
     display: flex;
     gap: 3vw;
+  }
+}
+@media screen and (max-width:600px){
+  .community.active{
+    margin-top: 90px;
   }
 }
 @media screen and (max-width: 500px) {

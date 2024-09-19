@@ -227,6 +227,9 @@
 .protein > li > .p-pice {
   padding-top: 7px;
 }
+.prducts-wrap.active{
+  margin-top: 110px;
+}
 @media screen and (max-width: 1500px) {
   .card .txt-wrap .price-wrap {
     flex-direction: column;
@@ -241,6 +244,9 @@
 }
 }
 @media screen and (max-width: 600px) {
+  .prducts-wrap.active{
+    margin-top: 90px;
+  }
   .mobile-cate-title > h1 {
     padding-bottom: 11vw;
   }

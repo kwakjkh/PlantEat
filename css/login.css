@@ -4,10 +4,6 @@
     position: relative;
     text-align: center;
 }
-.log-in h2{
-    font-size: 50px;
-    margin-top: 80px;
-}
 .id , .pw{
     display: block;
     margin: 10px auto;
@@ -68,6 +64,17 @@
 .kakao-login{
     background-color: #fee500;
 }
-@media screen and (max-width:1200px){
-    
+.log-in h2{
+    font-size: 50px;
+    margin-top: 80px;
+    color: #034934;
+    margin-bottom: 30px;
+}
+.log-in h2.active{
+    margin-top: 190px;
+}
+@media screen and (max-width:600px){
+    .log-in h2.active{
+        margin-top: 170px;
+    }
 }

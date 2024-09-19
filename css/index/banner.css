@@ -5,24 +5,15 @@
   /* padding-top: 110px; */
   z-index: 1 !important;
 }
-.sw-banner {
-  position: relative;
-  z-index: 1 !important;
-  width: 100%;
-}
-.sw-banner a {
+.banner a {
   width: 100%;
   display: block;
   position: relative;
   z-index: 1 !important;
 }
-.sw-banner a img {
+.banner a img {
   width: 100%;
   display: block;
-  position: relative;
-  z-index: 1 !important;
-}
-.sw-banner .swiper-slide {
   position: relative;
   z-index: 1 !important;
 }
