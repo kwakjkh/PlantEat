@@ -11,6 +11,15 @@
   }
 }
 @media screen and (max-width: 1080px) {
+  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
+    font-size: 2.3vw !important;
+  }
+  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p {
+    font-size: 1.4vw !important;
+  }
+  .xilk-carton-n-txt > h2 {
+    font-size: 2vw !important;
+  }
   .xilk-use-motion-wrap > .use-to-food,
   .xilk-use-motion-wrap > .use-to-drink {
     display: flex;
@@ -29,14 +38,21 @@
     background: url("../../images/xilk/xilk-n-info-bg.png") center no-repeat !important;
     background-size: contain !important;
   }
-  .left-xilk-carton > .xilk-carton-n-txt > h1{
+  .left-xilk-carton > .xilk-carton-n-txt > h1 {
     text-align: center;
     transform: translateY(-20px);
+    font-size: 5vw;
   }
 }
 @media screen and (max-width: 768px) {
+  .br-1980 {
+    display: none;
+  }
   .br-768 {
     display: block;
+  }
+  .right-xilk-carton > .xilk-carton-n-txt {
+    width: 50% !important;
   }
   .xilk-use > .xilk-use-txt > h1 {
     font-size: 30px !important;
@@ -55,13 +71,6 @@
   .right-xilk-carton {
     padding: 20px !important;
   }
-  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
-    font-size: 18px !important;
-  }
-  .xilk-carton-n-txt > h2 {
-    font-size: 18px !important;
-    margin-top: 40px;
-  }
   .xilk-use > .xilk-use-txt > p {
     font-size: 17px !important;
     line-height: 23px !important;
@@ -71,58 +80,83 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .xilk-intro-txt > h2{
+  .right-xilk-carton > .xilk-carton-n-txt {
+    width: 60% !important;
+  }
+  .xilk-intro-txt > h2 {
     margin-bottom: 20px !important;
     font-size: 16px;
   }
   .right-xilk-carton {
     padding: 20px !important;
   }
-  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
-    font-size: 16px !important;
-  }
-  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p{
-    font-size: 10px !important;
-  }
-  .br-1980{
+  .br-1980 {
     display: none;
-  }
-  .xilk-carton-n-txt > h2 {
-    font-size: 14px !important;
-    margin-top: 20px !important;
   }
   .xilk-intro-txt > h1 > span {
     font-size: 80px !important;
     margin-bottom: 30px;
   }
   .left-xilk-carton,
-  .right-xilk-carton{
+  .right-xilk-carton {
     height: 250px !important;
   }
-  .left-xilk-carton::after{
+  .left-xilk-carton::after {
     right: -250px !important;
     border-top: 125px solid rgba(0, 0, 0, 0) !important;
     border-right: 125px solid rgba(0, 255, 255, 0) !important;
-    border-left: 125px solid  #ff642c !important;
-    border-bottom: 125px solid rgba(0, 0, 0, 0 ) !important;
+    border-left: 125px solid #ff642c !important;
+    border-bottom: 125px solid rgba(0, 0, 0, 0) !important;
   }
-  .left-xilk-carton::before{
+  .left-xilk-carton::before {
     right: -170px !important;
     height: 20px !important;
   }
-  .right-xilk-carton::after{
+  .right-xilk-carton::after {
     left: -250px !important;
     border-top: 125px solid rgba(0, 0, 0, 0) !important;
     border-right: 125px solid #f1e1cc !important;
-    border-left: 125px solid  rgba(0, 255, 255, 0) !important;
-    border-bottom: 125px solid rgba(0, 0, 0, 0 ) !important;
+    border-left: 125px solid rgba(0, 255, 255, 0) !important;
+    border-bottom: 125px solid rgba(0, 0, 0, 0) !important;
   }
-  .right-xilk-carton::before{
+  .right-xilk-carton::before {
     left: -170px !important;
     height: 20px !important;
   }
+  .xilk-use > .xilk-use-txt > p {
+    font-size: 3vw !important;
+  }
+  .xilk-use > .xilk-use-txt > h1 {
+    font-size: 25px !important;
+  }
+  .use-txt-wrap > h1 {
+    font-size: 6vw !important;
+  }
+  .use-txt-wrap > h3 {
+    font-size: 3vw !important;
+  }
+  .use-txt-wrap > p {
+    font-size: 2.6vw !important;
+    line-height: 4vw !important;
+  }
+  #reading-more {
+    font-size: 2.6vw !important;
+  }
+  .recipe-more {
+    padding: 2vw 6vw !important;
+    margin: 0 20px 20px !important;
+    font-size: 2.4vw;
+  }
 }
 @media screen and (max-width: 420px) {
+  .right-xilk-carton > .xilk-carton-n-txt {
+    width: 60% !important;
+  }
+  .right-xilk-carton .xilk-carton-p-nutritionFacts {
+    width: 40% !important;
+    height: 80% !important;
+    padding: 20px 0 !important;
+  }
   .xilk-use > .xilk-use-txt > h1 {
     font-size: 23px !important;
   }
@@ -132,20 +166,26 @@
   .xilk-explain-txt > .txt-1 > h1,
   .xilk-explain-txt > .txt-2 > h1 {
     padding-top: 15px !important;
-    font-size: 23px !important;
+    font-size: 6vw !important;
   }
   .xilk-explain-txt p {
-    font-size: 14px !important;
+    font-size: 3vw !important;
     line-height: 20px !important;
   }
   .right-xilk-carton {
     padding: 20px !important;
   }
   .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
-    font-size: 14px !important;
+    font-size: 2.9vw !important;
   }
-  .xilk-carton-n-txt > h2 {
-    font-size: 14px !important;
-    margin-top: 40px;
+  .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p {
+    font-size: 2vw !important;
+  }
+  .right-xilk-carton > .xilk-carton-n-txt > h2 {
+    font-size: 2.3vw !important;
+    margin-top: 20px !important;
+  }
+  .xilk-use > .xilk-use-txt > h1 {
+    font-size: 6vw !important;
   }
 }
