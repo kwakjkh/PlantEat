@@ -227,20 +227,20 @@
 }
 /* 잇츠베러 상품 보러가기 */
 .go_a__shop {
-  padding: 8px 30px;
+  padding: 7px 30px;
   border-radius: 50px;
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: 0;
   opacity: 0;
   transition: opacity 0.5s;
   transition-delay: 0.4s;
   border: 2px solid #DF3E3B;
-  background-color: #00000000;
+  background-color: #ffffff70;
   color: #DF3E3B;
+  font-size: 13px;
   font-weight: 800;
   font-family: "Noto Sans KR", sans-serif;
-
 }
 .go_a__shop:hover {
   background-color: #d329293a;
@@ -672,6 +672,7 @@
   .its-better_i_info.more-infoActive {
     width: 100%;
     height: 200px;
+    padding: 0 20px;
   }
   .its-better_txt > h3 {
     font-size: 20px;
@@ -693,6 +694,10 @@
     width: 100%;
     margin-left: 0;
     padding: 0 20px;
+  }
+  .go_a__shop {
+    font-size: 2vw !important;
+    font-weight: 800;
   }
   /* 잇츠베러 베러 포인트 반응형 */
   .better-Point-list {
@@ -843,6 +848,9 @@
   .better-Point-list > li {
     min-height: 250px;
   }
+  .its-better_i_info.more-infoActive > p:last-of-type{
+    padding: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .its-better_more-info {
@@ -896,6 +904,7 @@
     font-size: 12px;
     top: 3px;
   }
+  
   .better-Point-list > li {
     min-height: 200px;
   }

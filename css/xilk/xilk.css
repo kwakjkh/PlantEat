@@ -274,12 +274,12 @@ h2 {
   text-align: right;
 }
 .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 900;
   font-family: "Noto Sans KR", sans-serif;
 }
 .right-xilk-carton > .xilk-carton-n-txt > .nutritionFacts-protein > p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #ff642c;
   font-family: "Noto Sans KR", sans-serif;
@@ -292,7 +292,7 @@ h2 {
   display: flex;
 }
 .xilk-carton-n-txt > h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 40px;
   font-family: "Noto Sans KR", sans-serif;
   color: #000;
@@ -311,7 +311,6 @@ h2 {
   font-size: 40px;
   font-weight: 900;
   font-family: "Noto Sans KR", sans-serif;
-  letter-spacing: 0.08rem;
   color: #ff642c;
 }
 .xilk-use > .xilk-use-txt > p {
@@ -325,6 +324,7 @@ h2 {
 }
 .xilk-use-motion-wrap {
   width: 100%;
+  margin-bottom: 10vw
 }
 .xilk-use-motion-wrap > .use-to-food,
 .xilk-use-motion-wrap > .use-to-drink {
