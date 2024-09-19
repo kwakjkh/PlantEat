@@ -91,7 +91,7 @@
  @media screen and (max-width : 790px){
   .card>ul{
     width: 50%;
-  }
+  } 
 
  }
  @media screen and (max-width : 770px){
@@ -154,9 +154,14 @@
 @media screen and (max-width : 400px){
 .menu-title-wrap> .menu-title{
   display: flex;
+  justify-content: center;
 }
 }
  @media screen and (max-width : 320px){
+  .menu-title-wrap> .menu-title{
+    display: flex;
+    justify-content: center;
+  }
   .card>ul>li>a>.prducts-name{
     font-size: 15px;
   }
