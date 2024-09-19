@@ -4,25 +4,22 @@ window.addEventListener("load", function () {
   
 
 
-  window.addEventListener("resize", function () {
-    swBanner.update();
-    document.querySelector(".sw-banner").style.zIndex = "1"; // 다시 z-index 설정
-  });
+
   const swItem = new Swiper(".sw-item", {
     slidesPerView: 2.2,
     spaceBetween: 20,
     loop: true,
     breakpoints: {
       600: {
-        slidesPerView: 3.2,
+        slidesPerView: 2.2,
         spaceBetween: 20,
       },
       900: {
-        slidesPerView: 4.2,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
@@ -38,11 +35,11 @@ window.addEventListener("load", function () {
     loop: true,
     breakpoints:{
       800:{
-        slidesPerView:3,
+        slidesPerView:2.8,
         spaceBetween:30
       },
       1200:{
-        slidesPerView:3,
+        slidesPerView:2.8,
         spaceBetween:40
       }
     }

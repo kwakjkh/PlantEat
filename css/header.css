@@ -161,6 +161,9 @@ top: 27px;
 .mobile-header-logo{
   display: none;
 }
+.nav-pop-inner{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .mobile-header-logo{
     display: block;
@@ -251,6 +254,7 @@ top: 27px;
     right: calc(100% - 300px);
   }
   .nav-pop-inner{
+    display: block;
     width: 85px;
     float: left;
     height: 100%;
@@ -277,7 +281,7 @@ top: 27px;
     width: 70%;
     display: flex;
     flex-direction: column;
-    top: 100px;
+    top: 130px;
     position: absolute;
   }
   .mobile-header-nav > li {

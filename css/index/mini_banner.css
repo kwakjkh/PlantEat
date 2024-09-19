@@ -57,15 +57,19 @@
 @media screen and (max-width : 1200px){
     .mini-banner .inner::after{
         background-image: none;
+        display: none;
     }
     .mini-banner p{
         font-size: 30px;
+    }
+    .mini-banner2{
+        margin-top: 0;
     }
 
 }
 @media screen and (max-width:470px){
     .mini-banner {
-        padding-top: 30px;
+        padding-top: 25px;
     }
     .mini-banner p{
         line-height: 1.2;
