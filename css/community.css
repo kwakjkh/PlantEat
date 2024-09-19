@@ -57,7 +57,7 @@
 .title-list2{
     display: flex;
     width: 30%;
-    background-color: aqua;
+
 }
 .title-list2 li{
     width: calc(100% / 3);
@@ -66,7 +66,7 @@
   display: flex;
   width: 100%;
 
-  /* justify-content: center; */
+
 }
 .community-list > ul {
 }
@@ -87,6 +87,9 @@
   height: 20px;
 }
 /*  notice-list*/
+.notice-list li > a > span {
+  width: calc(100% / 5);
+}
 /* qAa-list */
 .qAa-list {
   display: none;
