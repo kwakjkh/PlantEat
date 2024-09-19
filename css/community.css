@@ -2,6 +2,17 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /*  */
+.under-500px {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.under-active-500px {
+  display: none;
+  font-size: 10px;
+  margin-left: calc(15% + 10px);
+  margin-top: 2vw;
+  color: rgba(0, 0, 0, 0.664);
+  font-family: "Noto Sans KR", sans-serif;
+}
 .menu-title {
   font-family: "Oswald", sans-serif;
 }
@@ -11,6 +22,7 @@
   margin: 0 auto;
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 10vw;
 }
 /* 커뮤니티 제목 */
 .community-title {
@@ -20,77 +32,231 @@
   position: relative;
 }
 .community-title > h2 {
-  width: calc(20% / 2);
+  width: 150px;
   height: 40px;
   margin: 0 auto;
   padding-top: 5px;
   float: left;
-  font-size: 1.1vw;
-  font-weight: 1000;
-  background-color: #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgba(117, 126, 120, 0.589);
+  color: #fff;
   border-radius: 30px 30px 0 0;
   text-align: center;
-  padding-top: 0.4vw;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.community-title > h2:hover {
+  background-color: #034934b4;
+}
+.community-notice-title.active,
+.community-qAa-title.active {
+  background-color: #034934;
 }
 /* 커뮤니티 리스트 */
 .title-wrap {
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: block;
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: #ddd;
+  align-items: center;
+  background-color: #034934;
+  color: #fff;
   font-weight: 600;
   /* text-align: center; */
-  font-size: 0.9vw;
-  padding: 10px 4vh;
+  font-size: 16px;
+  padding: 10px 0;
 }
-.title-list1{
-    display: flex;
-    width: 50%;
-    /* background-color: aqua; */
-}
-.title-list1 li{
-    width: calc(100% / 2);
-}
-.title-list2{
-    display: flex;
-    width: 30%;
-
-}
-.title-list2 li{
-    width: calc(100% / 3);
-}
-.community-list {
+.title-list {
   display: flex;
   width: 100%;
-
-
+  /* background-color: aqua; */
+  text-align: center;
+}
+.title-list > li {
+  width: 10%;
+}
+.title-list > .tLt {
+  width: 70%;
 }
 /* .community-list > ul {
 } */
 .community-list > ul > li {
-  display: block;
   width: 100%;
-  height: 40px;
+  height: 50px;
   border-bottom: 1px solid #ddd;
-  margin-top: 10px;
-  padding: 0 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .community-list > ul > li > a > span {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 20px;
 }
-.community-list > ul > li > a > img {
+.community-list > ul > li > a > span > img {
   width: 20px;
   height: 20px;
 }
+.under-500px {
+  display: flex;
+  width: 30%;
+}
+.under-500px > li,
+.under-500px > span {
+  width: 100%;
+  text-align: center;
+}
 /*  notice-list*/
-.notice-list li > a > span {
-  width: calc(100% / 5);
+.notice-list li > a,
+.qAa-list li > a {
+  display: flex;
+}
+.notice-list li > a:hover,
+.qAa-list li > a:hover {
+  color: #00850b;
+}
+.notice-list li > a > span,
+.notice-list li > a > img,
+.qAa-list li > a > span,
+.qAa-list li > a > img {
+  width: 10%;
+}
+.notice-list li > a > span,
+.qAa-list li > a > span {
+  font-size: 16px;
+}
+.notice-list li > a > .tit,
+.qAa-list li > a > .tit {
+  width: 70%;
+}
+.imfortant-notice > a > .tit {
+  font-weight: 600;
+}
+.notice-list li > a > .num,
+.notice-list li > a > .name,
+.notice-list li > a > .date,
+.notice-list li > a > .count,
+.qAa-list li > a > .num,
+.qAa-list li > a > .name,
+.qAa-list li > a > .date,
+.qAa-list li > a > .count {
+  text-align: center;
 }
 /* qAa-list */
 .qAa-list {
   display: none;
+}
+@media screen and (max-width: 1080px) {
+  .community-list > ul > li > a > span > img {
+    width: 16px;
+    height: 16px;
+  }
+  .title-wrap {
+    font-size: 14px;
+  }
+  .title-list > .tLt {
+    width: 50%;
+  }
+  .notice-list li > a > .tit,
+  .qAa-list li > a > .tit {
+    width: 50%;
+  }
+  .title-list > li {
+    width: 15%;
+    padding: 0 10px;
+  }
+  .notice-list li > a > span,
+  .qAa-list li > a > span {
+    font-size: 14px;
+    padding: 0 10px;
+    width: 15%;
+  }
+}
+@media screen and (max-width: 617px) {
+  .community-title > h2 {
+    font-size: 16px;
+    width: 130px;
+  }
+  .title-wrap {
+    height: auto;
+    padding: 15px;
+  }
+  .community-list > ul > li {
+    height: auto;
+    padding: 15px;
+  }
+  .title-wrap {
+    font-size: 14px;
+  }
+  .title-list > .tLt {
+    width: 50%;
+  }
+  .notice-list li > a > .tit,
+  .qAa-list li > a > .tit {
+    width: 50%;
+    font-weight: 600;
+  }
+  .title-list > li {
+    width: 15%;
+    padding: 0 10px;
+  }
+  .notice-list li > a > span,
+  .qAa-list li > a > span {
+    font-size: 14px;
+    padding: 0 10px;
+    width: 15%;
+  }
+  .under-500px {
+    display: none;
+  }
+  .under-active-500px {
+    display: flex;
+    gap: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .community-title > h2 {
+    font-size: 13px;
+    width: 120px;
+  }
+  .community-list > ul > li > a > span > img {
+    width: 14px;
+    height: 14px;
+  }
+  .title-wrap {
+    font-size: 13px;
+  }
+  .title-list > li {
+    width: 15%;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .title-list > .tLt {
+    width: 80%;
+  }
+  .notice-list li > a > .tit,
+  .qAa-list li > a > .tit {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .notice-list li > a > .name,
+  .qAa-list li > a > .name {
+    width: 20%;
+  }
+  .title-list > .tLp {
+    width: 20%;
+  }
+  .notice-list li > a > .tit,
+  .qAa-list li > a > .tit {
+    font-weight: 600;
+  }
+  .notice-list li > a > span,
+  .qAa-list li > a > span {
+    font-size: 12px;
+    padding: 0 10px;
+    width: 15%;
+  }
 }
