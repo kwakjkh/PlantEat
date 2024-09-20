@@ -235,9 +235,9 @@
   opacity: 0;
   transition: opacity 0.5s;
   transition-delay: 0.4s;
-  border: 2px solid #DF3E3B;
+  border: 2px solid #df3e3b;
   background-color: #ffffff70;
-  color: #DF3E3B;
+  color: #df3e3b;
   font-size: 13px;
   font-weight: 800;
   font-family: "Noto Sans KR", sans-serif;
@@ -633,7 +633,19 @@
   }
   .its-better_i_info.more-infoActive {
     height: 400px;
+    width: 100%;
+    max-width: 654px;
     margin-top: 0;
+  }
+  .its-better_i_info.more-infoActive > p {
+    width: 100%;
+  }
+  .its-better-i-data_sub1 {
+    font-size: 19px;
+  }
+  .its-better-i-data_sub2 {
+    padding-right: 10px;
+    padding-top: 10px;
   }
   .the-plant-eat_flip {
     width: 200px;
@@ -657,10 +669,9 @@
   .br768 {
     display: block;
   }
-  .its-better_img{
+  .its-better_img {
     background: none;
     background-color: rgb(255, 248, 241);
-
   }
   /* 잇츠베러 상단 택스트 반응형 ====================*/
   .its-better_txt {
@@ -698,6 +709,9 @@
   .go_a__shop {
     font-size: 2vw !important;
     font-weight: 800;
+  }
+  .its-better_middle-img_after {
+    opacity: 1;
   }
   /* 잇츠베러 베러 포인트 반응형 */
   .better-Point-list {
@@ -842,14 +856,26 @@
   .its-better_a_pbt_list-1080 > li {
     width: 100%;
   }
+  .its-better_i_info.more-infoActive {
+    padding: 0;
+    padding-right: 20px;
+  }
   .better-Point-Txt > p {
     font-size: 14px;
   }
   .better-Point-list > li {
     min-height: 250px;
   }
-  .its-better_i_info.more-infoActive > p:last-of-type{
-    padding: none;
+  .its-better_i_info.more-infoActive > p:last-of-type {
+    padding: 0;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .go_a__shop {
+    top: 0;
+    padding: 8px 13px;
+    font-size: 2vw !important;
+    font-weight: 800;
   }
 }
 @media screen and (max-width: 500px) {
@@ -903,12 +929,37 @@
     padding: 3px 10px;
     font-size: 12px;
     top: 3px;
+    border: 1px solid;
   }
-  
+
   .better-Point-list > li {
     min-height: 200px;
   }
   .better-Point-Txt > p {
     font-size: 12px;
+  }
+  .its-better_Better-Point > h1 {
+    margin: 10vw 0;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .its-better_more-info {
+    height: 130vw;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 380px) {
+  .its-better_txt > .its-better_logo {
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .its-better_txt > .its-better_logo > img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  .its-better_txt > h3 {
+    display: none;
   }
 }
