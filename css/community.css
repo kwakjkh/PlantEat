@@ -267,4 +267,9 @@
     padding: 0 10px;
     width: 15%;
   }
+    .title-list> .tLn,  .title-list>.tLt{
+      font-size: 12px;
+    }
+
+
 }
