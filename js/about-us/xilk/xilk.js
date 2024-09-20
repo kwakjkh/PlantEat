@@ -1,59 +1,35 @@
 window.addEventListener("load", function () {
-  // AOS.init();
-  const navPop = this.document.querySelector(".nav-pop");
-  const mobileHeader = this.document.querySelector(".mobile-header");
-  const headerClose = this.document.querySelector(".header-close");
-  navPop.addEventListener("click", function () {
-    mobileHeader.classList.add("mobile-header-active");
+  const left_xilk_carton = this.document.querySelector(".left-xilk-carton");
+  const right_xilk_carton = this.document.querySelector(".right-xilk-carton");
+  const waypoint_xilk_left = new Waypoint({
+    element: document.querySelector(".xilk-nutritionFacts"),
+    handler: function (direction) {
+      // console.log(direction);
+      if (direction === "down") {
+        left_xilk_carton.classList.add("carton_active");
+      } else {
+        left_xilk_carton.classList.remove("carton_active");
+      }
+    },
+    offset: "50%",
   });
-  headerClose.addEventListener("click", function () {
-    mobileHeader.classList.remove("mobile-header-active");
+  const waypoint_xilk_right = new Waypoint({
+    element: document.querySelector(".xilk-nutritionFacts"),
+    handler: function (direction) {
+      // console.log(direction);
+      if (direction === "down") {
+        right_xilk_carton.classList.add("carton_active");
+      } else {
+        right_xilk_carton.classList.remove("carton_active");
+      }
+    },
+    offset: "20%",
   });
 
-  const mobileAbout = this.document.querySelector(".mobile-header-nav li img")
-  const mobileAboutLi = this.document.querySelector(".mobile-about-us")
-  mobileAbout.addEventListener("click",function(){
-    mobileAboutLi.classList.toggle("active")
+  const readingMore = this.document.querySelector("#reading-more");
+  const hideP = this.document.querySelector(".use-txt-wrap-p");
+  readingMore.addEventListener("click", function(){
+    hideP.classList.remove("readMore_active")
+    readingMore.style.display = "none"
   })
-
-
-
-
-
-    
-const mbSrc = this.document.querySelector(".mobile-search")
-const mbSrcBar = this.document.querySelector(".mobile-search-bar")
-const mbClose = this.document.querySelector(".mobile-search-bar > button")
-mbSrc.addEventListener("click",function(){
-  mbSrcBar.classList.toggle("active")
-})
-mbClose.addEventListener("click", function() {
-  mbSrcBar.classList.remove("active");
 });
-
-
-
-const header = document.querySelector(".header");
-const inner = this.document.querySelector(".wrap > .inner")
-function applyCSSOnScroll() {
-// header의 높이를 가져옴
-const headerHeight = header.offsetHeight;
-// 현재 스크롤 위치가 header 높이보다 클 경우
-
-
-if (window.scrollY >= headerHeight) {
-  // header.classList.remove("hide");
-  header.classList.add("active");
-  inner.classList.add("active")
-} else {
-  // header.classList.remove("hide");
-  header.classList.remove("active");
-  inner.classList.remove("active")
-}
-}
-
-// 스크롤할 때마다 applyCSSOnScroll 함수 실행
-window.addEventListener('scroll', applyCSSOnScroll);
-
-
-})
