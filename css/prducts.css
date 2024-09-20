@@ -243,6 +243,22 @@
   .prducts-icon {
     margin: 80px auto 20px;
 }
+.prducts-name {
+  font-size: 2vw;
+  white-space: nowrap;        /* 텍스트를 한 줄로 유지 */
+  overflow: hidden;           /* 넘치는 부분을 숨김 */
+  text-overflow: ellipsis; 
+}
+.or-pice {
+  font-size: 2vw;
+
+}
+.o-pice {
+  font-size: 2vw;
+}
+.p-pice {
+  font-size: 2vw;
+}
 }
 @media screen and (max-width: 600px) {
   .prducts-wrap.active{
