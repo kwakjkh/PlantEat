@@ -48,7 +48,7 @@
     border: none;
 } */
 .sns-login{
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 10px;
     width: 70%;
     max-width: 400px;
@@ -62,10 +62,12 @@
     left: 20px;
 }
 .naver-login{
+    margin: 40px auto 0;
     background-color: #00d337;
     color: white;
 }
 .kakao-login{
+    margin: 10px auto 0;
     background-color: #fee500;
 }
 .log-in h2{
