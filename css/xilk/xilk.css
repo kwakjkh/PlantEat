@@ -107,6 +107,14 @@ body {
   font-weight: 500;
   color: #333333d3;
 }
+.wrap > .inner.active{
+  margin-top: 110px;
+}
+@media screen and (max-width:600px){
+  .wrap > .inner.active{
+    margin-top: 90px;
+  }
+}
 /* 실크 인트로 ================================================================================= */
 .xilk-intro {
   margin-top: 200px;
