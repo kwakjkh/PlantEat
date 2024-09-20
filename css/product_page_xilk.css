@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.main_p-page {
+  width: 100%;
+  display: flex;
+  padding: 0 3vw;
+}
+
+/* 상단 좌측 */
+.main_p-page > .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main_p-page > .left > .main_img {
+  width: 100%;
+}
+.main_p-page > .left img {
+  width: 100%;
+}
+
+.sub_img-wrap {
+  width: 100%;
+  max-width: 400px;
+}
+.sub_img-wrap > .sub_img-list {
+  width: 100%;
+  display: flex;
+  gap: 0.5vw;
+}
+.sub_img-wrap > .sub_img-list > li {
+  width: 100%;
+}
+
+/* 상단 우측 */
+.main_p-page > .right {
+  width: 100%;
+  padding: 2vw 3vw;
+}
+.main_p-page > .right > .title > h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  color: #034934;
+}
+.main_p-page > .right > .title > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff642c;
+  padding-top: 1vw;
+}
+/* 상단 우측 가격 */
+.main_p-page > .right > .price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vw;
+  align-items: flex-end;
+}
+.main_p-page > .right > .price > .p-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8vw;
+}
+.p-wrap > .oPt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(194, 194, 194);
+  text-decoration: line-through;
+}
+.p-wrap > .dPt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.sale_p {
+  color: #ff642c;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 25px;
+}
+/* 상단 우측 택배 배송 */
+.delivery {
+  width: 100%;
+  padding-top: 1vw;
+}
+.delivery > .d-info {
+  display: flex;
+  gap: 0.3vw;
+  align-items: center;
+}
+.delivery > .d-info > .delivery-icon {
+  width: 25px;
+}
+.delivery > .d-info > .delivery-icon > img {
+  width: 100%;
+}
+.delivery p {
+  font-family: "Inter", "pretendard", sans-serif !important;
+  font-size: 14px;
+}
+.delivery p strong {
+  font-weight: 700;
+  font-family: "Inter", "pretendard", sans-serif !important;
+}
+/* 첫구매 할인 쿠폰 */
+.first_coupon {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 5px 10px;
+  margin-top: 0.3vw;
+}
