@@ -67,3 +67,8 @@
     margin-top: 0;
   }
   }
+  @media screen and (max-width:768px){
+    .mid-banner, .bottom-banner{
+      aspect-ratio: 320/150;
+    }
+  }

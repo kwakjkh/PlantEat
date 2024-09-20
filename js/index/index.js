@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
 
 
   const swItem = new Swiper(".sw-item", {
-    slidesPerView: 2.2,
+    slidesPerView: 1.3,
     spaceBetween: 20,
     loop: true,
     breakpoints: {
@@ -52,18 +52,22 @@ window.addEventListener("load", function () {
   function adjustAOSOffset() {
     const midBanner = document.querySelector('.mid-banner');
     const bottomBanner = document.querySelector('.bottom-banner');
-
+    const topBannerImg = document.querySelector(".top-banner-img")
+    const midBannerImg = document.querySelector(".mid-banner-img")
+    const bottomBannerImg = document.querySelector(".bottom-banner-img")
     if (window.innerWidth <= 768) {
       // 넓이가 768px 이하일 때 AOS offset을 제거
       midBanner.setAttribute('data-aos-offset', '-300');
       bottomBanner.setAttribute('data-aos-offset', '-300');
+      topBannerImg.setAttribute("src","images/banner/banner_mobile.png")
+      midBannerImg.setAttribute("src", "images/banner/eatsbetter_mobile.png")
     } else {
       // 넓이가 768px 이상일 때 AOS offset을 다시 설정
       midBanner.setAttribute('data-aos-offset', '300');
       bottomBanner.setAttribute('data-aos-offset', '300');
+      midBannerImg.setAttribute("src","images/banner/eatsbetter.png")
     }
   }
-
 
 
 
