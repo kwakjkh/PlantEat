@@ -53,6 +53,7 @@
   font-size: 16px;
   font-weight: 700;
 }
+
 .tMT {
   transform: translateY(-80%);
   animation: tMMT 0.3s;
@@ -170,3 +171,40 @@
     height: 100%;
     width: 100%;
 }
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .event>.inner>.menu-title-wrap{
+    padding-top: 80px;
+
+  }
+  .event>.inner>.menu-title-wrap>.menu-title{
+    font-size: 40px;
+  }
+  .event >.inner > .menu-title-wrap> p{
+    font-size: 12px;
+  }
+
+  }
+.title> h1{
+  font-size: 35px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .event >.inner > .menu-title-wrap> p{
+      display: none;
+    }
+  }
+@media screen and (max-width: 320px) {
+  .event>.inner>.menu-title-wrap>.menu-title{
+      font-size: 30px;}
+  .event>.inner>.menu-title-wrap{
+        height: 200px;
+        padding-top: 30PX;
+      }
+  .title> h1{
+    font-size: 25px;
+  }
+
+
+  }
