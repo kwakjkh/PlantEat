@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/product_page_xilk.css" />
 
+    <script src="js/product-page.js"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS -->
@@ -145,19 +146,50 @@
                 </div>
                 <!-- 갯수 -->
                 <div class="count">
-                    <!-- 상품명 -->
-                    <div class="product-txt"></div>
+                  <!-- 상품명 -->
+                  <div class="product-txt">
                     <h1>XILK 오트블렌드 오리지널 950ml</h1>
+                  </div>
+                  <div class="count_box">
+                    <button onclick="discount(1, 3800)" id="discount">-</button>
+                    <div class="num">1</div>
+                    <button onclick="add(1, 3800)" id="add">+</button>
+                  </div>
+                  <div class="all_p">3,800</div>
                 </div>
                 <!-- 배송 -->
                 <div class="delivery">
+                  <div class="d-info-wrap">
                     <div class="d-info">
-                        <div class="delivery-icon">
-                            <img src="images/icons/delivery.png" alt="택배 배송 아이콘" />
-                          </div>
-                          <p>3,500원<strong>(35,000원 이상 구매 시 무료)</strong></p>
+                      <div class="delivery-icon">
+                        <img src="images/icons/delivery.png" alt="택배 배송 아이콘" />
+                      </div>
+                      <p>3,500원<strong>(35,000원 이상 구매 시 무료)</strong></p>
                     </div>
-                    <button class="first_coupon">첫 구매 할인 쿠폰 사용하기</button>
+                    <button onclick="couponDiscount(3500)" class="first_coupon">첫 구매 할인 (배송비 할인) 사용하기</button>
+                  </div>
+                  <div id="coupon-discount" >
+                    +3,500
+                  </div>
+                </div>
+                <!-- 총 가격 및 계산 -->
+                <div class="pay">
+                  <div class="pay_price">
+                    <h1>TOTAL</h1>
+                    <div class="total_price">
+                      3,800
+                    </div>
+                  </div>
+                  <div class="p_menu">
+                    <button class="payNow">바로구매</button>
+                    <button>장바구니</button>
+                    <button>관심상품</button>
+                  </div>
+                  <!-- 간편구매 -->
+                  <div class="another_pay">
+                    <button class="naver_pay"></button>
+                    <button class="kakao_pay"></button>
+                  </div>
                 </div>
               </div>
             </div>
