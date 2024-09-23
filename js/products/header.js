@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     mobileHeader.classList.remove("mobile-header-active");
   });
 
-  const mobileAbout = this.document.querySelector(".mobile-header-nav li img")
+  const mobileAbout = this.document.querySelector(".mobile-toggle")
   const mobileAboutLi = this.document.querySelector(".mobile-about-us")
   mobileAbout.addEventListener("click",function(){
     mobileAboutLi.classList.toggle("active")
