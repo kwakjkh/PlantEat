@@ -53,10 +53,12 @@ cursor: pointer;
   font-size: 20px;
 }
 .header-logo {
-  height: 100%;
+  margin-top: 6px;
+  height: 90%;
   width: auto;
   float: left;
   padding-right: 30px;
+  margin-left: 20px;
 }
 .header-logo img {
   height: 100%;
@@ -104,6 +106,9 @@ cursor: pointer;
 }
 .header-nav li:hover ul{
   display: flex;
+}
+.header-nav li ul.active{
+  top: 90px;
 }
 .header-right {
   float: right;
@@ -256,7 +261,7 @@ cursor: pointer;
   }
   .nav-pop-inner{
     display: block;
-    width: 70px;
+    width: 50px;
     float: left;
     height: 100%;
     display: flex;
