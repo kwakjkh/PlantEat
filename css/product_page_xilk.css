@@ -12,6 +12,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 0.35vw;
 }
 .main_p-page > .left > .main_img {
   width: 100%;
@@ -81,20 +82,59 @@
   font-family: "Noto Sans KR", sans-serif;
   font-size: 25px;
 }
+
+/* 상단 가격 총합 및 개수 */
+.count {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 4vw;
+  padding: 1.3vw 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-txt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+.count > .count_box {
+  display: flex;
+}
+.count > .count_box > button {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  font-size: 23px;
+}
+.count > .count_box > .num {
+  width: 40px;
+  border-radius: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 4px;
+}
+
 /* 상단 우측 택배 배송 */
 .delivery {
   width: 100%;
-  padding-top: 1vw;
+  padding: 0.5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.delivery > .d-info {
+.delivery > .d-info-wrap > .d-info {
   display: flex;
   gap: 0.3vw;
   align-items: center;
 }
-.delivery > .d-info > .delivery-icon {
+.delivery > .d-info-wrap > .d-info > .delivery-icon {
   width: 25px;
 }
-.delivery > .d-info > .delivery-icon > img {
+.delivery > .d-info-wrap > .d-info > .delivery-icon > img {
   width: 100%;
 }
 .delivery p {
@@ -110,4 +150,158 @@
   font-family: "Noto Sans KR", sans-serif;
   padding: 5px 10px;
   margin-top: 0.3vw;
+}
+#coupon-discount {
+  color: #ff2c2c;
+}
+/* 총 가격 및 결재 */
+.pay {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.pay_price {
+  margin: 1vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+.p_menu {
+  width: 100%;
+  display: flex;
+  gap: 0.3vw;
+  height: 50px;
+}
+.p_menu > button {
+  width: 27.5%;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.p_menu > .payNow {
+  width: 45%;
+  background-color: #034934;
+  color: #fff;
+}
+/* 간편구매 */
+.another_pay {
+  width: 100%;
+  display: flex;
+  gap: 0.3vw;
+  flex-direction: column;
+  border: 1px solid #00000000;
+}
+.naver_pay,
+.kakao_pay {
+  width: 44%;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  height: 50px;
+}
+@media screen and (max-width: 880px) {
+  .main_p-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .delivery{
+    padding: 3vw 0;
+  }
+  .pay_price{
+    margin: 3vw 0;
+  }
+  .main_p-page > .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main_p-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_p-page > .right > .title > h1 {
+    font-size: 6vw;
+  }
+  .main_p-page > .right > .title > p {
+    font-size: 3vw;
+  }
+  .p-wrap > .oPt {
+    font-size: 4vw;
+  }
+  .p-wrap > .dPt {
+    font-size: 5vw;
+  }
+  .sale_p {
+    font-size: 4vw;
+  }
+  .main_p-page > .right {
+    padding: 3vw 2vw;
+  }
+  .delivery {
+    padding: 2vw 0;
+  }
+  .pay_price {
+    margin: 2vw 0;
+  }
+  .first_coupon {
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 5px 10px;
+    margin-top: 1vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .product-txt {
+    font-size: 3vw;
+  }
+  .count > .count_box > button {
+    width: 7vw;
+    height: 7vw;
+    font-size: 5vw;
+  }
+  .title{
+    padding-bottom: 3vw;
+  }
+  .count > .count_box > .num {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 4px;
+  }
+  .delivery > .d-info-wrap > .d-info > .delivery-icon {
+    width: 7vw;
+  }
+  .delivery p {
+    font-size: 3vw;
+  }
+  .first_coupon {
+    font-size: 3vw;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+  }
+  .pay_price{
+    margin: 3vw 0;
+  }
+  .pay_price > h1{
+    font-size: 3vw;
+  }
+  .all_p {
+    font-size: 4vw;
+  }
+  #coupon-discount{
+    font-size: 4vw;
+  }
+  .pay_price > .total_price{
+    font-size: 4vw;
+  }
+  .p_menu > button{
+    font-size: 4vw;
+    height: 15vw;
+  }
 }
