@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
       mobileHeader.classList.remove("mobile-header-active");
     });
 
-    const mobileAbout = this.document.querySelector(".mobile-header-nav li img")
+    const mobileAbout = this.document.querySelector(".mobile-toggle")
     const mobileAboutLi = this.document.querySelector(".mobile-about-us")
     mobileAbout.addEventListener("click",function(){
       mobileAboutLi.classList.toggle("active")
@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
 
 
 const header = document.querySelector(".header");
-const commu = this.document.querySelector(".community")
+const commu = this.document.querySelector(".community")z
 function applyCSSOnScroll() {
   // header의 높이를 가져옴
   const headerHeight = header.offsetHeight;
