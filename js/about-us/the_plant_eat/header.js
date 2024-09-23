@@ -35,6 +35,7 @@ mbClose.addEventListener("click", function() {
 
 const header = document.querySelector(".header");
 const inner = this.document.querySelector(".wrap > .inner")
+const headerNav = this.document.querySelector(".header-nav li ul")
 function applyCSSOnScroll() {
 // header의 높이를 가져옴
 const headerHeight = header.offsetHeight;
@@ -45,10 +46,12 @@ if (window.scrollY >= headerHeight) {
   // header.classList.remove("hide");
   header.classList.add("active");
   inner.classList.add("active")
+  headerNav.classList.add("active")
 } else {
   // header.classList.remove("hide");
   header.classList.remove("active");
   inner.classList.remove("active")
+  headerNav.classList.remove("active")
 }
 }
 
