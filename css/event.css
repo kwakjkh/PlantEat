@@ -19,11 +19,13 @@
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 600;
   color: #686868;
+  line-height: 50px;
 }
 .title > h1 {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 800;
   font-size: 40px;
+  line-height: 50px;
 }
 
 /* 이번달의 기획 */
@@ -164,7 +166,6 @@
 }
 .event-section > .event-right {
   width: 100%;
-  background-color: rgb(103, 103, 168);
 }
 .event-banner-l {
   height: 100%;
@@ -185,13 +186,15 @@
 .title > h1 {
   font-size: 35px;
 }
-
+.title > p {
+  line-height: 20px;
+}
 @media screen and (max-width: 600px) {
   .event > .inner > .menu-title-wrap > p {
     display: none;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .event > .inner > .menu-title-wrap > .menu-title {
     font-size: 30px;
   }
@@ -222,16 +225,20 @@
     transform: 0;
     border-radius: 30px 30px 0 0;
     animation: none;
+    border: 1px solid #fff;
   }
   .tMF {
     transform: 0;
     animation: none;
+    transform: translateY(-80%);
+    border: 1px solid #fff;
   }
 
   .tMO {
     transform: 0;
     border-radius: 0 0 30px 30px;
     animation: none;
+    border: 1px solid #fff;
   }
 
   .recommend-month > div {
@@ -244,6 +251,7 @@
     display: block;
     width: 100%;
     height: 100%;
+    padding-top: 60px;
   }
 
   .recommend > .title > p {
@@ -264,17 +272,16 @@
   }
   .event-section {
     flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .event-right {
-    display: block;
     width: 100%;
     height: 100%;
   }
-
   .event-banner-l {
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: 30%;
   }
 }
