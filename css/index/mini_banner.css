@@ -14,20 +14,21 @@
   font-weight: bold;
   margin-top: 18px;
 }
-.mini-banner .mini-banner-box {
-  border: 0.5px solid black;
+.mini-banner-box {
+  border: 2px solid black;
   width: 220px;
   height: 50px;
   text-align: center;
   align-content: center;
   font-size: 25px;
   margin-top: 34px;
+  border-radius: 25px;
 }
 .mini-banner-box a {
   cursor: pointer;
 }
 .mini-banner-box a p {
-  line-height: 50px;
+  line-height: 46px;
   margin: 0;
   font-weight: 500;
   font-size: 25px;
