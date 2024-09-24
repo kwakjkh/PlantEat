@@ -3,6 +3,7 @@
   margin-top: 105px;
   color: #034934;
   font-family: "Noto Sans KR", sans-serif;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .upper-footer {
   width: 100%;
@@ -44,7 +45,14 @@
 }
 .lower-footer {
   font-size: 16px;
+  height: auto;
 }
+.lower-footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .footer-info {
   width: 100%;
   float: left;
@@ -102,6 +110,10 @@
   .upper-footer{
     height: auto;
   }
+  .upper-footer .inner{
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
   .footer-nav{
     clear: both;
     position: relative;
@@ -116,7 +128,7 @@
     top: auto;
     transform: none;
     margin-top: 30px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .footer-sns li{
     padding-left: 40px;

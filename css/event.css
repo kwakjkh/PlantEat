@@ -186,12 +186,21 @@
 .title > h1 {
   font-size: 35px;
 }
+
+.event.active{
+  margin-top: 110px;
+}
+
 .title > p {
   line-height: 20px;
 }
+
 @media screen and (max-width: 600px) {
   .event > .inner > .menu-title-wrap > p {
     display: none;
+  }
+  .event.active{
+    margin-top: 90px;
   }
 }
 @media screen and (max-width: 450px) {
