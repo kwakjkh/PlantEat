@@ -226,6 +226,9 @@
   align-items: center;
   background-color: #00000010;
 }
+.p-info_list > li > a {
+  font-family: "Noto Sans KR", sans-serif;
+}
 .p-info_list > li.active {
   border: 1px solid #00000000;
   border-top: 1px solid #00000033;
@@ -525,7 +528,15 @@
   padding: 6px 10px;
   color: #0000009c;
 }
+@media screen and (max-width: 980px) {
+  .p-detail > ul > li > p {
+    width: 40%;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+}
 @media screen and (max-width: 880px) {
+  /* 메인 */
   .main_p-page {
     display: flex;
     flex-direction: column;
@@ -542,8 +553,37 @@
     flex-direction: column;
     gap: 0.2vw;
   }
+  .p-info_list > li > a {
+    font-size: 2.3vw;
+  }
+  /* 상세 필수 표기 정보 */
+  .p-detail {
+    padding: 2vw 0;
+  }
+  .p-detail > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .p-detail > ul > li {
+    width: 100%;
+  }
+  .p-detail > ul > li > p:first-of-type {
+    width: 40%;
+  }
+  .p-detail > ul > li > p {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+}
+@media screen and (max-width: 640px) {
+  .best-review-text > p {
+    font-size: 2.2vw;
+  }
 }
 @media screen and (max-width: 540px) {
+  /* 메인 */
   .main_p-page {
     display: flex;
     flex-direction: column;
@@ -576,6 +616,64 @@
     font-family: "Noto Sans KR", sans-serif;
     padding: 5px 10px;
     margin-top: 1vw;
+  }
+
+  /* 상세정보 */
+  .p-info_list {
+    height: 10vw;
+  }
+  .p-info_list > li > a {
+    font-size: 3vw;
+  }
+  .p-detail > h1 {
+    font-size: 3vw;
+  }
+  .p-detail > ul > li {
+    padding: 1vw 0;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #cccccc6e;
+  }
+  .p-detail > ul > li > p {
+    font-size: 3vw;
+  }
+  .p-detail > ul > li > p:first-of-type {
+    width: 50%;
+  }
+  /* 리뷰 */
+  .best-review-text > p {
+    font-size: 14px;
+  }
+  .best-r-title > .score {
+    color: #ff9900;
+    margin-top: 7px;
+    font-size: 4vw;
+  }
+  .best-review-list > li {
+    padding-top: 3vw;
+    border-bottom: 1px solid #00000050;
+    padding-bottom: 5vw;
+  }
+  /* 리뷰 날짜, 제품 */
+  .best-review-list > li > .users-wrap > .user-cart-info > .day {
+    font-size: 14px;
+  }
+  .best-review-list > li > .users-wrap > .user-cart-info > .p-name {
+    font-size: 12px;
+  }
+  /* 리뷰 - 유저 프로필 및 정보 */
+  .best-review-list > li > .users-wrap > .user-profile > .profile_img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #00000017;
+  }
+  .best-review-list > li > .users-wrap > .user-profile > .name > h1 {
+    font-size: 3.2vw;
+  }
+  .best-review-list > li > .users-wrap > .user-profile > .name > p {
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 420px) {
@@ -626,8 +724,35 @@
   .pay_price > .total_price {
     font-size: 4vw;
   }
+  .p_menu {
+    height: 12vw;
+  }
   .p_menu > button {
     font-size: 4vw;
-    height: 15vw;
+  }
+  .another_pay > button {
+    width: 100%;
+    height: 12vw;
+  }
+  /* 리뷰 */
+  .best-r-title > h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.4vw;
+    font-weight: 500;
+  }
+  .best-review-text {
+    padding: 10px 0;
+    line-height: 4vw;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .best-review-text > p {
+    font-size: 3vw;
+  }
+  /* 리뷰 날짜, 제품 */
+  .best-review-list > li > .users-wrap > .user-cart-info > .day {
+    font-size: 3vw;
+  }
+  .best-review-list > li > .users-wrap > .user-cart-info > .p-name {
+    font-size: 2.5vw;
   }
 }
