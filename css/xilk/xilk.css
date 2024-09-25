@@ -425,14 +425,18 @@ h2 {
   color: #ff642c;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 800;
+  background-color: #fff;
+  margin: 2vw 10px;
 }
 #reading-more:hover{
   color: #a14900;
 }
 .recipe-more {
+  font-size: 13px;
   font-weight: 700;
   border-radius: 50px;
-  border: 1px solid #ccc;
+  border: 2px solid #ff642c;
+  color: #ff642c;
   padding: 10px 30px;
   margin: 0 20px 20px;
   font-family: "Noto Sans KR", sans-serif;

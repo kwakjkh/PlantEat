@@ -1,6 +1,13 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("product_page_xilk-scroll.css");
+
+/* br */
+/* br */
+.br-540 {
+  display: none;
+}
+
 .main_p-page {
   width: 100%;
   display: flex;
@@ -32,6 +39,7 @@
 }
 .sub_img-wrap > .sub_img-list > li {
   width: 100%;
+  cursor: pointer;
 }
 
 /* 상단 우측 */
@@ -107,6 +115,7 @@
   border-radius: 0;
   border: 1px solid #ccc;
   font-size: 23px;
+  background-color: #00000005;
 }
 .count > .count_box > .num {
   width: 40px;
@@ -150,9 +159,26 @@
   font-family: "Noto Sans KR", sans-serif;
   padding: 5px 10px;
   margin-top: 0.3vw;
+  background-color: #00000005;
+  border: 1px solid #00000033;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.first_coupon:hover {
+  border: 1px solid rgba(0, 0, 0, 0.404);
 }
 #coupon-discount {
   color: #ff2c2c;
+}
+.first_coupon.active {
+  background-color: #ff7b00;
+  color: #fff;
+  border: 1px solid #ff7b00;
+}
+.first_coupon.false {
+  background-color: #ebebeb;
+  color: #fff;
+  border: 1px solid #dddddd;
 }
 /* 총 가격 및 결재 */
 .pay {
@@ -178,6 +204,7 @@
   font-size: 14px;
   font-weight: 700;
   font-family: "Noto Sans KR", sans-serif;
+  background-color: #00000005;
 }
 .p_menu > .payNow {
   width: 45%;
@@ -204,11 +231,12 @@
 .info_p-page {
   width: 100%;
   /* background-color: aqua; */
-  padding: 10vw 3vw 0;
+  padding: 5vw 3vw 0;
 }
 .p-info_menu {
   /* background-color: chartreuse; */
   border-top: 2px solid #000;
+  margin-top: 5vw;
 }
 .p-info_list {
   height: 50px;
@@ -224,7 +252,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00000010;
+  background-color: #00000005;
 }
 .p-info_list > li > a {
   font-family: "Noto Sans KR", sans-serif;
@@ -403,6 +431,7 @@
 .p-info_ask > .qna-list > li {
   width: 100%;
   border-bottom: 1px solid #000000;
+  padding: 15px;
 }
 .p-info_ask > .qna-list > li > .question,
 .p-info_ask > .qna-list > li > .ask {
@@ -447,7 +476,13 @@
   font-size: 20px;
   color: #00000088;
 }
-.p-info_ask > .qna-list > li > .question > .q-text,
+.p-info_ask > .qna-list > li > .question > .q-text {
+  padding-left: 1vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  width: calc(70% - 50px);
+}
 .p-info_ask > .qna-list > li > .ask > .a-text {
   padding-left: 1vw;
   font-family: "Noto Sans KR", sans-serif;
@@ -496,13 +531,16 @@
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 600;
   padding: 20px 30px;
-  background-color: #00000010;
+  background-color: #00000005;
   cursor: pointer;
+  border-bottom: 1px solid #00000010;
 }
 .buy-info p {
   color: #0000009c;
   padding: 6px 10px;
   font-family: "Noto Sans KR", sans-serif;
+  line-height: 30px;
+  font-size: 14px;
 }
 .buy-info p > strong {
   font-weight: 700;
@@ -514,13 +552,15 @@
   width: 100%;
 }
 .return-policy-info > .p-wrap p {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .red-imfortant {
   font-family: "Noto Sans KR", sans-serif;
   padding: 6px 10px;
   color: #da00009c;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
 }
 #etx {
   font-family: "Noto Sans KR", sans-serif;
@@ -581,8 +621,22 @@
   .best-review-text > p {
     font-size: 2.2vw;
   }
+  .p-info_ask > .qna-list > li > .question > .q-text > .q-u-text,
+  .p-info_ask > .qna-list > li > .ask > .a-text > .a-c-text {
+    font-size: 2.2vw;
+  }
+  .p-info_ask > .qna-list > li > .ask > .a-text {
+    width: 80%;
+  }
+  .a-company-info {
+    width: 20%;
+  }
 }
 @media screen and (max-width: 540px) {
+  /* br */
+  .br-540 {
+    display: block;
+  }
   /* 메인 */
   .main_p-page {
     display: flex;
@@ -675,8 +729,64 @@
   .best-review-list > li > .users-wrap > .user-profile > .name > p {
     font-size: 3vw;
   }
+  .q-user-info > .q-p-name {
+    font-size: 12px;
+  }
+
+  /* 문의 */
+  .p-info_ask > .qna-list > li > .question > .q-text > .q-user-name,
+  .p-info_ask > .qna-list > li > .ask > .a-text > .a-company-name {
+    font-size: 3.2vw;
+  }
+  .p-info_ask > .qna-list > li > .question > .q-user {
+    font-size: 3vw;
+    height: 6vw;
+    width: 10vw;
+  }
+  .p-info_ask > .qna-list > li > .ask > .a-company {
+    font-size: 3vw;
+    height: 6vw;
+    width: 10vw;
+  }
+  .q-user-info > .day,
+  .a-company-info > .day {
+    font-size: 14px;
+  }
+  .p-info_ask > .qna-list > li {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    padding: 3vw 0;
+  }
+  /* 구매 안내 */
+  .buy-info p {
+    color: #0000009c;
+    padding: 6px 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  .buy-info h1 {
+    font-size: 16px;
+    padding: 3vw 4vw;
+  }
+  .red-imfortant {
+    padding: 6px 10px;
+    color: #da00009c;
+    font-weight: 700;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  #etx {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    padding: 6px 10px;
+    color: #0000009c;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 420px) {
+  /* 메인 */
   .product-txt {
     font-size: 3vw;
   }
@@ -724,6 +834,7 @@
   .pay_price > .total_price {
     font-size: 4vw;
   }
+  /* 상세 정보 메뉴 */
   .p_menu {
     height: 12vw;
   }
@@ -754,5 +865,46 @@
   }
   .best-review-list > li > .users-wrap > .user-cart-info > .p-name {
     font-size: 2.5vw;
+  }
+  /* 문의 */
+  .best-review-text > p {
+    font-size: 3vw;
+  }
+  .p-info_ask > .qna-list > li > .question > .q-text > .q-u-text,
+  .p-info_ask > .qna-list > li > .ask > .a-text > .a-c-text {
+    font-size: 3vw;
+  }
+  .q-user-info > .day,
+  .a-company-info > .day {
+    font-size: 3vw;
+  }
+  .q-user-info > .q-p-name {
+    font-size: 2.5vw;
+  }
+  /* 구매 안내 */
+  .buy-info p {
+    color: #0000009c;
+    padding: 3px 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 5vw;
+    font-size: 3vw;
+  }
+  .buy-info h1 {
+    font-size: 3.4vw;
+  }
+  .red-imfortant {
+    padding: 6px 10px;
+    color: #da00009c;
+    font-weight: 700;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 5vw;
+    font-size: 3vw;
+  }
+  #etx {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    padding: 3vw 10px;
+    color: #0000009c;
+    font-size: 3vw;
   }
 }

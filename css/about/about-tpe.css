@@ -60,7 +60,7 @@
   border-right: 1px solid #fff;
   border-top: 1px solid #fff;
   transform: translateY(-11px);
-  transition: width 0.3s;
+  transition: all 0.3s;
   position: relative;
 }
 /* 두번쨰 줄 =============================================================*/
@@ -252,6 +252,15 @@
   opacity: 1;
   width: 200%;
   visibility: visible;
+}
+.tech-infos .infos-txt {
+  opacity: 0;
+
+}
+.tech-infos.info_active .infos-txt {
+  opacity: 1;
+  transition: all 0.7s;
+  transition-delay: 0.2s;
 }
 .tech-1 .tech-infos.info_active > h1,
 .tech-1 .tech-infos.info_active > h2,
@@ -446,14 +455,14 @@
   .mobile-the-plant-eat_about_main-bg {
     display: block !important;
   }
-  .mobile-the-plant-eat_about_main-bg > .inner > .swiper{
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper {
     position: relative;
   }
   .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 40px ;
+    margin-top: 40px;
     background-color: #034934;
     color: #fff;
   }
@@ -479,7 +488,7 @@
   .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-wrapper > .swiper-slide > .txt-s > .infos-txt-p {
     font-size: 15px;
   }
-  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-pagination{
+  .mobile-the-plant-eat_about_main-bg > .inner > .swiper > .swiper-pagination {
     position: absolute;
     top: 0px;
     height: 20px;
