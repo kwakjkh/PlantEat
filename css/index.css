@@ -3,5 +3,8 @@
 @import url("index/mini_banner.css");
 @import url("index/best_review.css");
 @import url("index/banner.css");
-@import url("index/product.css")
+@import url("index/product.css");
 
+h2{
+    font-family: "Oswald", sans-serif;
+}
