@@ -281,7 +281,7 @@
 
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .community>.inner>.menu-title-wrap>.menu-title{
     font-size: 30px;}
     .community>.inner>.menu-title-wrap{
