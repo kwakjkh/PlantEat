@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>더플랜잇샵</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/event.css" />
     <script src="js/event/header.js"></script>
+    <!-- 파비콘적용 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="images/favicon//ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link Swiper's CSS -->
@@ -20,6 +39,24 @@
   </head>
   <body>
     <div class="wrap">
+      <nav class="mobile-header">
+        <a href="index.html" class="mobile-header-logo"><img src="images/logo/the-plant-eat-logo-w.png" alt="로고" /></a>
+        <button class="header-close">닫기</button>
+        <ul class="mobile-header-nav">
+          <li class="mobile-toggle">
+            <p>ABOUT US</p>
+            <img src="images/icons/white-down-arrow-png-2.png" alt="화살표" class="mobile-arrow" />
+            <ul class="mobile-about-us">
+              <li><a href="eats-better.html">Eats Better</a></li>
+              <li><a href="the-plant-eat-about.html">The Plant Eat</a></li>
+              <li><a href="xilk.html">Xilk</a></li>
+            </ul>
+          </li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+        </ul>
+      </nav>
       <nav class="mobile-header">
         <a href="index.html" class="mobile-header-logo"><img src="images/logo/the-plant-eat-logo-w.png" alt="로고" /></a>
         <button class="header-close">닫기</button>
@@ -68,9 +105,6 @@
               <button class="mobile-search"></button>
             </li>
             <li>
-              <a href="javascript:void(0);"><img src="images/icons/icon _shopping-cart_.png" alt="장바구니" /></a>
-            </li>
-            <li>
               <a href="login.html"><img src="images/icons/icon _User_.png" alt="회원정보" /></a>
             </li>
           </ul>
@@ -87,7 +121,7 @@
         <div class="inner">
           <div class="menu-title-wrap">
             <h1 class="menu-title">Event</h1>
-            <p>플랜잇샵의 다양한 비건 상품을 만나보세요</p>
+            <p class="menu-subtitle">이달의 행사 상품을 만나보세요!</p>
           </div>
           <div class="recommend-month">
             <div class="tMT">이번 달의 추천 테마</div>
@@ -98,14 +132,14 @@
           </div>
           <div class="recommend">
             <div class="title">
-              <p>매달 추가되는</p>
+              <p>매달마다 새로운</p>
               <h1>기획상품</h1>
             </div>
             <div class="products">
-              <div class="main_sale">
+              <ul class="main_sale">
                 <a href="#"><img src="images/event_img/event_choco_scon.png" alt="이벤트 초코스콘" /></a>
-              </div>
-              <div class="sub_sale">
+              </ul>
+              <ul class="sub_sale">
                 <ul>
                   <li>
                     <a href="#"><img src="images/event_img/event_choco_granola.png" alt="이벤트 초코 그래놀라" /></a>
@@ -120,27 +154,26 @@
                     <a href="#"><img src="images/event_img/event_choco_cracker.png" alt="이벤트 초코 크래커" /></a>
                   </li>
                 </ul>
-              </div>
+              </ul>
             </div>
           </div>
           <div class="event-section">
             <div class="event-left">
               <div class="title">
                 <h1>이달의 행사</h1>
-                <p>행사에 참여하고 쿠폰을 받아가세요~!</p>
+                <p>행사에 참여하고 쿠폰 받아가세요~!</p>
               </div>
               <div class="event-banner-s">
-                <img src="images/event_img/plant_kakao.png" alt="플랜잇샵 친구 구함" />
+                <a href="https://pf.kakao.com/_Qsxaxkxj"><img src="images/event_img/plant_kakao.png" alt="플랜잇샵 친구 구함" /></a>
+                
               </div>
             </div>
             <div class="event-right">
-
               <div class="event-banner-l">
                 <img src="images/event_img/review1920.png" alt="리뷰배너" class="event-banner-l" />
               </div>
 
               <div class="event-banner-l"></div>
-
             </div>
           </div>
         </div>

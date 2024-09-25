@@ -2,30 +2,41 @@
 .event {
   width: 100%;
 }
+.event .inner{
+  padding: 0 20px;
+}
+.event.active{
+  margin-top: 110px;
+}
 .recommend {
   width: 100%;
   padding: 0 3vw;
 }
 .event .menu-title-wrap {
-  height: 290px;
+  height: 380px;
+  padding-top: 130px;
 }
 .title {
   text-align: center;
-  padding-top: 2vw;
+  padding-top: 30px;
   padding-bottom: 2vw;
   font-family: "Noto Sans KR", sans-serif;
 }
 .title > p {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 600;
-  color: #686868;
+  color: rgba(0, 0, 0, 0.5);
   line-height: 50px;
+  font-size: 15px;
+  
 }
 .title > h1 {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 800;
   font-size: 40px;
-  line-height: 50px;
+  /* line-height: 50px; */
+  margin-top: 10px;
+  color: #034934;
 }
 
 /* 이번달의 기획 */
@@ -33,11 +44,12 @@
   width: 100%;
   height: 60px;
   max-width: 700px;
-  background-color: #d9d9d9;
+  background-color: #034934;
   margin: 0 auto;
   display: flex;
   overflow: hidden;
   border-radius: 30px 30px 0 0;
+  /* padding: 0 20px; */
 }
 .recommend-month > span {
   width: 2px;
@@ -46,6 +58,7 @@
 }
 .recommend-month > div {
   width: 100%;
+  color: white;
   text-align: center;
   height: 100%;
   display: flex;
@@ -101,10 +114,22 @@
 .products {
   width: 100%;
   display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.products img {
+  transform: scale(1); /* 이미지 확대 */
+  transition: transform 0.7s; /* 시간 설정 */
+}
+.products img:hover {
+  transform: scale(1.2); /* 이미지 확대 */
+  transition: transform 0.7s; /* 시간 설정 */
 }
 .main_sale {
   width: 100%;
   height: 100%;
+  margin-right: 2px;
 }
 .sub_sale {
   width: 100%;
@@ -115,16 +140,19 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sub_sale > ul > li {
-  width: calc(100% / 2);
-  height: calc(100% / 2);
+  width: calc(100% / 2 - 1px);
+  height: calc(100% / 2 - 4px);
+  margin-bottom: 2px;
 }
 .main_sale > a,
 .sub_sale > ul > li > a {
   width: 100%;
   display: block;
   display: flex;
+  overflow: hidden;
 }
 .main_sale > a > img,
 .sub_sale > ul > li > a > img {
@@ -133,7 +161,7 @@
 
 /* 이번달 이벤트 */
 .event-section {
-  height: 70vw;
+  height: 55vw;
   max-height: 750px;
   width: 100%;
   /* background-color: aqua; */
@@ -144,24 +172,31 @@
 }
 .event-section > .event-left {
   width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
 }
 .event-section > .event-left > .title {
-  height: 100%;
+  height: 50%;
+  align-content: center;
   text-align: left;
-  background-color: azure;
+  /* background-color: azure; */
   padding: 0;
   padding-left: 4vw;
 }
+.event-section > .event-left > .title > h1{
+  margin-bottom: 10px;
+}
 .event-banner-s {
   height: 100%;
-  background-color: #fed650;
+  background-color: #fee500;
   display: flex;
   align-items: center;
 }
-.event-banner-s > img {
+.event-banner-s > a {
+  width: 100%;
+}
+.event-banner-s a img{
   width: 100%;
 }
 .event-section > .event-right {
@@ -172,6 +207,17 @@
   width: 100%;
 }
 /* 반응형 */
+@media screen and (max-width : 1200px) {
+  .event >.inner > .menu-title-wrap{
+    padding-top: 80px;
+    height: 230px;
+  }
+  }
+  @media screen and (max-width : 802px){
+    .recommend .title p{
+      font-size: 12px;
+    }
+  }
 @media screen and (max-width: 768px) {
   .event > .inner > .menu-title-wrap {
     padding-top: 80px;
@@ -180,6 +226,9 @@
     font-size: 40px;
   }
   .event > .inner > .menu-title-wrap > p {
+    font-size: 12px;
+  }
+  .title p{
     font-size: 12px;
   }
 }
@@ -193,13 +242,19 @@
   .event > .inner > .menu-title-wrap > p {
     display: none;
   }
+  .event .inner .menu-title-wrap{
+    height: 150px;
+  }
+  .event.active{
+    margin-top: 90px;
+  }
 }
 @media screen and (max-width: 450px) {
   .event > .inner > .menu-title-wrap > .menu-title {
     font-size: 30px;
   }
   .event > .inner > .menu-title-wrap {
-    height: 200px;
+    height: 100px;
     padding-top: 30px;
   }
   .title > h1 {
@@ -220,6 +275,7 @@
     height: 40px;
     overflow: visible;
     background-color: rgba(0, 0, 0, 0);
+    margin-top: 35px;
   }
   .tMT {
     transform: 0;
@@ -242,7 +298,7 @@
   }
 
   .recommend-month > div {
-    background-color: #d9d9d9;
+    background-color: #034934;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -256,6 +312,7 @@
 
   .recommend > .title > p {
     font-size: 13px;
+    
   }
   .recommend > .title > h1 {
     font-size: 20px;

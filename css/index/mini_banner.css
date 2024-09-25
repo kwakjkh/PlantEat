@@ -15,23 +15,30 @@
   margin-top: 18px;
 }
 .mini-banner-box {
-  border: 2px solid black;
-  width: 220px;
-  height: 50px;
+  width: 146.72px;
+  height: 39px;
   text-align: center;
+  border: 2px solid black;
   align-content: center;
   font-size: 25px;
   margin-top: 34px;
   border-radius: 25px;
+  padding: 10px 30px;
+  
+}
+.mini-banner-box:hover, .mini-banner-box:hover a{
+  background-color: #034934;
+  color: white;
+  border: 1px solid black;
 }
 .mini-banner-box a {
   cursor: pointer;
 }
 .mini-banner-box a p {
-  line-height: 46px;
   margin: 0;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .mini-banner1 {
   background-color: rgba(255, 100, 44, 0.25);
