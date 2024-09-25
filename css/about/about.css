@@ -155,11 +155,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 30px;
-  background-color: #00000050;
+  background-color: #3b0f0f3d;
   color: white;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.1s ease-out;
   cursor: pointer;
+  filter:blur(60%);
 }
 .its-better_middle-img_after:hover {
   opacity: 1;
@@ -227,7 +228,7 @@
 }
 /* 잇츠베러 상품 보러가기 */
 .go_a__shop {
-  padding: 7px 30px;
+  padding: 10px 30px;
   border-radius: 50px;
   position: absolute;
   top: 10px;
@@ -239,11 +240,12 @@
   background-color: #ffffff70;
   color: #df3e3b;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   font-family: "Noto Sans KR", sans-serif;
 }
 .go_a__shop:hover {
-  background-color: #d329293a;
+  background-color: #df3e3b;
+  color: #fff;
 }
 .go_a__shop-active {
   opacity: 1;
@@ -535,6 +537,7 @@
     width: 544px;
     height: 544px;
     border-radius: 90px 0 0 0;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 1223px) {
@@ -714,7 +717,7 @@
     padding: 0 20px;
   }
   .go_a__shop {
-    font-size: 2vw !important;
+    font-size: 13px !important;
     font-weight: 800;
   }
   .its-better_middle-img_after {
@@ -895,9 +898,8 @@
     font-size: 12px;
   }
   .go_a__shop {
-    top: 0;
-    padding: 8px 13px;
-    font-size: 2vw !important;
+    top: -0.5vw;
+    padding: 2vw 6vw !important;
     font-weight: 800;
   }
 }
@@ -905,6 +907,8 @@
   .its-better_more-info {
     height: 550px;
     overflow: hidden;
+    width: calc(100% - 6vw);
+    margin: 0 3vw;
   }
   .its-better_img {
     width: 100%;
@@ -913,7 +917,7 @@
     padding: 20px;
   }
   .its-better_i_info > h1 {
-    font-size: 20px;
+    font-size: 5vw;
   }
   .its-better_img-wrapping {
     height: auto;
@@ -932,6 +936,10 @@
   .better-Point-Txt > h3 {
     font-size: 18px;
   }
+  .go_a__shop {
+    font-size: 3vw !important;
+    font-weight: 800;
+  }
 }
 @media screen and (max-width: 420px) {
   .br-420 {
@@ -949,10 +957,9 @@
   }
   .go_a__shop,
   .go_a__shop-active {
-    padding: 3px 10px;
-    font-size: 12px;
-    top: 3px;
-    border: 1px solid;
+    top: 0;
+    right: 0;
+    border: 2px solid;
   }
 
   .better-Point-list > li {
@@ -968,6 +975,12 @@
   .its-better_more-info {
     height: 130vw;
     overflow: hidden;
+  }
+  .its-better_i_info.more-infoActive > p:first-of-type{
+    font-size: 3.2vw;
+  }
+  .its-better_i_info.more-infoActive > p:last-of-type{
+    font-size: 3vw !important;
   }
 }
 @media screen and (max-width: 380px) {

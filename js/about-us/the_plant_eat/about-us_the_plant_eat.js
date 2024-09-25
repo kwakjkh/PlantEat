@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
         });
       }
     },
-    offset: "-70%",
+    offset: "-30%",
   });
 
   // .click-ani 요소들을 선택

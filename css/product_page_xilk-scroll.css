@@ -2,8 +2,8 @@
 html {
   scroll-behavior: smooth;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 /* 리뷰, 문의 더 보기 버튼 */
 
@@ -12,7 +12,7 @@ button{
 .other_ask {
   width: 100%;
   max-width: 400px;
-  margin: 2vw auto;
+  margin: 2vw auto 8vw;
   /* background-color: brown; */
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,7 @@ button{
   border-radius: 0;
   border: 1px solid #afafaf;
   color: #afafafe3;
+  background-color: #00000005;
 }
 /* 숫자 버튼 영역 */
 .num-btn {
@@ -39,22 +40,19 @@ button{
   font-family: "Noto Sans KR", sans-serif;
   background-color: #fff;
 }
-.num-btn > button:hover{
-    background-color: #afafaf6b;
+.num-btn > button:hover {
+  background-color: #afafaf6b;
 }
 .num-btn > button.num_active {
   border: 2px solid #ff642c;
   color: #ff642c;
 }
 
-
-
-
 /* js active 리스트 */
 .best-review-list,
-.qna-list{
+.qna-list {
   display: none;
 }
-.page_active{
+.page_active {
   display: block;
 }
