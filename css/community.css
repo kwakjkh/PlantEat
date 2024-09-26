@@ -13,6 +13,9 @@
   color: rgba(0, 0, 0, 0.664);
   font-family: "Noto Sans KR", sans-serif;
 }
+.community > .inner > .menu-title-wrap {
+  height: 380px;
+}
 .menu-title {
   font-family: "Oswald", sans-serif;
 }
@@ -147,8 +150,14 @@
 .qAa-list {
   display: none;
 }
-.community.active{
+.community.active {
   margin-top: 110px;
+}
+@media screen and (max-width: 1200px) {
+  .community > .inner > .menu-title-wrap {
+    padding-top: 80px;
+    height: 230px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .community-list > ul > li > a > span > img {
@@ -177,13 +186,16 @@
   }
 }
 @media screen and (max-width: 768px) {
-.community>.inner>.menu-title-wrap{
-  padding-top: 80px;
+  .community > .inner > .menu-title-wrap {
+    padding-top: 80px;
+  }
+  .community > .inner > .menu-title-wrap > .menu-title {
+    font-size: 40px;
+  }
 }
-.community>.inner>.menu-title-wrap>.menu-title{
-  font-size: 40px;}
+.event > .inner > .menu-title-wrap > p {
+  font-size: 12px;
 }
-
 @media screen and (max-width: 617px) {
   .community-title > h2 {
     font-size: 16px;
@@ -226,9 +238,12 @@
     gap: 3vw;
   }
 }
-@media screen and (max-width:600px){
-  .community.active{
+@media screen and (max-width: 600px) {
+  .community.active {
     margin-top: 90px;
+  }
+  .community > .inner > .menu-title-wrap > p {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -275,22 +290,22 @@
     padding: 0 10px;
     width: 15%;
   }
-    .title-list> .tLn,  .title-list>.tLt{
-      font-size: 12px;
-    }
-
-
+  .title-list > .tLn,
+  .title-list > .tLt {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 450px) {
-  .community>.inner>.menu-title-wrap>.menu-title{
-    font-size: 30px;}
-    .community>.inner>.menu-title-wrap{
-      height: 200px;
-      padding-top: 30PX;
-    }
-    .community-title > h2 {
-      width: 100px;
-      padding-top: 15px;}
-
-      
+  .community > .inner > .menu-title-wrap > .menu-title {
+    font-size: 30px;
+  }
+  .community > .inner > .menu-title-wrap {
+    height: 100px;
+    padding-top: 30px;
+  }
+  .community-title > h2 {
+    width: 100px;
+    padding-top: 15px;
+  }
+  
 }

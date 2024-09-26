@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
     } else {
       // 아이디와 비밀번호가 모두 입력된 경우
       alert("로그인 되었습니다");
-      window.location.href = "../index.html"
+      history.back()
       // 실제 로그인 처리를 여기서 할 수 있음 (폼 전송 등)
     }
 
