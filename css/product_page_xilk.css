@@ -206,6 +206,9 @@
   font-family: "Noto Sans KR", sans-serif;
   background-color: #00000005;
 }
+.p_menu > button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+}
 .p_menu > .payNow {
   width: 45%;
   background-color: #034934;
@@ -215,16 +218,93 @@
 .another_pay {
   width: 100%;
   display: flex;
-  gap: 0.3vw;
   flex-direction: column;
   border: 1px solid #00000000;
+  margin-top: 0.3vw;
 }
 .naver_pay,
 .kakao_pay {
   width: 44%;
+}
+.naver-pay-wrap,
+.kakao-pay-wrap {
+  width: 100%;
   border-radius: 0;
-  border: 1px solid #ccc;
-  height: 50px;
+  /* border: 1px solid #ccc; */
+  border-top: 2px solid #000;
+  max-height: 50px;
+  height: calc(10vw);
+  position: relative;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.n-pay-text {
+  width: calc(40% - 10px);
+  max-width: 88px;
+  height: calc(100% - 10px);
+  max-height: 25px;
+  background: url("../images/pay/npay_sp_text\ 1\ \(1\).png") no-repeat center;
+  background-size: contain;
+  padding-left: 6vw;
+}
+.naver_pay > .naver-pay-wrap > button {
+  width: calc(50% - 10px);
+  height: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #00de5a;
+  border: none;
+}
+.naver_pay > .naver-pay-wrap > button > span {
+  background: url("../images/pay/npay_sp_payment\ 1.png") no-repeat center;
+  background-size: contain;
+  width: 70%;
+  max-width: 70px;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.k-pay-text {
+  width: calc(30% - 10px);
+  height: calc(100% - 10px);
+  background: url("../images/pay/img_checkout_main\ 1\ \(1\).png") no-repeat center;
+  background-size: contain;
+}
+.kakao_pay > .kakao-pay-wrap > button {
+  width: calc(50% - 10px);
+  height: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fee500;
+  border: none;
+}
+.kakao_pay > .kakao-pay-wrap > button > span {
+  background: url("../images/pay/img_checkout_main\ 1.png") no-repeat center;
+  background-size: contain;
+  width: 70%;
+  max-width: 70px;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.naver-point,
+.kakao-point {
+  width: 100%;
+  border-top: 1px solid #00000044;
+  font-size: 12px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0.2vw 0.4vw;
+  cursor: pointer;
 }
 
 /* 상품 정보 메뉴 */
@@ -268,6 +348,7 @@
 /* 상품 상세 */
 .p-detail {
   width: 100%;
+  margin-bottom: 2vw;
 }
 .p-detail > h1 {
   font-weight: 600;
@@ -291,12 +372,52 @@
 }
 
 /* 상품 정보 메인 페이지(이미지) */
+.more_see-btn_wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 12vw;
+  background: linear-gradient(to top, #ffffff, #ffffff77);
+  z-index: 99;
+}
+.more_see {
+  margin: 2vw auto;
+  background-color: #ffffff77;
+  color: #ff642c;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 2px solid #ff642c;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.more_see:hover {
+  background-color: #ff642c;
+  color: #fff;
+}
 .p-m-info {
   width: 100%;
   background-color: #ff642c;
   max-width: 800px;
   margin: 0 auto;
-  height: 1000px;
+  height: 100vw;
+  max-height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+.p-m-info.show {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+.p-m-info > img {
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
 /* 상품 리뷰 */
@@ -568,6 +689,12 @@
   padding: 6px 10px;
   color: #0000009c;
 }
+@media screen and (max-width: 1247px) {
+  .naver-point,
+  .kakao-point {
+    font-size: 0.9vw;
+  }
+}
 @media screen and (max-width: 980px) {
   .p-detail > ul > li > p {
     width: 40%;
@@ -576,6 +703,10 @@
   }
 }
 @media screen and (max-width: 880px) {
+  .naver-point,
+  .kakao-point {
+    font-size: 12px;
+  }
   /* 메인 */
   .main_p-page {
     display: flex;
@@ -618,6 +749,14 @@
   }
 }
 @media screen and (max-width: 640px) {
+  .naver-point,
+  .kakao-point {
+    width: 100%;
+    border-top: 1px solid #00000044;
+    font-size: 2vw;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 0.2vw 0.4vw;
+  }
   .best-review-text > p {
     font-size: 2.2vw;
   }
@@ -694,6 +833,31 @@
   .p-detail > ul > li > p:first-of-type {
     width: 50%;
   }
+
+  /* 상품 상세보기 페이지 영역 */
+  .more_see-btn_wrap {
+    height: 16vw;
+  }
+  .more_see {
+    margin: 4vw auto;
+    padding: 2vw 6vw;
+    font-size: 14px;
+  }
+  .more_see:hover {
+    background-color: #ff642c;
+    color: #fff;
+  }
+  .p-m-info {
+    width: 100%;
+    background-color: #ff642c;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vw;
+    max-height: 900px;
+    overflow: hidden;
+    position: relative;
+  }
+
   /* 리뷰 */
   .best-review-text > p {
     font-size: 14px;
@@ -807,6 +971,9 @@
     font-size: 3vw;
     text-align: center;
     padding-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .delivery > .d-info-wrap > .d-info > .delivery-icon {
     width: 7vw;
@@ -834,6 +1001,59 @@
   .pay_price > .total_price {
     font-size: 4vw;
   }
+
+  /* 간편 결재 버튼 */
+  .naver_pay,
+  .kakao_pay {
+    width: 100%;
+  }
+  .naver-pay-wrap,
+  .kakao-pay-wrap {
+    max-height: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .k-pay-text {
+    transform: translateX(-5vw);
+  }
+  .naver-point,
+  .kakao-point {
+    font-size: 3vw;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 0.7vw 0.8vw;
+  }
+  .naver_pay > .naver-pay-wrap > button {
+    width: calc(40% - 10px);
+  }
+  .kakao_pay > .kakao-pay-wrap > button {
+    width: calc(40% - 10px);
+  }
+  /* 상품 상세보기 페이지 영역 */
+  .more_see-btn_wrap {
+    height: 16vw;
+  }
+  .more_see {
+    margin: 4vw auto;
+    padding: 2vw 6vw;
+    display: block;
+    position: relative;
+    font-size: 3vw;
+  }
+  .more_see:hover {
+    background-color: #ff642c;
+    color: #fff;
+  }
+  .p-m-info {
+    width: 100%;
+    background-color: #ff642c;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vw;
+    max-height: 900px;
+    overflow: hidden;
+    position: relative;
+  }
+
   /* 상세 정보 메뉴 */
   .p_menu {
     height: 12vw;
@@ -906,5 +1126,10 @@
     padding: 3vw 10px;
     color: #0000009c;
     font-size: 3vw;
+  }
+}
+@media screen and (max-width: 340px) {
+  .k-pay-text {
+    transform: translateX(-4vw);
   }
 }
