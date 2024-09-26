@@ -100,6 +100,18 @@ window.addEventListener("load", function () {
     window.location.href = "login.html"; // 알림창 확인 후 login.html로 이동
   });
 
+  // 상품 정보 더보기 버튼
+  const more_see_btn = this.document.querySelector(".more_see")
+  const more_see_wrap = this.document.querySelector(".more_see-btn_wrap")
+  const p_m_info = this.document.querySelector(".p-m-info")
+  more_see_btn.addEventListener("click", function(){
+    more_see_wrap.style.display = "none"
+    p_m_info.classList.add("show")
+  })
+
+
+
+
   // 리뷰, 문의 더보기 누를 시 나타나는 알림창
   const prevbtn = this.document.querySelectorAll(".prev");
   const nextbtn = this.document.querySelectorAll(".next");
