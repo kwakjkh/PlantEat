@@ -71,7 +71,7 @@ function displayTotal() {
   const discountedPrice = ppPrice + d_coupon; // 쿠폰 할인을 적용한 총 가격
   const over35000 = d_coupon - 3500;
   const notover35000 = d_coupon;
-  if (discountedPrice > 35000) {
+  if (common_price > 35000) {
     total_price.innerHTML = `${common_price.toLocaleString()}`;
     overcoupon.innerHTML = `0`;
   } else {
